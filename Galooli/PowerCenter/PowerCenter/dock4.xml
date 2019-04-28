@@ -1,0 +1,387 @@
+﻿<XtraSerializer version="1.0" application="DockManager">
+  <property name="#LayoutVersion" />
+  <property name="AllowGlyphSkinning">false</property>
+  <property name="AutoHiddenPanelCaptionShowMode">ShowForAllPanels</property>
+  <property name="AutoHideContainers" iskey="true" value="0" />
+  <property name="DockingOptions" isnull="true" iskey="true">
+    <property name="AutoHidePanelVerticalTextOrientation">Default</property>
+    <property name="TabbedPanelVerticalTextOrientation">Default</property>
+    <property name="CustomResizeZoneThickness">0</property>
+    <property name="CursorFloatCanceled" isnull="true" />
+    <property name="HideImmediatelyOnAutoHide">false</property>
+    <property name="CloseActiveTabOnly">true</property>
+    <property name="CloseActiveFloatTabOnly">false</property>
+    <property name="ShowCaptionOnMouseHover">false</property>
+    <property name="ShowCaptionImage">false</property>
+    <property name="AllowRestoreToAutoHideContainer">false</property>
+    <property name="DockPanelInTabContainerTabRegion">DockImmediately</property>
+    <property name="DockPanelInCaptionRegion">Default</property>
+    <property name="SnapMode">None</property>
+    <property name="ShowMaximizeButton">true</property>
+    <property name="ShowAutoHideButton">true</property>
+    <property name="ShowCloseButton">true</property>
+    <property name="FloatOnDblClick">true</property>
+  </property>
+  <property name="ActivePanelID">5</property>
+  <property name="XtraSerializableScreenConfiguration" iskey="true" value="3">
+    <property name="Item1">@1,X=0@1,Y=0@4,Width=1366@3,Height=768</property>
+    <property name="Item2">@5,X=-3840@2,Y=11@4,Width=1920@4,Height=1080</property>
+    <property name="Item3">@5,X=-1920@1,Y=0@4,Width=1920@4,Height=1080</property>
+  </property>
+  <property name="Panels" iskey="true" value="7">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="DockedAsTabbedDocument">true</property>
+      <property name="Count">0</property>
+      <property name="SavedIndex">0</property>
+      <property name="SavedTabbed">false</property>
+      <property name="SavedMdiDocument">true</property>
+      <property name="FloatSize">@4,Width=1378@3,Height=780</property>
+      <property name="FloatVertical">false</property>
+      <property name="DockVertical">Default</property>
+      <property name="FloatLocation">@3,X=633@3,Y=267</property>
+      <property name="Dock">Float</property>
+      <property name="Header" />
+      <property name="Footer" />
+      <property name="AllowBorderColorBlending">false</property>
+      <property name="Tabbed">false</property>
+      <property name="TabsPosition">Bottom</property>
+      <property name="TabsScroll">false</property>
+      <property name="ImageIndex">-1</property>
+      <property name="Visibility">Visible</property>
+      <property name="TabText" />
+      <property name="AllowGlyphSkinning">Default</property>
+      <property name="AllowCustomHeaderButtonsGlyphSkinning">Default</property>
+      <property name="Hint" />
+      <property name="Text">TR7Z-TR5 Device [Not Active]</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowFloating">true</property>
+        <property name="AllowDockLeft">true</property>
+        <property name="AllowDockRight">true</property>
+        <property name="AllowDockTop">true</property>
+        <property name="AllowDockBottom">true</property>
+        <property name="AllowDockFill">true</property>
+        <property name="AllowDockAsTabbedDocument">true</property>
+        <property name="ResizeDirection">All</property>
+        <property name="ShowMaximizeButton">true</property>
+        <property name="ShowAutoHideButton">true</property>
+        <property name="ShowCloseButton">true</property>
+        <property name="FloatOnDblClick">true</property>
+      </property>
+      <property name="XtraParentID">-10001</property>
+      <property name="XtraSavedParentID">-1</property>
+      <property name="XtraAutoHideContainerDock">Float</property>
+      <property name="ID">a25da57a-d1a8-4ba8-a99f-f0969f301f1b</property>
+      <property name="XtraID">0</property>
+      <property name="XtraActiveChildID">-1</property>
+      <property name="XtraBounds">@1,X=0@1,Y=0@4,Width=1378@3,Height=780</property>
+      <property name="OriginalSize">@3,Width=200@3,Height=200</property>
+      <property name="XtraZIndex">0</property>
+      <property name="SavedDock">Float</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="DockedAsTabbedDocument">true</property>
+      <property name="Count">0</property>
+      <property name="SavedIndex">0</property>
+      <property name="SavedTabbed">false</property>
+      <property name="SavedMdiDocument">false</property>
+      <property name="FloatSize">@4,Width=1471@3,Height=836</property>
+      <property name="FloatVertical">false</property>
+      <property name="DockVertical">Default</property>
+      <property name="FloatLocation">@3,X=663@3,Y=293</property>
+      <property name="Dock">Float</property>
+      <property name="Header" />
+      <property name="Footer" />
+      <property name="AllowBorderColorBlending">false</property>
+      <property name="Tabbed">false</property>
+      <property name="TabsPosition">Bottom</property>
+      <property name="TabsScroll">false</property>
+      <property name="ImageIndex">-1</property>
+      <property name="Visibility">Visible</property>
+      <property name="TabText" />
+      <property name="AllowGlyphSkinning">Default</property>
+      <property name="AllowCustomHeaderButtonsGlyphSkinning">Default</property>
+      <property name="Hint" />
+      <property name="Text">EX20SSR Device [ID 1]</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowFloating">true</property>
+        <property name="AllowDockLeft">true</property>
+        <property name="AllowDockRight">true</property>
+        <property name="AllowDockTop">true</property>
+        <property name="AllowDockBottom">true</property>
+        <property name="AllowDockFill">true</property>
+        <property name="AllowDockAsTabbedDocument">true</property>
+        <property name="ResizeDirection">All</property>
+        <property name="ShowMaximizeButton">true</property>
+        <property name="ShowAutoHideButton">true</property>
+        <property name="ShowCloseButton">true</property>
+        <property name="FloatOnDblClick">true</property>
+      </property>
+      <property name="XtraParentID">-10001</property>
+      <property name="XtraSavedParentID">-1</property>
+      <property name="XtraAutoHideContainerDock">Float</property>
+      <property name="ID">ab78e105-b12c-4711-90d7-7771f1bba34b</property>
+      <property name="XtraID">1</property>
+      <property name="XtraActiveChildID">-1</property>
+      <property name="XtraBounds">@1,X=0@1,Y=0@4,Width=1471@3,Height=836</property>
+      <property name="OriginalSize">@3,Width=200@3,Height=200</property>
+      <property name="XtraZIndex">0</property>
+      <property name="SavedDock">Right</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="DockedAsTabbedDocument">false</property>
+      <property name="Count">0</property>
+      <property name="SavedIndex">-1</property>
+      <property name="SavedTabbed">false</property>
+      <property name="SavedMdiDocument">false</property>
+      <property name="FloatSize">@3,Width=200@3,Height=200</property>
+      <property name="FloatVertical">false</property>
+      <property name="DockVertical">Default</property>
+      <property name="FloatLocation">@1,X=0@1,Y=0</property>
+      <property name="Dock">Left</property>
+      <property name="Header" />
+      <property name="Footer" />
+      <property name="AllowBorderColorBlending">false</property>
+      <property name="Tabbed">false</property>
+      <property name="TabsPosition">Bottom</property>
+      <property name="TabsScroll">false</property>
+      <property name="ImageIndex">-1</property>
+      <property name="Visibility">Visible</property>
+      <property name="TabText" />
+      <property name="AllowGlyphSkinning">Default</property>
+      <property name="AllowCustomHeaderButtonsGlyphSkinning">Default</property>
+      <property name="Hint" />
+      <property name="Text">Explorer</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowFloating">true</property>
+        <property name="AllowDockLeft">true</property>
+        <property name="AllowDockRight">true</property>
+        <property name="AllowDockTop">true</property>
+        <property name="AllowDockBottom">true</property>
+        <property name="AllowDockFill">false</property>
+        <property name="AllowDockAsTabbedDocument">false</property>
+        <property name="ResizeDirection">All</property>
+        <property name="ShowMaximizeButton">true</property>
+        <property name="ShowAutoHideButton">true</property>
+        <property name="ShowCloseButton">true</property>
+        <property name="FloatOnDblClick">true</property>
+      </property>
+      <property name="XtraParentID">-1</property>
+      <property name="XtraSavedParentID">-1</property>
+      <property name="XtraAutoHideContainerDock">Float</property>
+      <property name="ID">49052f91-bea4-4359-9aee-2e24911bf8d7</property>
+      <property name="XtraID">2</property>
+      <property name="XtraActiveChildID">-1</property>
+      <property name="XtraBounds">@1,X=0@3,Y=155@3,Width=151@3,Height=865</property>
+      <property name="OriginalSize">@3,Width=151@3,Height=200</property>
+      <property name="XtraZIndex">1</property>
+      <property name="SavedDock">Float</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="DockedAsTabbedDocument">true</property>
+      <property name="Count">0</property>
+      <property name="SavedIndex">1</property>
+      <property name="SavedTabbed">false</property>
+      <property name="SavedMdiDocument">true</property>
+      <property name="FloatSize">@4,Width=1471@3,Height=836</property>
+      <property name="FloatVertical">false</property>
+      <property name="DockVertical">Default</property>
+      <property name="FloatLocation">@3,X=284@3,Y=288</property>
+      <property name="Dock">Float</property>
+      <property name="Header" />
+      <property name="Footer" />
+      <property name="AllowBorderColorBlending">false</property>
+      <property name="Tabbed">false</property>
+      <property name="TabsPosition">Bottom</property>
+      <property name="TabsScroll">false</property>
+      <property name="ImageIndex">-1</property>
+      <property name="Visibility">Visible</property>
+      <property name="TabText" />
+      <property name="AllowGlyphSkinning">Default</property>
+      <property name="AllowCustomHeaderButtonsGlyphSkinning">Default</property>
+      <property name="Hint" />
+      <property name="Text">EX6I Device [ID 1]</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowFloating">true</property>
+        <property name="AllowDockLeft">true</property>
+        <property name="AllowDockRight">true</property>
+        <property name="AllowDockTop">true</property>
+        <property name="AllowDockBottom">true</property>
+        <property name="AllowDockFill">true</property>
+        <property name="AllowDockAsTabbedDocument">true</property>
+        <property name="ResizeDirection">All</property>
+        <property name="ShowMaximizeButton">true</property>
+        <property name="ShowAutoHideButton">true</property>
+        <property name="ShowCloseButton">true</property>
+        <property name="FloatOnDblClick">true</property>
+      </property>
+      <property name="XtraParentID">-10001</property>
+      <property name="XtraSavedParentID">-1</property>
+      <property name="XtraAutoHideContainerDock">Float</property>
+      <property name="ID">f4102e91-b3c1-40be-8df1-8e75d5a1cb42</property>
+      <property name="XtraID">3</property>
+      <property name="XtraActiveChildID">-1</property>
+      <property name="XtraBounds">@1,X=0@1,Y=0@4,Width=1471@3,Height=836</property>
+      <property name="OriginalSize">@3,Width=518@3,Height=536</property>
+      <property name="XtraZIndex">0</property>
+      <property name="SavedDock">Float</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="DockedAsTabbedDocument">true</property>
+      <property name="Count">0</property>
+      <property name="SavedIndex">4</property>
+      <property name="SavedTabbed">false</property>
+      <property name="SavedMdiDocument">true</property>
+      <property name="FloatSize">@3,Width=966@3,Height=524</property>
+      <property name="FloatVertical">true</property>
+      <property name="DockVertical">Default</property>
+      <property name="FloatLocation">@3,X=186@3,Y=299</property>
+      <property name="Dock">Float</property>
+      <property name="Header" />
+      <property name="Footer" />
+      <property name="AllowBorderColorBlending">false</property>
+      <property name="Tabbed">false</property>
+      <property name="TabsPosition">Bottom</property>
+      <property name="TabsScroll">false</property>
+      <property name="ImageIndex">-1</property>
+      <property name="Visibility">Visible</property>
+      <property name="TabText" />
+      <property name="AllowGlyphSkinning">Default</property>
+      <property name="AllowCustomHeaderButtonsGlyphSkinning">Default</property>
+      <property name="Hint" />
+      <property name="Text">EX20 Device [ID 1]</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowFloating">true</property>
+        <property name="AllowDockLeft">true</property>
+        <property name="AllowDockRight">true</property>
+        <property name="AllowDockTop">true</property>
+        <property name="AllowDockBottom">true</property>
+        <property name="AllowDockFill">true</property>
+        <property name="AllowDockAsTabbedDocument">true</property>
+        <property name="ResizeDirection">All</property>
+        <property name="ShowMaximizeButton">true</property>
+        <property name="ShowAutoHideButton">true</property>
+        <property name="ShowCloseButton">true</property>
+        <property name="FloatOnDblClick">true</property>
+      </property>
+      <property name="XtraParentID">-10001</property>
+      <property name="XtraSavedParentID">-1</property>
+      <property name="XtraAutoHideContainerDock">Float</property>
+      <property name="ID">fef2e11a-8460-4ffc-9b38-b0627da02b0c</property>
+      <property name="XtraID">4</property>
+      <property name="XtraActiveChildID">-1</property>
+      <property name="XtraBounds">@1,X=0@1,Y=0@3,Width=966@3,Height=524</property>
+      <property name="OriginalSize">@3,Width=200@3,Height=200</property>
+      <property name="XtraZIndex">0</property>
+      <property name="SavedDock">Float</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="DockedAsTabbedDocument">true</property>
+      <property name="Count">0</property>
+      <property name="SavedIndex">2</property>
+      <property name="SavedTabbed">false</property>
+      <property name="SavedMdiDocument">true</property>
+      <property name="FloatSize">@4,Width=1471@3,Height=836</property>
+      <property name="FloatVertical">false</property>
+      <property name="DockVertical">Default</property>
+      <property name="FloatLocation">@5,X=-1222@3,Y=144</property>
+      <property name="Dock">Float</property>
+      <property name="Header" />
+      <property name="Footer" />
+      <property name="AllowBorderColorBlending">false</property>
+      <property name="Tabbed">false</property>
+      <property name="TabsPosition">Bottom</property>
+      <property name="TabsScroll">false</property>
+      <property name="ImageIndex">-1</property>
+      <property name="Visibility">Visible</property>
+      <property name="TabText" />
+      <property name="AllowGlyphSkinning">Default</property>
+      <property name="AllowCustomHeaderButtonsGlyphSkinning">Default</property>
+      <property name="Hint" />
+      <property name="Text">TR7Z-K2 Device</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowFloating">true</property>
+        <property name="AllowDockLeft">true</property>
+        <property name="AllowDockRight">true</property>
+        <property name="AllowDockTop">true</property>
+        <property name="AllowDockBottom">true</property>
+        <property name="AllowDockFill">true</property>
+        <property name="AllowDockAsTabbedDocument">true</property>
+        <property name="ResizeDirection">All</property>
+        <property name="ShowMaximizeButton">true</property>
+        <property name="ShowAutoHideButton">true</property>
+        <property name="ShowCloseButton">true</property>
+        <property name="FloatOnDblClick">true</property>
+      </property>
+      <property name="XtraParentID">-10001</property>
+      <property name="XtraSavedParentID">-1</property>
+      <property name="XtraAutoHideContainerDock">Float</property>
+      <property name="ID">b8e93e8c-d570-4d6b-8120-12867eb5747e</property>
+      <property name="XtraID">5</property>
+      <property name="XtraActiveChildID">-1</property>
+      <property name="XtraBounds">@1,X=0@1,Y=0@4,Width=1471@3,Height=836</property>
+      <property name="OriginalSize">@2,Width=63@2,Height=87</property>
+      <property name="XtraZIndex">0</property>
+      <property name="SavedDock">Float</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="DockedAsTabbedDocument">false</property>
+      <property name="Count">0</property>
+      <property name="SavedIndex">1</property>
+      <property name="SavedTabbed">false</property>
+      <property name="SavedMdiDocument">false</property>
+      <property name="FloatSize">@3,Width=292@3,Height=865</property>
+      <property name="FloatVertical">false</property>
+      <property name="DockVertical">Default</property>
+      <property name="FloatLocation">@1,X=0@1,Y=0</property>
+      <property name="Dock">Right</property>
+      <property name="Header" />
+      <property name="Footer" />
+      <property name="AllowBorderColorBlending">false</property>
+      <property name="Tabbed">false</property>
+      <property name="TabsPosition">Bottom</property>
+      <property name="TabsScroll">false</property>
+      <property name="ImageIndex">-1</property>
+      <property name="Visibility">Visible</property>
+      <property name="TabText" />
+      <property name="AllowGlyphSkinning">Default</property>
+      <property name="AllowCustomHeaderButtonsGlyphSkinning">Default</property>
+      <property name="Hint" />
+      <property name="Text">Communication Log</property>
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowFloating">true</property>
+        <property name="AllowDockLeft">true</property>
+        <property name="AllowDockRight">true</property>
+        <property name="AllowDockTop">true</property>
+        <property name="AllowDockBottom">true</property>
+        <property name="AllowDockFill">true</property>
+        <property name="AllowDockAsTabbedDocument">true</property>
+        <property name="ResizeDirection">All</property>
+        <property name="ShowMaximizeButton">true</property>
+        <property name="ShowAutoHideButton">true</property>
+        <property name="ShowCloseButton">true</property>
+        <property name="FloatOnDblClick">true</property>
+      </property>
+      <property name="XtraParentID">-1</property>
+      <property name="XtraSavedParentID">-1</property>
+      <property name="XtraAutoHideContainerDock">Float</property>
+      <property name="ID">b53a79bd-254e-42e4-b0fc-f51765b77057</property>
+      <property name="XtraID">6</property>
+      <property name="XtraActiveChildID">-1</property>
+      <property name="XtraBounds">@4,X=1630@3,Y=155@3,Width=290@3,Height=865</property>
+      <property name="OriginalSize">@3,Width=290@3,Height=113</property>
+      <property name="XtraZIndex">2</property>
+      <property name="SavedDock">Bottom</property>
+    </property>
+  </property>
+  <property name="TopZIndexControls" iskey="true" value="9">
+    <property name="Item1" type="System.String">DevExpress.XtraBars.BarDockControl</property>
+    <property name="Item2" type="System.String">DevExpress.XtraBars.StandaloneBarDockControl</property>
+    <property name="Item3" type="System.String">System.Windows.Forms.StatusBar</property>
+    <property name="Item4" type="System.String">System.Windows.Forms.MenuStrip</property>
+    <property name="Item5" type="System.String">System.Windows.Forms.StatusStrip</property>
+    <property name="Item6" type="System.String">DevExpress.XtraBars.Ribbon.RibbonStatusBar</property>
+    <property name="Item7" type="System.String">DevExpress.XtraBars.Ribbon.RibbonControl</property>
+    <property name="Item8" type="System.String">DevExpress.XtraBars.Navigation.OfficeNavigationBar</property>
+    <property name="Item9" type="System.String">DevExpress.XtraBars.Navigation.TileNavPane</property>
+  </property>
+</XtraSerializer>

@@ -1,0 +1,278 @@
+<TranslationSet>
+
+	<Translations Name="Bool" >
+		<Translation Value="0" Text="false"/>
+		<Translation Value="1" Text="true"/>
+	</Translations>
+
+	<Translations Name="YesNo" >
+		<Translation Value="0" Text="No"/>
+		<Translation Value="1" Text="Yes"/>
+	</Translations>
+
+	<Translations Name="OnOff" >
+		<Translation Value="0" Text="Off"/>
+		<Translation Value="1" Text="On"/>
+	</Translations>
+
+	<Translations Name="PackState">
+		<Translation Value="0" Text="Startup"/>
+		<Translation Value="1" Text="Grid power"/>
+		<Translation Value="2" Text="Battery back-up"/>
+		<Translation Value="3" Text="Switch-in"/>
+		<Translation Value="4" Text="Shutdown"/>
+		<Translation Value="5" Text="Off"/>
+		<Translation Value="6" Text="Error"/>
+	</Translations>
+
+	<Translations Name="SwitchState">
+		<Translation Value="0" Text="Cooldown"/>
+		<Translation Value="1" Text="Override"/>
+		<Translation Value="2" Text="Ready"/>
+		<Translation Value="3" Text="Discharge"/>
+		<Translation Value="4" Text="Active"/>
+		<Translation Value="5" Text="Short circuit"/>
+		<Translation Value="6" Text="Discharge over-current"/>
+		<Translation Value="7" Text="Charge over-current"/>
+		<Translation Value="8" Text="Driver over-current"/>
+		<Translation Value="9" Text="Load under-voltage"/>
+		<Translation Value="10" Text="Driver over-voltage"/>
+		<Translation Value="11" Text="Over-temperature"/>
+		<Translation Value="12" Text="Current measurement failed"/>
+		<Translation Value="13" Text="Version"/>
+		<Translation Value="14" Text="Time-out"/>
+		<Translation Value="15" Text="Unknown"/>
+	</Translations>
+
+	<Translations Name="AlarmQuantity" >
+		<Translation Value="0" Text="Not assigned"/>
+		<Translation Value="1" Text="Pack SOC"/>
+		<Translation Value="2" Text="Pack voltage"/>
+		<Translation Value="3" Text="Pack current"/>
+		<Translation Value="4" Text="Pack min temp"/>
+		<Translation Value="5" Text="Pack max temp"/>
+		<Translation Value="6" Text="Pack average temp"/>
+		<Translation Value="7" Text="Pack charge"/>
+		<Translation Value="8" Text="External temp 1"/>
+		<Translation Value="9" Text="External temp 2"/>
+		<Translation Value="10" Text="Board temp"/>
+		<Translation Value="11" Text="Pack all discharge on"/>
+		<Translation Value="12" Text="Pack any discharge on"/>
+		<Translation Value="13" Text="Pack any discharge off"/>
+		<Translation Value="14" Text="Rfid valid"/>
+		<Translation Value="15" Text="Input 1"/>
+		<Translation Value="16" Text="Input 2"/>
+		<Translation Value="17" Text="Input 3"/>
+		<Translation Value="18" Text="Input 4"/>
+		<Translation Value="19" Text="Any previous alarm"/>
+	</Translations>
+	
+	<Translations Name="AlarmBoundaryType">
+		<Translation Value="0" Text="Hysteresis"/>
+		<Translation Value="1" Text="Inclusive"/>
+	</Translations>
+	
+	<Translations Name="AlarmState">
+		<Translation Value="0" Text="No alarm"/>
+		<Translation Value="1" Text="Activated"/>
+	</Translations>
+
+	<Translations Name="AlarmSignal">
+		<Translation Value="-1" Text="Relay off (open)"/>
+		<Translation Value="0" Text="Unknown"/>
+		<Translation Value="1" Text="Relay on (closed)"/>
+	</Translations>
+
+	<Translations Name="CurrentChannel" >
+		<Translation Value="0" Text="Not assigned"/>
+		<Translation Value="1" Text="Current Sense 1"/>
+		<Translation Value="2" Text="Current Sense 2"/>
+		<Translation Value="3" Text="Current Sense 3"/>
+		<Translation Value="4" Text="Current Sense 4"/>
+	</Translations>
+	
+	<Translations Name="BatteryState" >
+		<Translation Value="0" Text="Normal"/>
+		<Translation Value="1" Text="Over voltage"/>
+		<Translation Value="2" Text="Under voltage"/>
+		<Translation Value="3" Text="Over temperature"/>
+		<Translation Value="4" Text="Over current"/>
+		<Translation Value="5" Text="Fuse"/>
+		<Translation Value="6" Text="BMS comm failure"/>
+		<Translation Value="7" Text="Unknown"/>
+		<Translation Value="8" Text="No connection"/>
+	</Translations>
+
+	<Translations Name="CurrentType" >
+		<Translation Value="0" Text="Shunt"/>
+		<Translation Value="1" Text="Hall"/>
+	</Translations>
+
+	<Translations Name="ConfigError" >
+		<Translation Value="0" Text="Ok"/>
+		<Translation Value="1" Text="Temp"/>
+		<Translation Value="2" Text="Load current"/>
+		<Translation Value="3" Text="Load voltage"/>
+		<Translation Value="4" Text="Driver current"/>
+		<Translation Value="5" Text="Driver voltage"/>
+	</Translations>
+
+	<Translations Name="TempChannel" >
+		<Translation Value="0" Text="Not assigned"/>
+		<Translation Value="1" Text="Temp 1"/>
+		<Translation Value="2" Text="Temp 2"/>
+	</Translations>
+
+	<Translations Name="TestMode" >
+		<Translation Value="0" Text="None"/>
+		<Translation Value="1" Text="Device under test"/>
+		<Translation Value="2" Text="Test bench PBM"/>
+		<Translation Value="3" Text="EMC"/>
+		<Translation Value="4" Text="Test bench SP48"/>
+	</Translations>
+
+	<Translations Name="TraceChannel" >
+		<Translation Value="0" Text="Not assigned"/>
+		<Translation Value="1" Text="RS232"/>
+		<Translation Value="2" Text="RS485"/>
+	</Translations>
+
+	<Translations Name="ClimateRegulationType" >
+		<Translation Value="0" Text="Hysteresis"/>
+		<Translation Value="1" Text="PI-regulator"/>
+	</Translations>
+
+	<Translations Name="ClimateTemperatureSource" >
+		<Translation Value="0" Text="Not assigned"/>
+		<Translation Value="1" Text="Battery cell min"/>
+		<Translation Value="2" Text="Battery cell max"/>
+		<Translation Value="3" Text="Battery cell average"/>
+		<Translation Value="4" Text="External temp 1"/>
+		<Translation Value="5" Text="External temp 2"/>
+		<Translation Value="6" Text="Board temp"/>
+	</Translations>
+
+	<Translations Name="ClimateTemperatureSource_SLP" >
+		<Translation Value="0" Text="Not assigned"/>
+		<Translation Value="1" Text="Battery cell min"/>
+		<Translation Value="2" Text="Battery cell max"/>
+		<Translation Value="3" Text="Battery cell average"/>
+		<Translation Value="4" Text="Battery cell diff"/>
+		<Translation Value="5" Text="External temp 1"/>
+		<Translation Value="6" Text="External temp 2"/>
+	</Translations>
+
+	<Translations Name="Locked" >
+		<Translation Value="0" Text="No"/>
+		<Translation Value="49374" Text="Yes"/>
+		<Translation Value="65535" Text="No"/>
+	</Translations>
+
+	<Translations Name="Temperature" >
+		<Translation Value="32767" Text="Not connected"/>
+	</Translations>
+	
+	<Translations Name="PackPhase">
+		<Translation Value="0" Text="Startup"/>
+		<Translation Value="1" Text="Charge only"/>
+		<Translation Value="2" Text="Operating"/>
+		<Translation Value="3" Text="Operating fully"/>
+		<Translation Value="4" Text="Shutoff"/>
+		<Translation Value="5" Text="Shutdown latched"/>
+		<Translation Value="6" Text="Shutdown"/>
+		<Translation Value="7" Text="Disabled"/>
+		<Translation Value="8" Text="Error"/>
+	</Translations>	
+
+	<Translations Name="BatteryPhase" >
+		<Translation Value="0" Text="Startup"/>
+		<Translation Value="1" Text="Precharge"/>
+		<Translation Value="2" Text="Charge-only"/>
+		<Translation Value="3" Text="Operating"/>
+		<Translation Value="4" Text="Shutoff"/>
+		<Translation Value="5" Text="Shutdown latched"/>
+		<Translation Value="6" Text="Shutdown"/>
+		<Translation Value="7" Text="Disabled"/>
+		<Translation Value="8" Text="SMBus timeout"/>
+		<Translation Value="9" Text="Invalid config"/>
+		<Translation Value="10" Text="Permanent failure"/>
+		<Translation Value="11" Text="Cell under-voltage"/>
+		<Translation Value="12" Text="Cell over-voltage"/>
+		<Translation Value="13" Text="Charge over-current"/>
+		<Translation Value="14" Text="Discharge over-current"/>
+		<Translation Value="15" Text="Discharge overload"/>
+		<Translation Value="16" Text="Discharge overload, latched"/>
+		<Translation Value="17" Text="Discharge short-circuit"/>
+		<Translation Value="18" Text="Discharge short-circuit, latched"/>
+		<Translation Value="19" Text="Charge over-temperature"/>
+		<Translation Value="20" Text="Discharge over-temperature"/>
+		<Translation Value="21" Text="Charge under-temperature"/>
+		<Translation Value="22" Text="Discharge under-temperature"/>
+		<Translation Value="23" Text="Precharge timeout"/>
+		<Translation Value="24" Text="Charge timeout"/>
+		<Translation Value="25" Text="Over-charge"/>
+		<Translation Value="26" Text="Discharge blocked"/>
+		<Translation Value="27" Text="Charge blocked"/>
+	</Translations>
+	
+	<Translations Name="Routing">
+		<Translation Value="0" Text="Open"/>
+		<Translation Value="1" Text="Closed"/>
+		<Translation Value="2" Text="Alarm 1"/>
+		<Translation Value="3" Text="Alarm 2"/>
+		<Translation Value="4" Text="Alarm 3"/>
+		<Translation Value="5" Text="Alarm 4"/>
+		<Translation Value="6" Text="Climate heating"/>
+		<Translation Value="7" Text="Climate cooling"/>
+		<Translation Value="8" Text="Generator control"/>
+	</Translations>		
+	
+	<Translations Name="NetworkStatus">
+		<Translation Value="0" Text="Home network"/>
+		<Translation Value="1" Text="Roaming network"/>
+		<Translation Value="2" Text="Packet service attached"/>
+		<Translation Value="3" Text="Unknown"/>
+	</Translations>		
+	
+	<Translations Name="RSSI">
+		<Translation Value="99" Text="No signal"/>
+	</Translations>		
+	
+	<Translations Name="CloudDomain">
+		<Translation Value="0" Text="Development"/>
+		<Translation Value="1" Text="Production"/>
+	</Translations>		
+	
+	<Translations Name="Metric">
+		<Translation Value="0" Text="Metric system"/>
+		<Translation Value="1" Text="Imperial system"/>
+	</Translations>		
+
+	<Translations Name="ApplicationBootloaderStatus">
+		<Translation Value="0" Text="Up-to-date"/>
+		<Translation Value="1" Text="Updating"/>
+		<Translation Value="2" Text="Update failed"/>
+	</Translations>			
+	
+	<Translations Name="BatteryBootloaderStatus">
+		<Translation Value="0" Text="Unknown"/>
+		<Translation Value="1" Text="Not up-to-date"/>
+		<Translation Value="2" Text="Up-to-date"/>
+		<Translation Value="3" Text="Updating"/>
+		<Translation Value="4" Text="Unresponsive"/>
+		<Translation Value="5" Text="Incompatible"/>
+		<Translation Value="6" Text="Echausted"/>
+		<Translation Value="7" Text="Cold"/>
+	</Translations>		
+	
+	<Translations Name="GridStatus">
+		<Translation Value="0" Text="Not connected"/>
+		<Translation Value="1" Text="Connected"/>
+	</Translations>		
+	
+	<Translations Name="RailVoltage">
+		<Translation Value="32767" Text="Voltage present"/>
+		<Translation Value="32768" Text="No voltage present"/>
+	</Translations>		
+
+</TranslationSet>

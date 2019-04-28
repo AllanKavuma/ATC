@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<setup crc="8466">
+    <meta documentname="setup.xml" createdon="2016-06-14T09:04:39" createdwith="V3.24B3" author="PSC 3 Controller" version="v1.0" crc="31960" />
+    <handler type="4096" inst="1" version="1" name="PSC3">
+        <param obj="4609" value="0000_0000_0000" label="Input1" crc="39942" />
+        <param obj="4610" value="0000_0000_0000" label="Input2" crc="2574" />
+        <param obj="4611" value="0000_0000_0000" label="Input3" crc="2767" />
+        <param obj="4612" value="0000_0000_0000" label="Input4" crc="2956" />
+        <param obj="4817" value="10d3_0000_0001" label="Temperature 1" crc="8658" />
+        <param obj="4818" value="0000_0000_0000" label="Temperature 2" crc="28514" />
+        <param obj="4819" value="0000_0000_0000" label="Temperature 3" crc="28579" />
+        <param obj="4820" value="0000_0000_0000" label="Temperature 4" crc="38954" />
+        <param obj="4625" value="0000_0000_0000" label="Middle Point 1" crc="63627" />
+        <param obj="4626" value="0000_0000_0000" label="Middle Point 2" crc="63944" />
+        <param obj="4627" value="0000_0000_0000" label="Middle Point 3" crc="63753" />
+        <param obj="4628" value="0000_0000_0000" label="Middle Point 4" crc="64838" />
+        <param obj="4641" value="1002_0000_0011" label="Output1" crc="28871" />
+        <param obj="4642" value="1002_0000_8001" label="Output2" crc="33159" />
+        <param obj="4643" value="1002_0000_801d" label="Output3" crc="11911" />
+        <param obj="4644" value="1002_0000_8005" label="Output4" crc="16384" />
+        <param obj="4645" value="1002_0000_0000" label="Output5" crc="8963" />
+        <param obj="4646" value="1002_0000_0000" label="Output6" crc="8768" />
+        <param obj="4647" value="1002_0000_0000" label="Output7" crc="8833" />
+        <param obj="4648" value="1002_0000_0000" label="Output8" crc="9934" />
+        <param obj="4649" value="1002_0000_0000" label="Output9" crc="9743" />
+        <param obj="4650" value="1002_0000_0000" label="Output10" crc="45063" />
+        <param obj="4651" value="1002_0000_0000" label="Output11" crc="45254" />
+        <param obj="4652" value="1002_0000_0000" label="Output12" crc="45445" />
+        <param obj="4653" value="1002_0000_0000" label="OC1" crc="45380" />
+        <param obj="4654" value="1002_0000_0000" label="OC2" crc="45827" />
+        <param obj="4655" value="1002_0000_0000" label="OC3" crc="46018" />
+        <param obj="4656" value="1002_0000_0000" label="OC4" crc="45697" />
+        <param obj="4657" value="1002_0000_0000" label="OC5" crc="45632" />
+        <param obj="4658" value="1002_0000_0000" label="OC6" crc="46607" />
+        <param obj="4659" value="1002_0000_8039" label="LVD1" crc="8204" />
+        <param obj="4660" value="1002_0000_0000" label="LVD2" crc="16711" />
+        <param obj="4661" value="1002_0000_0000" label="LVD3" crc="16774" />
+        <param obj="4832" value="t" label="Bistable" crc="44586" />
+        <param obj="4833" value="f" label="Bistable" crc="13227" />
+        <param obj="4834" value="f" label="Bistable" crc="937" />
+        <param obj="4672" value="***************" label="Site Name" />
+        <param obj="4673" value="DPS 2400-48-10" label="System Name" />
+        <param obj="4674" value="" label="Notes" crc="27136" />
+        <param obj="4688" value="my Password" label="Default Password" crc="14812" />
+        <param obj="4689" value="1" label="Max. Nbr. of Sessions per User" crc="18335" />
+        <param obj="4690" value="4" label="Max. Sessions" crc="54280" />
+        <param obj="4691" value="00:05:00" label="Session Inactive" crc="16345" />
+        <param obj="4692" value="00:15:00" label="Session Timeout After" crc="4080" />
+        <param obj="4157" value="255.255.255.255" label="From IP Address" crc="25457" />
+        <param obj="4704" value="t" label="Assign Write Access at Login Automatically" crc="6874" />
+        <param obj="4705" value="t" label="Withdraw Write Access When Session Inactive" crc="35547" />
+        <param obj="4706" value="f" label="Save Setup Before Withdrawing Write Access" crc="30555" />
+    </handler>
+    <handler type="4105" inst="15" version="1" name="EventOr" crc="34754">
+        <param obj="4144" value="S Non Urg Alarm" label="Selected Alarm/Event" />
+        <param obj="4224" value="1002_0000_002c" label="Input1" />
+        <param obj="4225" value="1002_0000_0019" label="Input2" />
+        <param obj="4226" value="1002_0000_8008" label="Input3" />
+        <param obj="4227" value="1002_0000_8005" label="Input4" />
+        <param obj="4228" value="1002_0000_8006" label="Input5" />
+        <param obj="4229" value="1002_0000_8037" label="Input6" />
+        <param obj="4230" value="1002_0000_0000" label="Input7" />
+        <param obj="4231" value="1002_0000_0000" label="Input8" />
+    </handler>
+    <handler type="4105" inst="17" version="1" name="EventOr" crc="39950">
+        <param obj="4144" value="S Urgent Alarm" label="Selected Alarm/Event" />
+        <param obj="4224" value="1002_0000_001a" label="Input1" />
+        <param obj="4225" value="1002_0000_0064" label="Input2" />
+        <param obj="4226" value="1002_0000_0065" label="Input3" />
+        <param obj="4227" value="1002_0000_0033" label="Input4" />
+        <param obj="4228" value="1002_0000_8033" label="Input5" />
+        <param obj="4229" value="1002_0000_8034" label="Input6" />
+        <param obj="4230" value="1002_0000_0000" label="Input7" />
+        <param obj="4231" value="1002_0000_0000" label="Input8" />
+    </handler>
+    <handler type="4105" inst="105" version="1" name="EventOr" crc="47597">
+        <param obj="4144" value="S Critical Alarm" label="Selected Alarm/Event" />
+        <param obj="4224" value="1002_0000_0001" label="Input1" />
+        <param obj="4225" value="1002_0000_0000" label="Input2" />
+        <param obj="4226" value="1002_0000_0000" label="Input3" />
+        <param obj="4227" value="1002_0000_0000" label="Input4" />
+        <param obj="4228" value="1002_0000_0000" label="Input5" />
+        <param obj="4229" value="1002_0000_0000" label="Input6" />
+        <param obj="4230" value="1002_0000_0000" label="Input7" />
+        <param obj="4231" value="1002_0000_0000" label="Input8" />
+    </handler>
+    <handler type="4105" inst="32792" version="1" name="EventOr" crc="11181">
+        <param obj="4144" value="Special mode" label="Selected Alarm/Event" />
+        <param obj="4224" value="1002_0000_0031" label="Input1" />
+        <param obj="4225" value="1002_0000_002a" label="Input2" />
+        <param obj="4226" value="1002_0000_0034" label="Input3" />
+        <param obj="4227" value="1002_0000_0000" label="Input4" />
+        <param obj="4228" value="1002_0000_0000" label="Input5" />
+        <param obj="4229" value="1002_0000_0000" label="Input6" />
+        <param obj="4230" value="1002_0000_0000" label="Input7" />
+        <param obj="4231" value="1002_0000_0000" label="Input8" />
+    </handler>
+    <handler type="4107" inst="1" version="1" name="PSC3SystemInterface" crc="54551">
+        <param obj="4208" value="&amp;FE0X3&amp;D0M0" label="1" />
+        <param obj="4209" value="" label="2" />
+        <param obj="4210" value="" label="3" />
+        <param obj="4320" value="1" label="Protocol And Modem Type" />
+        <param obj="4224" value="1" label="Modem Type" />
+        <param obj="4256" value="" label="PIN Code" />
+        <param obj="4240" value="f" label="Pin Code Control" />
+        <param obj="4272" value="1" label="Protocol Type" />
+        <param obj="4288" value="0" label="Handshake" />
+        <param obj="4304" value="3" label="Number of Rings" />
+        <param obj="4112" value="0" label="Parity" />
+        <param obj="4128" value="5" label="Baudrate" />
+        <param obj="4160" value="1" label="Data-Bits" />
+        <param obj="4176" value="0" label="Stop-Bits" />
+        <param obj="257" value="192.168.100.100" label="IP Address" />
+        <param obj="4368" value="80" label="Port" />
+        <param obj="258" value="255.255.255.0" label="Subnet Mask" />
+        <param obj="259" value="172.25.138.10" label="Gateway Address" />
+        <param obj="260" value="0.0.0.0" label="Domain Name Server" />
+        <param obj="4434" value="0" label="DHCP" />
+        <param obj="4214" value="" label="APN Init String" />
+        <param obj="4215" value="" label="Dial Code" />
+        <param obj="4216" value="psc3" label="Username" />
+        <param obj="4217" value="psc3" label="Password" />
+        <param obj="4336" value="1" label="Authentication Type" />
+        <param obj="4220" value="t" label="Permanent Connection" />
+        <param obj="4597" value="t" label="Static Address" />
+        <param obj="4598" value="192.168.0.73" label="Local Address" />
+        <param obj="4599" value="192.168.0.201" label="Remote Address" />
+        <param obj="4424" value="" label="Configured Hostname" />
+    </handler>
+    <handler type="4110" inst="32768" version="2" name="Signal" crc="23136">
+        <param obj="4112" value="10d3_1060_0001" label="Measurement" />
+        <param obj="4113" value="Tbatt low" label="Too Low Event" />
+        <param obj="4114" value="Tbatt high" label="Too High Event" />
+        <param obj="4115" value="5.0" label="Lower Threshold" />
+        <param obj="4116" value="35.0" label="Upper Threshold" />
+        <param obj="4117" value="5.0" label="Lower Threshold Hysteresis" />
+        <param obj="4118" value="5.0" label="Upper Threshold Hysteresis" />
+        <param obj="4144" value="0" label="UIM Access" />
+        <param obj="4119" value="32774" label="Too Low Event Id" />
+        <param obj="4120" value="32773" label="Too High Event Id" />
+    </handler>
+    <handler type="4110" inst="32769" version="2" name="Signal" crc="1968">
+        <param obj="4112" value="1090_1001_0001" label="Measurement" />
+        <param obj="4113" value="" label="Too Low Event" />
+        <param obj="4114" value="Psys high" label="Too High Event" />
+        <param obj="4115" value="2147483647" label="Lower Threshold" />
+        <param obj="4116" value="12000" label="Upper Threshold" />
+        <param obj="4117" value="2147483647" label="Lower Threshold Hysteresis" />
+        <param obj="4118" value="100" label="Upper Threshold Hysteresis" />
+        <param obj="4144" value="0" label="UIM Access" />
+        <param obj="4119" value="0" label="Too Low Event Id" />
+        <param obj="4120" value="32776" label="Too High Event Id" />
+    </handler>
+    <handler type="4110" inst="32770" version="2" name="Signal" crc="3891">
+        <param obj="4112" value="10d1_1060_0001" label="Measurement" />
+        <param obj="4113" value="LVD[U]" label="Too Low Event" />
+        <param obj="4114" value="" label="Too High Event" />
+        <param obj="4115" value="42.00" label="Lower Threshold" />
+        <param obj="4116" value="21474836.47" label="Upper Threshold" />
+        <param obj="4117" value="8.00" label="Lower Threshold Hysteresis" />
+        <param obj="4118" value="21474836.47" label="Upper Threshold Hysteresis" />
+        <param obj="4144" value="0" label="UIM Access" />
+        <param obj="4119" value="32823" label="Too Low Event Id" />
+        <param obj="4120" value="0" label="Too High Event Id" />
+    </handler>
+    <handler type="4113" inst="1" version="1" name="EventAlarm" crc="18391">
+        <param obj="8256" value="17" label="Source ID" />
+        <param obj="8257" value="32768" label="Dest ID" />
+        <param obj="8336" value="t" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="2" version="1" name="EventAlarm" crc="33319">
+        <param obj="8256" value="15" label="Source ID" />
+        <param obj="8257" value="32769" label="Dest ID" />
+        <param obj="8336" value="t" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="3" version="1" name="EventAlarm" crc="35641">
+        <param obj="8256" value="105" label="Source ID" />
+        <param obj="8257" value="32767" label="Dest ID" />
+        <param obj="8336" value="t" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32768" version="1" name="EventAlarm" crc="11723">
+        <param obj="8256" value="19" label="Source ID" />
+        <param obj="8257" value="32797" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32769" version="1" name="EventAlarm" crc="52572">
+        <param obj="8256" value="32823" label="Source ID" />
+        <param obj="8257" value="32828" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32770" version="1" name="EventAlarm" crc="43595">
+        <param obj="8256" value="32776" label="Source ID" />
+        <param obj="8257" value="32800" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32771" version="1" name="EventAlarm" crc="14476">
+        <param obj="8256" value="51" label="Source ID" />
+        <param obj="8257" value="32801" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32772" version="1" name="EventAlarm" crc="36347">
+        <param obj="8256" value="44" label="Source ID" />
+        <param obj="8257" value="32802" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32773" version="1" name="EventAlarm" crc="12904">
+        <param obj="8256" value="25" label="Source ID" />
+        <param obj="8257" value="32803" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32775" version="1" name="EventAlarm" crc="50456">
+        <param obj="8256" value="32820" label="Source ID" />
+        <param obj="8257" value="32821" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32776" version="1" name="EventAlarm" crc="19054">
+        <param obj="8256" value="32819" label="Source ID" />
+        <param obj="8257" value="32822" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32777" version="1" name="EventAlarm" crc="15203">
+        <param obj="8256" value="102" label="Source ID" />
+        <param obj="8257" value="32829" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32778" version="1" name="EventAlarm" crc="53939">
+        <param obj="8256" value="103" label="Source ID" />
+        <param obj="8257" value="32830" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32780" version="1" name="EventAlarm" crc="27066">
+        <param obj="8256" value="32773" label="Source ID" />
+        <param obj="8257" value="32810" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32781" version="1" name="EventAlarm" crc="17320">
+        <param obj="8256" value="32774" label="Source ID" />
+        <param obj="8257" value="32811" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32782" version="1" name="EventAlarm" crc="36842">
+        <param obj="8256" value="26" label="Source ID" />
+        <param obj="8257" value="32813" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32783" version="1" name="EventAlarm" crc="5264">
+        <param obj="8256" value="100" label="Source ID" />
+        <param obj="8257" value="32814" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4113" inst="32784" version="1" name="EventAlarm" crc="54070">
+        <param obj="8256" value="101" label="Source ID" />
+        <param obj="8257" value="32815" label="Dest ID" />
+        <param obj="8336" value="f" label="Alarm|Stop" />
+    </handler>
+    <handler type="4114" inst="2" version="1" name="LVD" crc="29316">
+        <param obj="4224" value="1002_0000_8037" label="Event" />
+        <param obj="256" value="LVD" label="Name" />
+        <param obj="8272" value="0" label="Disconnect Delay" />
+        <param obj="8273" value="1002_0000_8039" label="Destination Id" />
+        <param obj="8274" value="32824" label="Disconnect Id for Delay" />
+    </handler>
+    <handler type="4116" inst="1" version="2" name="DataLogging" crc="7374">
+        <param obj="4366" value="f" label="Accept Debug Logs" />
+        <param obj="4352" value="Default" label="Name" />
+        <param obj="4353" value="Default Log" label="Description" />
+        <param obj="4368" value="0" label="Log Type" />
+        <param obj="4354" value="f" label="Enable" />
+        <param obj="4355" value="00:01" label="Interval" />
+        <param obj="4356" value="f" label="Enable" />
+        <param obj="4357" value="0000_0000_0000" label="Sampling Triggered by" />
+        <param obj="4358" value="1" label="When Changed at Least" />
+        <param obj="4359" value="" label="Selected Logged Events" />
+        <param obj="4360" value="" label="Selected Logged Measurements" />
+        <param obj="4361" value="1002_0000_8037,1002_0000_0034,1002_0000_002a,1002_0000_0031,1002_0000_002c,1002_0000_000f,1002_0000_0011,1002_0000_8008,1002_0000_8018,1002_0000_8005,1002_0000_8006,1002_0000_8034,1002_0000_0066,1002_0000_8033,1002_0000_0033,1002_0000_0067,1002_0000_0013,1002_0000_0019,1002_0000_0064,1002_0000_0065,1002_0000_001a" label="Selected Captured Events" />
+        <param obj="4362" value="t" label="Capture all System Messages" />
+        <param obj="4363" value="1002_0000_0000" label="Control Event" />
+        <param obj="4364" value="1002_0000_0000" label="Save Event" />
+        <param obj="4384" value="0" label="When Log Restarts" />
+        <param obj="4400" value="0" label="File Splitting Type" />
+        <param obj="4365" value="400" label="Max Entries per File" />
+        <param obj="512" value="1701726018" label="Language" />
+    </handler>
+    <handler type="4116" inst="2" version="2" name="DataLogging" crc="2013">
+        <param obj="4366" value="t" label="Accept Debug Logs" />
+        <param obj="4352" value="Debug" label="Name" />
+        <param obj="4353" value="Debug Log" label="Description" />
+        <param obj="4368" value="0" label="Log Type" />
+        <param obj="4354" value="f" label="Enable" />
+        <param obj="4355" value="00:01" label="Interval" />
+        <param obj="4356" value="f" label="Enable" />
+        <param obj="4357" value="0000_0000_0000" label="Sampling Triggered by" />
+        <param obj="4358" value="1" label="When Changed at Least" />
+        <param obj="4359" value="" label="Selected Logged Events" />
+        <param obj="4360" value="" label="Selected Logged Measurements" />
+        <param obj="4361" value="" label="Selected Captured Events" />
+        <param obj="4362" value="f" label="Capture all System Messages" />
+        <param obj="4363" value="1002_0000_0000" label="Control Event" />
+        <param obj="4364" value="1002_0000_0000" label="Save Event" />
+        <param obj="4384" value="0" label="When Log Restarts" />
+        <param obj="4400" value="0" label="File Splitting Type" />
+        <param obj="4365" value="400" label="Max Entries per File" />
+        <param obj="512" value="1701726018" label="Language" />
+    </handler>
+    <handler type="4137" inst="1" version="1" name="HTMLUser" crc="34799">
+        <param obj="4128" value="Admin" label="Username" />
+        <param obj="4130" value="a43edbccb9c62c82" label="Password Encrypted" />
+        <param obj="512" value="1701726018" label="Language" />
+        <param obj="4144" value="3" label="Access Profile" />
+        <param obj="4240" value="2" label="User Type" />
+        <param obj="4227" value="f" label="Disable|Access" />
+        <param obj="4230" value="t" label="Default|Password|Unchanged" />
+    </handler>
+    <handler type="4137" inst="3" version="1" name="HTMLUser" crc="37927">
+        <param obj="4128" value="_can_" label="Username" />
+        <param obj="4130" value="466579e7e2fa050b5c0dd1bb6c865a40" label="Password Encrypted" />
+        <param obj="512" value="1701726018" label="Language" />
+        <param obj="4144" value="7" label="Access Profile" />
+        <param obj="4240" value="5" label="User Type" />
+        <param obj="4227" value="t" label="Disable|Access" />
+        <param obj="4230" value="t" label="Default|Password|Unchanged" />
+    </handler>
+    <handler type="4137" inst="4" version="1" name="HTMLUser" crc="52419">
+        <param obj="4128" value="_dev_" label="Username" />
+        <param obj="4130" value="88b4897d3d01c2ccaf977e9e360c1e73" label="Password Encrypted" />
+        <param obj="512" value="1701726018" label="Language" />
+        <param obj="4144" value="8" label="Access Profile" />
+        <param obj="4240" value="7" label="User Type" />
+        <param obj="4227" value="t" label="Disable|Access" />
+        <param obj="4230" value="t" label="Default|Password|Unchanged" />
+    </handler>
+    <handler type="4137" inst="6" version="1" name="HTMLUser" crc="768">
+        <param obj="4128" value="_psc3_" label="Username" />
+        <param obj="4130" value="466579e7e2fa050b437820523c3a2a43" label="Password Encrypted" />
+        <param obj="512" value="1701726018" label="Language" />
+        <param obj="4144" value="7" label="Access Profile" />
+        <param obj="4240" value="5" label="User Type" />
+        <param obj="4227" value="t" label="Disable|Access" />
+        <param obj="4230" value="t" label="Default|Password|Unchanged" />
+    </handler>
+    <handler type="4137" inst="7" version="1" name="HTMLUser" crc="33809">
+        <param obj="4128" value="_randd_" label="Username" />
+        <param obj="4130" value="466579e7e2fa050b395cc37eb45251b8" label="Password Encrypted" />
+        <param obj="512" value="1701726018" label="Language" />
+        <param obj="4144" value="1" label="Access Profile" />
+        <param obj="4240" value="7" label="User Type" />
+        <param obj="4227" value="t" label="Disable|Access" />
+        <param obj="4230" value="t" label="Default|Password|Unchanged" />
+    </handler>
+    <handler type="4137" inst="8" version="1" name="HTMLUser" crc="49522">
+        <param obj="4128" value="_setup_" label="Username" />
+        <param obj="4130" value="466579e7e2fa050baebcb8a053ea3e21" label="Password Encrypted" />
+        <param obj="512" value="1701726018" label="Language" />
+        <param obj="4144" value="7" label="Access Profile" />
+        <param obj="4240" value="5" label="User Type" />
+        <param obj="4227" value="t" label="Disable|Access" />
+        <param obj="4230" value="t" label="Default|Password|Unchanged" />
+    </handler>
+    <handler type="4137" inst="9" version="1" name="HTMLUser" crc="4161">
+        <param obj="4128" value="_tp_" label="Username" />
+        <param obj="4130" value="466579e7e2fa050bc81dddc9016a8a78" label="Password Encrypted" />
+        <param obj="512" value="1701726018" label="Language" />
+        <param obj="4144" value="7" label="Access Profile" />
+        <param obj="4240" value="5" label="User Type" />
+        <param obj="4227" value="t" label="Disable|Access" />
+        <param obj="4230" value="t" label="Default|Password|Unchanged" />
+    </handler>
+    <handler type="4137" inst="10" version="1" name="HTMLUser" crc="55786">
+        <param obj="4128" value="configuration" label="Username" />
+        <param obj="4130" value="a43edbccb9c62c82" label="Password Encrypted" />
+        <param obj="512" value="1701726018" label="Language" />
+        <param obj="4144" value="3" label="Access Profile" />
+        <param obj="4240" value="3" label="User Type" />
+        <param obj="4227" value="f" label="Disable|Access" />
+        <param obj="4230" value="t" label="Default|Password|Unchanged" />
+    </handler>
+    <handler type="4137" inst="11" version="1" name="HTMLUser" crc="29290">
+        <param obj="4128" value="delta" label="Username" />
+        <param obj="4130" value="9b1852b262c5acd679e86da04027c4c2" label="Password Encrypted" />
+        <param obj="512" value="1701726018" label="Language" />
+        <param obj="4144" value="2" label="Access Profile" />
+        <param obj="4240" value="1" label="User Type" />
+        <param obj="4227" value="t" label="Disable|Access" />
+        <param obj="4230" value="t" label="Default|Password|Unchanged" />
+    </handler>
+    <handler type="4137" inst="12" version="1" name="HTMLUser" crc="57045">
+        <param obj="4128" value="maintenance" label="Username" />
+        <param obj="4130" value="a43edbccb9c62c82" label="Password Encrypted" />
+        <param obj="512" value="1701726018" label="Language" />
+        <param obj="4144" value="4" label="Access Profile" />
+        <param obj="4240" value="3" label="User Type" />
+        <param obj="4227" value="f" label="Disable|Access" />
+        <param obj="4230" value="t" label="Default|Password|Unchanged" />
+    </handler>
+    <handler type="4137" inst="13" version="1" name="HTMLUser" crc="54110">
+        <param obj="4128" value="monitor" label="Username" />
+        <param obj="4130" value="a43edbccb9c62c82" label="Password Encrypted" />
+        <param obj="512" value="1701726018" label="Language" />
+        <param obj="4144" value="7" label="Access Profile" />
+        <param obj="4240" value="3" label="User Type" />
+        <param obj="4227" value="f" label="Disable|Access" />
+        <param obj="4230" value="t" label="Default|Password|Unchanged" />
+    </handler>
+    <handler type="4137" inst="14" version="1" name="HTMLUser" crc="30783">
+        <param obj="4128" value="operator" label="Username" />
+        <param obj="4130" value="a43edbccb9c62c82" label="Password Encrypted" />
+        <param obj="512" value="1701726018" label="Language" />
+        <param obj="4144" value="6" label="Access Profile" />
+        <param obj="4240" value="3" label="User Type" />
+        <param obj="4227" value="f" label="Disable|Access" />
+        <param obj="4230" value="t" label="Default|Password|Unchanged" />
+    </handler>
+    <handler type="4240" inst="1" version="2" name="PSC3System" crc="32592">
+        <param obj="4368" value="0" label="System Ground" />
+        <param obj="4384" value="1" label="Nominal Voltage" />
+        <param obj="4416" value="0" label="Selection" />
+        <param obj="4352" value="1002_0000_0011" label="LED1" />
+        <param obj="4353" value="1002_0000_000f" label="LED2" />
+        <param obj="4354" value="1002_0000_0023" label="LED3" />
+        <param obj="4355" value="1002_0000_0013" label="LED4" />
+        <param obj="4356" value="1002_0000_8018" label="LED5" />
+        <param obj="4448" value="1002_0000_0000" label="Buzzer" />
+        <param obj="4656" value="t" label="Display an Alarm Stop Button" />
+        <param obj="4529" value="f" label="Numerical" />
+        <param obj="4544" value="f" label="Disabled for Battery Functions" />
+        <param obj="4545" value="f" label="Disabled for Alarm Stop" />
+        <param obj="4893" value="f" label="Enable Phase Failure Detection" />
+        <param obj="4894" value="f" label="Enable AC Failure Detection" />
+    </handler>
+    <handler type="4241" inst="1" version="1" name="PSC3ModemInterface" crc="34920">
+        <param obj="417" value="f" label="Enable" />
+        <param obj="4103" value="f" label="Allow Remote Monitoring Protocol to Specify Numbers" />
+        <param obj="4096" value="" label="1" />
+        <param obj="4097" value="" label="2" />
+        <param obj="4098" value="" label="3" />
+        <param obj="4128" value="" label="4" />
+        <param obj="4129" value="" label="5" />
+        <param obj="4130" value="" label="6" />
+        <param obj="4131" value="" label="7" />
+        <param obj="4132" value="" label="8" />
+        <param obj="4133" value="" label="9" />
+        <param obj="4134" value="" label="10" />
+        <param obj="4099" value="f" label="Enable" />
+        <param obj="4100" value="10" label="Redial Delay" />
+        <param obj="4101" value="0" label="Number of Retries" />
+    </handler>
+    <handler type="4256" inst="1" version="3" name="PSC3SystemTime" crc="55901">
+        <param obj="18" value="3" label="DST Starting Month" />
+        <param obj="19" value="1" label="DST Starting Day" />
+        <param obj="21" value="01:00" label="at" />
+        <param obj="34" value="10" label="DST Ending Month" />
+        <param obj="35" value="1" label="DST Ending Day" />
+        <param obj="37" value="01:00" label="at" />
+        <param obj="64" value="0" label="Switching Dates" />
+        <param obj="80" value="00:00" label="Time Zone (UTC)" />
+        <param obj="105" value="0" label="Synchronization Type" />
+        <param obj="82" value="" label="SNTP Server URL or IP" />
+    </handler>
+    <handler type="4272" inst="1" version="1" name="BatteryString" crc="25174">
+        <param obj="256" value="Batt Sh. 1" label="Name" />
+        <param obj="4352" value="100.0" label="max. IBatt|" />
+        <param obj="4353" value="1000.0" label="Capacity|" />
+        <param obj="4384" value="0" label="String Type" />
+        <param obj="4485" value="32818" label="Lvd Suppression" />
+        <param obj="4432" value="1" label="Fuse Supervision Mode" />
+        <param obj="4448" value="0.0" label="Offset" />
+    </handler>
+    <handler type="4288" inst="1" version="1" name="LoadString" crc="30764">
+        <param obj="256" value="Load" label="Name" />
+        <param obj="4384" value="2" label="String Type" />
+        <param obj="4416" value="1002_0000_8033" label="Fuse" />
+        <param obj="4432" value="0" label="Fuse Supervision Mode" />
+        <param obj="4448" value="0.0" label="Offset" />
+    </handler>
+    <handler type="4296" inst="1" version="1" name="StringsShunt" crc="15188">
+        <param obj="4352" value="0000_0000_0000" label="String|Assignment" />
+        <param obj="4360" value="300.0" label="Value" />
+        <param obj="272" value="1" label="at" />
+        <param obj="4432" value="10d2_0000_0001" label="Fuse" />
+    </handler>
+    <handler type="4296" inst="2" version="1" name="StringsShunt" crc="48051">
+        <param obj="4352" value="10b0_0000_0001" label="String|Assignment" />
+        <param obj="4360" value="300.0" label="Value" />
+        <param obj="272" value="2" label="at" />
+        <param obj="4432" value="10d2_0000_0002" label="Fuse" />
+    </handler>
+    <handler type="4296" inst="3" version="1" name="StringsShunt" crc="54804">
+        <param obj="4352" value="0000_0000_0000" label="String|Assignment" />
+        <param obj="4360" value="300.0" label="Value" />
+        <param obj="272" value="1" label="at" />
+        <param obj="4432" value="0000_0000_0000" label="Fuse" />
+    </handler>
+    <handler type="4305" inst="1" version="2" name="AnalogMeasurement" crc="62832">
+        <param obj="256" value="Usys" label="Name" />
+        <param obj="8192" value="0" label="Offset" />
+        <param obj="8193" value="10000" label="Gain" />
+    </handler>
+    <handler type="4305" inst="4096" version="2" name="AnalogMeasurement" crc="8768">
+        <param obj="256" value="Ubackup" label="Name" />
+        <param obj="8192" value="0" label="Offset" />
+        <param obj="8193" value="10000" label="Gain" />
+    </handler>
+    <handler type="4306" inst="1" version="1" name="DigitalMeasurement" crc="21603">
+        <param obj="256" value="Load Fuse" label="Name" />
+        <param obj="8211" value="32819" label="Id" />
+        <param obj="8208" value="f" label="Inverted" />
+        <param obj="8209" value="35.00" label="Threshold" />
+        <param obj="8210" value="0.20" label="Hysteresis" />
+    </handler>
+    <handler type="4306" inst="2" version="1" name="DigitalMeasurement" crc="51728">
+        <param obj="256" value="Batt Fuse 1" label="Name" />
+        <param obj="8211" value="32820" label="Id" />
+        <param obj="8208" value="f" label="Inverted" />
+        <param obj="8209" value="35.00" label="Threshold" />
+        <param obj="8210" value="0.20" label="Hysteresis" />
+    </handler>
+    <handler type="4307" inst="1" version="1" name="TemperatureMeasurement" crc="50243">
+        <param obj="256" value="Tbatt" label="Name" />
+        <param obj="8449" value="-4" label="Offset" />
+        <param obj="8448" value="t" label="Battery|Temperature" />
+    </handler>
+    <handler type="4320" inst="1" version="1" name="PSC3SystemBattery" crc="25453">
+        <param obj="4208" value="t" label="Enable" />
+        <param obj="4209" value="5" label="Expected Backup Time" />
+        <param obj="4257" value="24" label="Maximum Recharge Duration" />
+        <param obj="417" value="t" label="Enable" />
+        <param obj="4129" value="0" label="Tcoeff|" />
+        <param obj="4130" value="54.00" label="Usys @|20°C|" />
+        <param obj="4131" value="0.0" label="Tc_low|" />
+        <param obj="4132" value="45.0" label="Tc_high|" />
+        <param obj="4133" value="58.00" label="Utc_high|" />
+        <param obj="4144" value="56.00" label="Ua max" />
+        <param obj="4145" value="49.00" label="Ua min" />
+        <param obj="4146" value="54.50" label="Us max" />
+        <param obj="4147" value="53.00" label="Us min" />
+        <param obj="4148" value="0.10" label="Hysteresis" />
+        <param obj="4149" value="f" label="Suppress S Ua low during mains failure" />
+        <param obj="4150" value="t" label="Suppress S Us low during mains failure" />
+        <param obj="4193" value="24" label="max. Recharge Duration" />
+        <param obj="4192" value="0.10" label="Voltage Within Ufloat±" />
+    </handler>
+    <handler type="4321" inst="1" version="1" name="PSC3SystemBattTest" crc="7482">
+        <param obj="8400" value="1" label="Test Type" />
+        <param obj="8416" value="47.00" label="Usupport" />
+        <param obj="8417" value="60.0" label="Idischarge" />
+        <param obj="8418" value="60" label="Duration" />
+        <param obj="8421" value="5" label="Minimal Duration" />
+        <param obj="4192" value="0.50" label="Voltage Within Ufloat±" />
+        <param obj="8433" value="86400" label="For" />
+        <param obj="8434" value="10.0" label="Temperature Between" />
+        <param obj="8435" value="40.0" label="And" />
+        <param obj="8448" value="t" label="Enable Auto Start" />
+        <param obj="8449" value="182" label="Interval" />
+        <param obj="4194" value="09:00:00" label="Start Time Between" />
+        <param obj="4195" value="10:00:00" label="And" />
+        <param obj="4640" value="00/00" label="Period 1 From" />
+        <param obj="4641" value="00/00" label="Period 1 To" />
+        <param obj="4642" value="00/00" label="Period 2 From" />
+        <param obj="4643" value="00/00" label="Period 2 To" />
+        <param obj="4644" value="00/00" label="Period 3 From" />
+        <param obj="4645" value="00/00" label="Period 3 To" />
+        <param obj="4646" value="00/00" label="Period 4 From" />
+        <param obj="4647" value="00/00" label="Period 4 To" />
+        <param obj="4648" value="00/00" label="Period 5 From" />
+        <param obj="4649" value="00/00" label="Period 5 To" />
+        <param obj="4368" value="f" label="Sunday" />
+        <param obj="4369" value="f" label="Monday" />
+        <param obj="4370" value="f" label="Tuesday" />
+        <param obj="4371" value="f" label="Wednesday" />
+        <param obj="4372" value="f" label="Thursday" />
+        <param obj="4373" value="f" label="Friday" />
+        <param obj="4374" value="f" label="Saturday" />
+        <param obj="8800" value="f" label="Enable Natural Battery Test" />
+        <param obj="8801" value="47.00" label="Voltage Level" />
+        <param obj="8802" value="60" label="Monitoring Period" />
+        <param obj="8450" value="1002_0000_0000" label="Inhibit Input" />
+    </handler>
+    <handler type="4322" inst="1" version="1" name="PSC3SystemEqualize" crc="26146">
+        <param obj="417" value="f" label="Enable" />
+        <param obj="8336" value="53.50" label="Voltage" />
+        <param obj="8337" value="40" label="Duration" />
+        <param obj="8338" value="10" label="Lead Time" />
+        <param obj="8339" value="20" label="Time Lag" />
+        <param obj="8368" value="f" label="Use Battery Room Fan" />
+        <param obj="8384" value="t" label="Max. Battery Temperature" />
+        <param obj="8385" value="50.0" label="Max. Battery Temperature" />
+        <param obj="8400" value="300" label="After" />
+        <param obj="4192" value="0.10" label="Voltage Within Ufloat±" />
+        <param obj="8416" value="175" label="Interval" />
+        <param obj="4194" value="00:00:00" label="Start Time Between" />
+        <param obj="4195" value="23:59:59" label="And" />
+        <param obj="8419" value="86400" label="Inhibit After Boost" />
+        <param obj="4640" value="00/00" label="Period 1 From" />
+        <param obj="4641" value="00/00" label="Period 1 To" />
+        <param obj="4642" value="00/00" label="Period 2 From" />
+        <param obj="4643" value="00/00" label="Period 2 To" />
+        <param obj="4644" value="00/00" label="Period 3 From" />
+        <param obj="4645" value="00/00" label="Period 3 To" />
+        <param obj="4646" value="00/00" label="Period 4 From" />
+        <param obj="4647" value="00/00" label="Period 4 To" />
+        <param obj="4648" value="00/00" label="Period 5 From" />
+        <param obj="4649" value="00/00" label="Period 5 To" />
+        <param obj="4368" value="f" label="Sunday" />
+        <param obj="4369" value="f" label="Monday" />
+        <param obj="4370" value="f" label="Tuesday" />
+        <param obj="4371" value="f" label="Wednesday" />
+        <param obj="4372" value="f" label="Thursday" />
+        <param obj="4373" value="f" label="Friday" />
+        <param obj="4374" value="f" label="Saturday" />
+        <param obj="8420" value="1002_0000_0000" label="Inhibit Input" />
+    </handler>
+    <handler type="4323" inst="1" version="1" name="PSC3SystemBoost" crc="16568">
+        <param obj="8320" value="0" label="Boost Type" />
+        <param obj="8336" value="54.00" label="Voltage" />
+        <param obj="8337" value="16" label="max. Duration" />
+        <param obj="8338" value="f" label="Use Battery Room Fan" />
+        <param obj="8339" value="20" label="Time Lag" />
+        <param obj="8352" value="86400" label="Inhibit Time" />
+        <param obj="8384" value="t" label="Max. Battery Temperature" />
+        <param obj="8385" value="50.0" label="Max. Battery Temperature" />
+        <param obj="8400" value="300" label="After" />
+        <param obj="4192" value="0.10" label="Voltage Within Ufloat±" />
+        <param obj="8416" value="50.0" label="Istart" />
+        <param obj="8417" value="10.0" label="Istop" />
+        <param obj="8432" value="1.0" label="Factor" />
+        <param obj="8433" value="49.20" label="Uboostlow" />
+        <param obj="8448" value="1.10" label="Factor" />
+        <param obj="8353" value="1002_0000_0000" label="Inhibit Input" />
+    </handler>
+    <handler type="4324" inst="1" version="1" name="PSC3SystemSepCharge" crc="39206">
+        <param obj="8448" value="0" label="Separate Charge Type" />
+        <param obj="8464" value="54.00" label="Charge Voltage" />
+        <param obj="8466" value="49.50" label="Reconnect Voltage" />
+        <param obj="8465" value="10.0" label="max. IBatt" />
+        <param obj="8481" value="1002_0000_0000" label="Enable Input" />
+        <param obj="8482" value="1002_0000_0000" label="Mode Select Input" />
+    </handler>
+    <handler type="4325" inst="1" version="1" name="PSC3SystemMiddlePointCommon" crc="4318">
+        <param obj="417" value="f" label="Enable" />
+        <param obj="8224" value="24" label="Number of Cells" />
+        <param obj="8225" value="12" label="Measure Point" />
+        <param obj="8240" value="1.00" label="Udiff charge" />
+        <param obj="8241" value="1.00" label="Udiff discharge" />
+    </handler>
+    <handler type="4326" inst="1" version="1" name="PSC3SystemTdiff" crc="54275">
+        <param obj="417" value="f" label="Enable" />
+        <param obj="8224" value="30.0" label="Tdiffmax" />
+        <param obj="8225" value="0000_0000_0000" label="Tamb" />
+    </handler>
+    <handler type="4327" inst="1" version="1" name="PSC3SystemIdiff" crc="33570">
+        <param obj="417" value="f" label="Enable" />
+        <param obj="8224" value="30" label="Idiffmax charge" />
+        <param obj="8225" value="30" label="Idiffmax discharge" />
+    </handler>
+    <handler type="4328" inst="1" version="1" name="PSC3SystemEventControlledCharge" crc="52283">
+        <param obj="8448" value="0" label="Event Controlled Charge Type" />
+        <param obj="8464" value="53.50" label="Voltage" />
+        <param obj="8465" value="100.0" label="max. IBatt" />
+        <param obj="8466" value="t" label="Temperature Compensation" />
+        <param obj="8481" value="1002_0000_0000" label="Activation Input" />
+    </handler>
+    <handler type="4329" inst="1" version="1" name="PSC3SystemBlockCommon" crc="62055">
+        <param obj="417" value="f" label="Enable" />
+        <param obj="8224" value="5" label="Block Voltage" />
+        <param obj="8240" value="1.00" label="Udiff charge" />
+        <param obj="8241" value="1.00" label="Udiff discharge" />
+    </handler>
+    <handler type="4336" inst="1" version="1" name="PSC3SystemRemoteMonitoringSNMP" crc="32637">
+        <param obj="4111" value="255.255.255.255,255.255.255.255,255.255.255.255,255.255.255.255,255.255.255.255,255.255.255.255,255.255.255.255,255.255.255.255,255.255.255.255,255.255.255.255" label="Trap Destinations" />
+        <param obj="4864" value="public" label="Read community" />
+        <param obj="4865" value="private" label="Write community" />
+        <param obj="5119" value="1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000" label="Alarm Events" />
+        <param obj="5375" value="162,162,162,162,162,162,162,162,162,162" label="Trap Ports" />
+        <param obj="6655" value="1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000,1002_0000_0000" label="Control Events" />
+    </handler>
+    <handler type="4352" inst="1" version="1" name="PSC3LicenseKM" crc="31009">
+        <param obj="4096" value="f" label="SNMP Protocol" />
+        <param obj="4097" value="f" label="SMS Alarming" />
+    </handler>
+    <handler type="4367" inst="1" version="1" name="PSC3SystemRemoteMonitoring" crc="1013">
+        <param obj="256" value="7" label="Monitoring" />
+    </handler>
+    <handler type="4368" inst="1" version="2" name="PSC3SystemRemoteMonitoringTP" crc="56627">
+        <param obj="512" value="3557" label="TPE Identifier" />
+        <param obj="513" value="2000" label="Listen to Port" />
+        <param obj="514" value="0.0.0.0" label="SOC IP Address" />
+        <param obj="515" value="0" label="SOC Port" />
+        <param obj="544" value="" label="Phone #1" />
+        <param obj="545" value="" label="Phone #2" />
+        <param obj="546" value="" label="Phone #3" />
+        <param obj="547" value="" label="Phone #4" />
+        <param obj="548" value="" label="Phone #5" />
+        <param obj="549" value="" label="Phone #6" />
+        <param obj="550" value="" label="Phone #7" />
+        <param obj="551" value="" label="Phone #8" />
+        <param obj="552" value="" label="Phone #9" />
+        <param obj="553" value="" label="Phone #10" />
+        <param obj="576" value="1002_0000_0000" label="Input Event 1" />
+        <param obj="577" value="1002_0000_0000" label="Input Event 2" />
+        <param obj="578" value="1002_0000_0000" label="Input Event 3" />
+        <param obj="579" value="1002_0000_0000" label="Input Event 4" />
+        <param obj="580" value="1002_0000_0000" label="Input Event 5" />
+        <param obj="581" value="1002_0000_0000" label="Input Event 6" />
+        <param obj="582" value="1002_0000_0000" label="Input Event 7" />
+        <param obj="583" value="1002_0000_0000" label="Input Event 8" />
+        <param obj="608" value="1002_0000_0000" label="Output Event 1" />
+        <param obj="609" value="1002_0000_0000" label="Output Event 2" />
+    </handler>
+    <handler type="4370" inst="1" version="1" name="PSC3SystemRemoteMonitoringSMS" crc="48932">
+        <param obj="417" value="f" label="Enable" />
+        <param obj="4608" value="" label="1" />
+        <param obj="4609" value="" label="2" />
+        <param obj="4610" value="" label="3" />
+        <param obj="4611" value="" label="4" />
+        <param obj="4612" value="" label="5" />
+        <param obj="4613" value="" label="6" />
+        <param obj="4614" value="" label="7" />
+        <param obj="4615" value="" label="8" />
+        <param obj="4616" value="" label="9" />
+        <param obj="4617" value="" label="10" />
+        <param obj="4640" value="" label="1" />
+        <param obj="4641" value="" label="2" />
+        <param obj="4642" value="" label="3" />
+        <param obj="4643" value="" label="4" />
+        <param obj="4644" value="" label="5" />
+        <param obj="4645" value="" label="6" />
+        <param obj="4646" value="" label="7" />
+        <param obj="4647" value="" label="8" />
+        <param obj="4648" value="" label="9" />
+        <param obj="4649" value="" label="10" />
+        <param obj="4671" value="f,f,f,f,f,f,f,f,f,f" label="SMS Destination Enable" />
+    </handler>
+    <handler type="8191" inst="1" version="1" name="UIL" crc="28277">
+        <param obj="4546" value="1701726018" label="Language" />
+        <param obj="4528" value="112443" label="UIM Password" />
+    </handler>
+    <handler type="40963" inst="1" version="1" name="RMGroup" crc="23564">
+        <param obj="256" value="RMGroup1" label="Name" />
+        <param obj="12544" value="15" label="Rectifier Type" />
+        <param obj="12384" value="300" label="Event Interval" />
+        <param obj="12640" value="f" label="Two-Line Operation not allowed" />
+        <param obj="8448" value="53.50" label="Voltage" />
+        <param obj="8449" value="53.0" label="Current Limit" />
+        <param obj="8450" value="2450" label="Power Limit" />
+        <param obj="8464" value="53.50" label="Voltage" />
+        <param obj="8465" value="53.0" label="Current Limit" />
+        <param obj="8466" value="2450" label="Power Limit" />
+        <param obj="8480" value="80.0" label="Input Low Off" />
+        <param obj="8481" value="90.0" label="Input Low On" />
+        <param obj="8482" value="285.0" label="Input High On" />
+        <param obj="8483" value="305.0" label="Input High Off" />
+        <param obj="8467" value="0" label="Power Up Delay" />
+        <param obj="8468" value="60.00" label="Limit Time" />
+        <param obj="12320" value="0" label="Power Up Time" />
+        <param obj="12387" value="59.50" label="Umax off" />
+    </handler>
+    <handler type="40964" inst="1" version="1" name="RMCycling" crc="21541">
+        <param obj="417" value="f" label="Enable" />
+        <param obj="12289" value="f" label="Limit Switching Times" />
+        <param obj="12290" value="f" label="Force Switching Once per Month" />
+        <param obj="12304" value="1200" label="Minimum Power Reserve" />
+        <param obj="12305" value="1000" label="Minimum Rectifier Power" />
+        <param obj="12306" value="1002_0000_0000" label="Inhibit Input" />
+        <param obj="12307" value="100" label="Sweet Spot" />
+    </handler>
+    <handler type="40965" inst="1" version="1" name="ConverterPositioning" crc="54519">
+        <param obj="12544" value="0" label="Scheme Type" />
+        <param obj="12592" value="6" label="Number of Rectifiers" />
+        <param obj="12593" value="1" label="Failures for Non Urgent Alarm" />
+        <param obj="12594" value="2" label="Failures for Urgent Alarm" />
+        <param obj="12608" value="3" label="Number of DC/DC Converters" />
+        <param obj="12609" value="1" label="Failures for Non Urgent Alarm" />
+        <param obj="12610" value="2" label="Failures for Urgent Alarm" />
+        <param obj="12624" value="3" label="Number of PVCs" />
+        <param obj="12625" value="1" label="Failures for Non Urgent Alarm" />
+        <param obj="12626" value="2" label="Failures for Urgent Alarm" />
+    </handler>
+    <handler type="40967" inst="1" version="2" name="RMControl" crc="6231">
+        <param obj="12352" value="f" label="Enable" />
+        <param obj="12368" value="f" label="Enable" />
+        <param obj="12353" value="1" label="Required Number of Redundant RM" />
+        <param obj="12369" value="10" label="Expected Recharge Time" />
+        <param obj="12600" value="f" label="Enable" />
+        <param obj="12601" value="5" label="Max Deviation" />
+        <param obj="12602" value="1" label="Filter Duration" />
+    </handler>
+    <handler type="40968" inst="1" version="1" name="RMACMeasurement" crc="13546">
+        <param obj="13056" value="4294967295" label="RFM ContNumber Phase1" />
+        <param obj="13057" value="65535" label="RFM DeviceIndex Phase1" />
+        <param obj="13058" value="255" label="RFM ModuleType Phase1" />
+        <param obj="13059" value="255" label="RFM ProductionYear Phase1" />
+        <param obj="13060" value="65535" label="RFM Manufacturer Phase1" />
+        <param obj="13061" value="4294967295" label="RFM ContNumber Phase2" />
+        <param obj="13062" value="65535" label="RFM DeviceIndex Phase2" />
+        <param obj="13063" value="255" label="RFM ModuleType Phase2" />
+        <param obj="13064" value="255" label="RFM ProductionYear Phase2" />
+        <param obj="13065" value="65535" label="RFM Manufacturer Phase2" />
+        <param obj="13066" value="4294967295" label="RFM ContNumber Phase3" />
+        <param obj="13067" value="65535" label="RFM DeviceIndex Phase3" />
+        <param obj="13068" value="255" label="RFM ModuleType Phase3" />
+        <param obj="13069" value="255" label="RFM ProductionYear Phase3" />
+        <param obj="13070" value="65535" label="RFM Manufacturer Phase3" />
+    </handler>
+    <handler type="45058" inst="1" version="1" name="PCM-DCDCConvCommon" crc="15936">
+        <param obj="12320" value="0" label="DC/DC Type" />
+        <param obj="12384" value="100" label="Event Interval" />
+        <param obj="12544" value="327.67" label="Voltage" />
+        <param obj="12545" value="214748364.7" label="Current Limit" />
+        <param obj="12546" value="2147483647" label="Power Limit" />
+        <param obj="12548" value="327.67" label="Input Low Off" />
+        <param obj="12549" value="327.67" label="Input Low On" />
+        <param obj="12561" value="1002_0000_0000" label="Stop Input" />
+        <param obj="12547" value="0" label="Start Up Delay" />
+        <param obj="12550" value="327.67" label="Ovp Limit" />
+        <param obj="12576" value="f" label="Enable" />
+        <param obj="12577" value="1" label="Required Number of Redundant DC/DC" />
+    </handler>
+    <handler type="53250" inst="1" version="1" name="PVCCommon" crc="18099">
+        <param obj="12320" value="0" label="PVC Type" />
+        <param obj="12384" value="100" label="Event Interval" />
+        <param obj="12561" value="1002_0000_0000" label="Alarm Inhibit Input" />
+        <param obj="12544" value="327.67" label="Voltage" />
+        <param obj="12545" value="0.10" label="VPGM+" />
+        <param obj="12546" value="3600" label="Alarm Delay" />
+        <param obj="12548" value="327.67" label="Input Low Off" />
+        <param obj="12549" value="327.67" label="Input Low On" />
+        <param obj="12547" value="0" label="Start Up Delay" />
+        <param obj="12550" value="327.67" label="Ovp Limit" />
+    </handler>
+    <handler type="61441" inst="1" version="1" name="GENCommon" crc="33912">
+        <param obj="12544" value="190.0" label="U Min Off" />
+        <param obj="12545" value="255.0" label="U Max Off" />
+        <param obj="12546" value="210.0" label="U Min On" />
+        <param obj="12547" value="250.0" label="U Max On" />
+        <param obj="12548" value="47.00" label="F Min" />
+        <param obj="12549" value="53.00" label="F Max" />
+        <param obj="12550" value="0" label="Password" />
+    </handler>
+    <handler type="4331" inst="1" version="1" name="PSC3SystemLifePrediction" crc="9694">
+        <param obj="417" value="f" label="Enable" />
+        <param obj="8224" value="10" label="Design Life In Years" />
+        <param obj="8225" value="1500" label="Expected Cycles @ 50% DoD" />
+        <param obj="8226" value="90" label="Remaining Days Notification" />
+    </handler>
+    <handler type="4371" inst="1" version="1" name="PSC3SystemRemoteMonitoringModbusSlave" crc="52282">
+        <param obj="4096" value="1" label="Slave Id" />
+        <param obj="4097" value="502" label="Listen Socket" />
+    </handler>
+</setup>

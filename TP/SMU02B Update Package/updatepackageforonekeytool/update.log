@@ -1,0 +1,1398 @@
+INFO  [2017/01/25 13:19:43 774] DLG       : Tool Init
+INFO  [2017/01/25 13:19:53 789] DLG       : Select server ip is 0.0.0.0
+INFO  [2017/01/25 13:20:57 772] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/01/25 13:21:00 713] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/01/25 13:21:03 790] SSH2      : [S]version
+INFO  [2017/01/25 13:21:03 805] SSH2      : [R]version: v100r004c01b21
+INFO  [2017/01/25 13:21:04 855] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/01/25 13:21:04 934] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/01/25 13:21:05 984] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/01/25 13:21:06 007] SSH2      : [R]PDM_Version=V186
+SoftwareVersion=V300R003C00SPC086
+INFO  [2017/01/25 13:21:06 007] VersionInfo: PDM ver = V186, APP ver = V300R003C00SPC086, BSP ver = V100R004C01B21
+ERR   [2017/01/25 13:21:12 785] PING      : nOkCount = 15,nCount=15
+INFO  [2017/01/25 13:23:58 644] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/01/25 13:24:01 079] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/01/25 13:24:03 408] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/01/25 13:24:04 551] SSH2      : [S]cd /tmp
+INFO  [2017/01/25 13:24:05 604] SSH2      : [S]version
+INFO  [2017/01/25 13:24:05 619] SSH2      : [R]version: v100r004c01b21
+INFO  [2017/01/25 13:24:06 669] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/01/25 13:24:06 810] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/01/25 13:24:07 860] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/01/25 13:24:07 880] SSH2      : [R]PDM_Version=V186
+SoftwareVersion=V300R003C00SPC086
+INFO  [2017/01/25 13:24:07 880] VersionInfo: PDM ver = V186, APP ver = V300R003C00SPC086, BSP ver = V100R004C01B21
+INFO  [2017/01/25 13:24:08 883] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/01/25 13:24:08 883] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/01/25 13:24:08 883] SSH2      : [S]cd /tmp
+INFO  [2017/01/25 13:24:08 884] SSH2      : [S]cd /tmp
+INFO  [2017/01/25 13:24:08 886] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 0.0.0.0
+INFO  [2017/01/25 13:24:10 916] SSH2      : [S]echo $?
+INFO  [2017/01/25 13:24:10 919] SSH2      : [R]1
+INFO  [2017/01/25 13:24:10 920] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 0.0.0.0
+INFO  [2017/01/25 13:24:12 950] SSH2      : [S]echo $?
+INFO  [2017/01/25 13:24:12 952] SSH2      : [R]1
+INFO  [2017/01/25 13:24:12 953] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/01/25 13:24:13 674] PING      : nOkCount = 15,nCount=15
+INFO  [2017/01/25 13:24:15 140] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/01/25 13:24:17 572] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/01/25 13:24:17 572] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/01/25 13:24:17 572] SSH2      : [S]cd /tmp
+INFO  [2017/01/25 13:24:17 572] SSH2      : [S]cd /tmp
+INFO  [2017/01/25 13:24:17 573] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 0.0.0.0
+INFO  [2017/01/25 13:24:19 608] SSH2      : [S]echo $?
+INFO  [2017/01/25 13:24:19 620] SSH2      : [R]1
+INFO  [2017/01/25 13:24:19 620] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 0.0.0.0
+INFO  [2017/01/25 13:24:21 650] SSH2      : [S]echo $?
+INFO  [2017/01/25 13:24:21 658] SSH2      : [R]1
+INFO  [2017/01/25 13:24:21 660] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/01/25 13:24:23 899] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/01/25 13:24:25 877] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/01/25 13:24:25 877] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/01/25 13:24:25 877] SSH2      : [S]cd /tmp
+INFO  [2017/01/25 13:24:25 877] SSH2      : [S]cd /tmp
+INFO  [2017/01/25 13:24:25 879] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 0.0.0.0
+INFO  [2017/01/25 13:24:27 910] SSH2      : [S]echo $?
+INFO  [2017/01/25 13:24:27 915] SSH2      : [R]1
+INFO  [2017/01/25 13:24:27 915] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 0.0.0.0
+INFO  [2017/01/25 13:24:29 945] SSH2      : [S]echo $?
+INFO  [2017/01/25 13:24:29 948] SSH2      : [R]1
+INFO  [2017/01/25 13:24:29 950] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/01/25 13:24:32 244] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/01/25 13:24:35 510] SSH2      : [S]reboot 
+INFO  [2017/01/25 13:24:50 512] DLG       : update fail
+INFO  [2017/01/27 12:34:04 157] DLG       : Tool Init
+INFO  [2017/01/27 12:36:07 535] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/01/27 12:36:53 039] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/01/27 12:36:55 791] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:36:55 791] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/01/27 12:36:55 791] SSH2      : [S]cd /
+INFO  [2017/01/27 12:36:55 792] SSH2      : [S]su
+ERR   [2017/01/27 12:36:55 812] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:36:55 812] SSH2      : [S]Changeme
+ERR   [2017/01/27 12:36:55 832] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:36:55 852] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:36:55 872] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:36:55 892] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:36:55 913] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:36:57 913] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/01/27 12:37:00 240] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:00 240] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/01/27 12:37:00 241] SSH2      : [S]cd /
+INFO  [2017/01/27 12:37:00 241] SSH2      : [S]su
+ERR   [2017/01/27 12:37:00 262] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:00 263] SSH2      : [S]Changeme
+ERR   [2017/01/27 12:37:00 283] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:00 303] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:00 323] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:00 344] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:00 364] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:02 364] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/01/27 12:37:04 715] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:04 715] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/01/27 12:37:04 715] SSH2      : [S]cd /
+INFO  [2017/01/27 12:37:04 716] SSH2      : [S]su
+ERR   [2017/01/27 12:37:04 736] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:04 736] SSH2      : [S]Changeme
+ERR   [2017/01/27 12:37:04 756] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:04 776] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:04 796] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:04 816] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:04 836] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:06 836] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/01/27 12:37:08 054] PING      : nOkCount = 15,nCount=15
+ERR   [2017/01/27 12:37:10 365] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:10 365] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/01/27 12:37:10 365] SSH2      : [S]cd /
+INFO  [2017/01/27 12:37:10 366] SSH2      : [S]su
+ERR   [2017/01/27 12:37:10 386] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:10 386] SSH2      : [S]Changeme
+ERR   [2017/01/27 12:37:10 406] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:10 426] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:10 446] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:10 466] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:10 486] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:12 486] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/01/27 12:37:14 640] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:14 640] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/01/27 12:37:14 640] SSH2      : [S]cd /
+INFO  [2017/01/27 12:37:14 641] SSH2      : [S]su
+ERR   [2017/01/27 12:37:14 661] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:14 661] SSH2      : [S]Changeme
+ERR   [2017/01/27 12:37:14 681] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:14 701] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:14 721] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:14 741] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:14 761] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:16 761] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/01/27 12:37:19 041] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:19 041] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/01/27 12:37:19 041] SSH2      : [S]cd /
+INFO  [2017/01/27 12:37:19 042] SSH2      : [S]su
+ERR   [2017/01/27 12:37:19 062] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:19 062] SSH2      : [S]Changeme
+ERR   [2017/01/27 12:37:19 082] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:19 102] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:19 122] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:19 142] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:19 162] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:21 162] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/01/27 12:37:23 511] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:23 511] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/01/27 12:37:23 512] SSH2      : [S]cd /
+INFO  [2017/01/27 12:37:23 512] SSH2      : [S]su
+ERR   [2017/01/27 12:37:23 532] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:23 532] SSH2      : [S]Changeme
+ERR   [2017/01/27 12:37:23 552] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:23 572] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:23 592] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:23 612] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:23 632] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:25 633] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/01/27 12:37:28 078] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:28 078] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/01/27 12:37:28 078] SSH2      : [S]cd /
+INFO  [2017/01/27 12:37:28 079] SSH2      : [S]su
+ERR   [2017/01/27 12:37:28 099] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:37:28 099] SSH2      : [S]Changeme
+ERR   [2017/01/27 12:37:28 119] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:28 139] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:28 159] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:28 179] SSH2      : ssh2 poll error[80]
+ERR   [2017/01/27 12:37:28 199] SSH2      : ssh2 poll error[80]
+INFO  [2017/01/27 12:38:27 495] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/01/27 12:38:29 937] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/01/27 12:38:33 266] SSH2      : [S]version
+INFO  [2017/01/27 12:38:33 280] SSH2      : [R]version: v100r004c01b21
+INFO  [2017/01/27 12:38:34 331] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/01/27 12:38:34 417] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/01/27 12:38:35 468] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/01/27 12:38:35 489] SSH2      : [R]PDM_Version=V186
+SoftwareVersion=V300R003C00SPC086
+INFO  [2017/01/27 12:38:35 489] VersionInfo: PDM ver = V186, APP ver = V300R003C00SPC086, BSP ver = V100R004C01B21
+ERR   [2017/01/27 12:38:42 517] PING      : nOkCount = 15,nCount=15
+INFO  [2017/01/27 12:39:54 803] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/01/27 12:39:56 907] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/01/27 12:39:59 089] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/01/27 12:40:00 229] SSH2      : [S]cd /tmp
+INFO  [2017/01/27 12:40:01 282] SSH2      : [S]version
+INFO  [2017/01/27 12:40:01 300] SSH2      : [R]version: v100r004c01b21
+INFO  [2017/01/27 12:40:02 351] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/01/27 12:40:02 455] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/01/27 12:40:03 506] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/01/27 12:40:03 522] SSH2      : [R]PDM_Version=V186
+SoftwareVersion=V300R003C00SPC086
+INFO  [2017/01/27 12:40:03 522] VersionInfo: PDM ver = V186, APP ver = V300R003C00SPC086, BSP ver = V100R004C01B21
+INFO  [2017/01/27 12:40:04 524] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/01/27 12:40:04 524] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/01/27 12:40:04 525] SSH2      : [S]cd /tmp
+INFO  [2017/01/27 12:40:04 525] SSH2      : [S]cd /tmp
+INFO  [2017/01/27 12:40:04 527] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 192.168.0.11
+INFO  [2017/01/27 12:40:04 679] Begin     : SendMessage() start
+INFO  [2017/01/27 12:40:04 680] Send_first:  ntohs(DBuf.block)=1
+INFO  [2017/01/27 12:40:06 557] SSH2      : [S]echo $?
+ERR   [2017/01/27 12:40:09 815] PING      : nOkCount = 15,nCount=15
+INFO  [2017/01/27 12:40:17 093] SSH2      : [R]0
+INFO  [2017/01/27 12:40:18 145] SSH2      : [S]tar -zxf SMUV300R003C00SPC090.tar.gz
+INFO  [2017/01/27 12:40:18 145] SSH2      : [S]echo $?
+INFO  [2017/01/27 12:40:22 834] SSH2      : [R]0
+INFO  [2017/01/27 12:40:22 835] SSH2      : [S]rm SMUV300R003C00SPC090.tar.gz
+INFO  [2017/01/27 12:40:22 835] SSH2      : [S]chmod u+x *.sh
+INFO  [2017/01/27 12:40:22 836] SSH2      : [S]/tmp/update.sh /tmp/smu_app.tar.gz updateall &
+INFO  [2017/01/27 12:40:29 002] SSH2      : [R]decompress update package...
+INFO  [2017/01/27 12:40:36 109] SSH2      : [R]update app to /mnt/app_bin1/bin_arm/...
+INFO  [2017/01/27 12:40:45 557] SSH2      : [R]INFO: cp /tmp//app_arm...
+INFO  [2017/01/27 12:41:15 649] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/01/27 12:41:18 181] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/01/27 12:41:18 216] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/01/27 12:41:35 605] SSH2      : [R]INFO: /tmp//libssl.so.1.0.1p...
+INFO  [2017/01/27 12:41:36 425] SSH2      : [R]INFO: /tmp//libcrypto.so.1.0.1p...
+INFO  [2017/01/27 12:41:39 583] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/01/27 12:41:39 617] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/01/27 12:41:39 673] SSH2      : [R]update app to /mnt/app_bin0/bin_arm/...
+INFO  [2017/01/27 12:42:08 425] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/01/27 12:42:10 946] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/01/27 12:42:10 982] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/01/27 12:42:18 209] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/01/27 12:42:18 262] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/01/27 12:42:19 042] SSH2      : [R]OK
+INFO  [2017/01/27 12:42:19 045] SSH2      : [S]reboot
+INFO  [2017/01/27 12:42:19 045] SSH2      : [S]reboot
+INFO  [2017/01/27 12:43:21 061] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/01/27 12:43:23 290] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/01/27 12:43:25 337] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/01/27 12:43:26 387] SSH2      : [S]version
+INFO  [2017/01/27 12:43:26 408] SSH2      : [R]version: v100r004c01b21
+INFO  [2017/01/27 12:43:27 458] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/01/27 12:43:27 559] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/01/27 12:43:28 609] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/01/27 12:43:28 629] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/01/27 12:43:28 630] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B21
+INFO  [2017/01/27 12:43:29 644] DLG       : update success
+INFO  [2017/02/01 12:58:17 843] DLG       : Tool Init
+INFO  [2017/02/01 13:00:42 013] DLG       : Tool Init
+INFO  [2017/02/01 13:01:13 687] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/01 13:02:41 578] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/01 13:02:41 583] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/01 13:02:43 078] PING      : Recv time out
+ERR   [2017/02/01 13:02:45 928] PING      : Recv time out
+ERR   [2017/02/01 13:02:46 584] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/01 13:02:47 428] PING      : Recv time out
+ERR   [2017/02/01 13:02:50 427] PING      : Recv time out
+ERR   [2017/02/01 13:02:51 587] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/01 13:02:51 927] PING      : Recv time out
+ERR   [2017/02/01 13:02:53 427] PING      : Recv time out
+ERR   [2017/02/01 13:02:54 927] PING      : Recv time out
+ERR   [2017/02/01 13:02:56 428] PING      : Recv time out
+ERR   [2017/02/01 13:02:56 590] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/01 13:02:57 928] PING      : Recv time out
+ERR   [2017/02/01 13:02:59 428] PING      : Recv time out
+ERR   [2017/02/01 13:03:00 928] PING      : Recv time out
+ERR   [2017/02/01 13:03:01 590] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/01 13:03:01 590] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/01 13:03:01 590] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/01 13:03:01 591] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/01 13:03:02 428] PING      : Recv time out
+ERR   [2017/02/01 13:03:03 928] PING      : Recv time out
+ERR   [2017/02/01 13:03:06 592] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/01 13:03:06 927] PING      : Recv time out
+ERR   [2017/02/01 13:03:08 427] PING      : Recv time out
+ERR   [2017/02/01 13:03:09 929] PING      : nOkCount = 0,nCount=15
+ERR   [2017/02/01 13:03:11 594] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/01 13:03:16 597] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/01 13:03:21 599] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/01 13:03:21 599] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/01 13:03:23 599] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/01 13:03:23 601] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/01 13:03:28 603] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/01 13:03:33 606] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/01 13:03:38 608] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/01 13:03:43 610] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/01 13:03:43 610] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/01 13:03:43 610] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/01 13:03:43 612] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/01 13:03:48 615] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/01 13:03:53 615] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+INFO  [2017/02/01 13:04:01 257] DLG       : Tool Init
+INFO  [2017/02/01 13:11:36 450] DLG       : Tool Init
+INFO  [2017/02/01 13:11:59 582] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/01 13:12:02 832] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/01 13:12:05 372] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:05 372] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/02/01 13:12:05 372] SSH2      : [S]cd /
+INFO  [2017/02/01 13:12:05 373] SSH2      : [S]su
+ERR   [2017/02/01 13:12:05 393] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:05 393] SSH2      : [S]Changeme
+ERR   [2017/02/01 13:12:05 413] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:05 433] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:05 453] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:05 473] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:05 493] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:07 494] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/01 13:12:09 399] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:09 399] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/02/01 13:12:09 399] SSH2      : [S]cd /
+INFO  [2017/02/01 13:12:09 400] SSH2      : [S]su
+ERR   [2017/02/01 13:12:09 420] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:09 420] SSH2      : [S]Changeme
+ERR   [2017/02/01 13:12:09 440] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:09 460] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:09 480] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:09 500] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:09 520] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:11 520] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/01 13:12:13 349] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:13 349] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/02/01 13:12:13 350] SSH2      : [S]cd /
+INFO  [2017/02/01 13:12:13 350] SSH2      : [S]su
+ERR   [2017/02/01 13:12:13 370] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:13 370] SSH2      : [S]Changeme
+ERR   [2017/02/01 13:12:13 390] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:13 410] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:13 430] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:13 450] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:13 470] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:15 471] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/01 13:12:17 340] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:17 341] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/02/01 13:12:17 341] SSH2      : [S]cd /
+INFO  [2017/02/01 13:12:17 341] SSH2      : [S]su
+ERR   [2017/02/01 13:12:17 361] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:17 361] SSH2      : [S]Changeme
+ERR   [2017/02/01 13:12:17 381] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:17 401] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:17 421] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:17 441] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:17 461] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:17 858] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/01 13:12:19 461] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/01 13:12:21 172] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:21 173] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/02/01 13:12:21 173] SSH2      : [S]cd /
+INFO  [2017/02/01 13:12:21 173] SSH2      : [S]su
+ERR   [2017/02/01 13:12:21 193] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:21 193] SSH2      : [S]Changeme
+ERR   [2017/02/01 13:12:21 213] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:21 233] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:21 253] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:21 274] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:21 294] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:23 294] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/01 13:12:25 151] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:25 151] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/02/01 13:12:25 152] SSH2      : [S]cd /
+INFO  [2017/02/01 13:12:25 152] SSH2      : [S]su
+ERR   [2017/02/01 13:12:25 172] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:25 172] SSH2      : [S]Changeme
+ERR   [2017/02/01 13:12:25 192] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:25 212] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:25 237] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:25 257] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:25 277] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:27 277] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/01 13:12:28 980] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:28 980] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/02/01 13:12:28 980] SSH2      : [S]cd /
+INFO  [2017/02/01 13:12:28 981] SSH2      : [S]su
+ERR   [2017/02/01 13:12:29 001] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:29 001] SSH2      : [S]Changeme
+ERR   [2017/02/01 13:12:29 021] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:29 041] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:29 062] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:29 082] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:29 102] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:31 102] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/01 13:12:32 941] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:32 941] Login     : 登录成功，但是通道异常关闭，username：enspire
+INFO  [2017/02/01 13:12:32 941] SSH2      : [S]cd /
+INFO  [2017/02/01 13:12:32 942] SSH2      : [S]su
+ERR   [2017/02/01 13:12:32 962] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:12:32 962] SSH2      : [S]Changeme
+ERR   [2017/02/01 13:12:32 982] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:33 002] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:33 022] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:33 042] SSH2      : ssh2 poll error[80]
+ERR   [2017/02/01 13:12:33 062] SSH2      : ssh2 poll error[80]
+INFO  [2017/02/01 13:13:16 815] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/01 13:13:18 442] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/01 13:13:21 032] SSH2      : [S]version
+INFO  [2017/02/01 13:13:21 068] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/01 13:13:22 118] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/01 13:13:22 190] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/01 13:13:23 240] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/01 13:13:23 262] SSH2      : [R]PDM_Version=V181
+SoftwareVersion=V300R002C02SP81
+INFO  [2017/02/01 13:13:23 262] VersionInfo: PDM ver = V181, APP ver = V300R002C02SP81, BSP ver = V100R004C01B18
+ERR   [2017/02/01 13:13:31 824] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/01 13:14:06 359] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/01 13:14:08 157] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/01 13:14:10 012] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/01 13:14:11 152] SSH2      : [S]cd /tmp
+INFO  [2017/02/01 13:14:12 205] SSH2      : [S]version
+INFO  [2017/02/01 13:14:12 226] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/01 13:14:13 276] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/01 13:14:13 372] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/01 13:14:14 422] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/01 13:14:14 444] SSH2      : [R]PDM_Version=V181
+SoftwareVersion=V300R002C02SP81
+INFO  [2017/02/01 13:14:14 444] VersionInfo: PDM ver = V181, APP ver = V300R002C02SP81, BSP ver = V100R004C01B18
+INFO  [2017/02/01 13:14:15 447] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/01 13:14:15 447] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/01 13:14:15 447] SSH2      : [S]cd /tmp
+INFO  [2017/02/01 13:14:15 447] SSH2      : [S]cd /tmp
+INFO  [2017/02/01 13:14:15 449] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 192.168.0.11
+INFO  [2017/02/01 13:14:15 518] Begin     : SendMessage() start
+INFO  [2017/02/01 13:14:15 519] Send_first:  ntohs(DBuf.block)=1
+INFO  [2017/02/01 13:14:17 480] SSH2      : [S]echo $?
+ERR   [2017/02/01 13:14:21 374] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/01 13:14:32 507] SSH2      : [R]0
+INFO  [2017/02/01 13:14:33 561] SSH2      : [S]tar -zxf SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/01 13:14:33 561] SSH2      : [S]echo $?
+INFO  [2017/02/01 13:14:38 466] SSH2      : [R]0
+INFO  [2017/02/01 13:14:38 466] SSH2      : [S]rm SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/01 13:14:38 466] SSH2      : [S]chmod u+x *.sh
+INFO  [2017/02/01 13:14:38 467] SSH2      : [S]/tmp/update.sh /tmp/smu_app.tar.gz updateall &
+INFO  [2017/02/01 13:14:44 614] SSH2      : [R]decompress update package...
+INFO  [2017/02/01 13:14:52 531] SSH2      : [R]update app to /mnt/app_bin1/bin_arm/...
+INFO  [2017/02/01 13:14:57 989] SSH2      : [R]INFO: cp /tmp//app_arm...
+INFO  [2017/02/01 13:15:28 262] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/01 13:15:32 615] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/01 13:15:32 648] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/01 13:15:57 056] SSH2      : [R]INFO: /tmp//libssl.so.1.0.1p...
+INFO  [2017/02/01 13:15:58 458] SSH2      : [R]INFO: /tmp//libcrypto.so.1.0.1p...
+INFO  [2017/02/01 13:16:04 114] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/01 13:16:04 153] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/01 13:16:04 204] SSH2      : [R]update app to /mnt/app_bin0/bin_arm/...
+INFO  [2017/02/01 13:16:36 331] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/01 13:16:40 763] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/01 13:16:40 796] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/01 13:16:48 973] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/01 13:16:48 999] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/01 13:16:49 118] SSH2      : [R]OK
+INFO  [2017/02/01 13:16:49 128] SSH2      : [S]reboot
+INFO  [2017/02/01 13:16:49 129] SSH2      : [S]reboot
+INFO  [2017/02/01 13:17:51 144] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/01 13:17:52 905] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/01 13:17:54 901] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/01 13:17:55 952] SSH2      : [S]version
+INFO  [2017/02/01 13:17:55 978] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/01 13:17:57 029] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/01 13:17:57 097] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/01 13:17:58 147] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/01 13:17:58 169] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/02/01 13:17:58 170] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B18
+INFO  [2017/02/01 13:17:59 187] DLG       : update success
+INFO  [2017/02/01 15:02:02 710] DLG       : Tool Init
+INFO  [2017/02/01 15:02:35 123] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/01 15:03:17 392] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/01 15:03:19 729] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/01 15:03:22 617] SSH2      : [S]version
+INFO  [2017/02/01 15:03:22 637] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/01 15:03:23 688] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/01 15:03:23 777] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/01 15:03:24 827] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/01 15:03:24 850] SSH2      : [R]PDM_Version=V181
+SoftwareVersion=V300R002C02SP81
+INFO  [2017/02/01 15:03:24 851] VersionInfo: PDM ver = V181, APP ver = V300R002C02SP81, BSP ver = V100R004C01B18
+ERR   [2017/02/01 15:03:32 412] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/01 15:04:47 797] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/01 15:04:49 645] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/01 15:04:51 451] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/01 15:04:52 591] SSH2      : [S]cd /tmp
+INFO  [2017/02/01 15:04:53 644] SSH2      : [S]version
+INFO  [2017/02/01 15:04:53 665] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/01 15:04:54 715] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/01 15:04:54 835] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/01 15:04:55 886] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/01 15:04:55 902] SSH2      : [R]PDM_Version=V181
+SoftwareVersion=V300R002C02SP81
+INFO  [2017/02/01 15:04:55 902] VersionInfo: PDM ver = V181, APP ver = V300R002C02SP81, BSP ver = V100R004C01B18
+INFO  [2017/02/01 15:04:56 904] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/01 15:04:56 904] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/01 15:04:56 905] SSH2      : [S]cd /tmp
+INFO  [2017/02/01 15:04:56 905] SSH2      : [S]cd /tmp
+INFO  [2017/02/01 15:04:56 907] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 192.168.0.11
+INFO  [2017/02/01 15:04:56 988] Begin     : SendMessage() start
+INFO  [2017/02/01 15:04:56 989] Send_first:  ntohs(DBuf.block)=1
+INFO  [2017/02/01 15:04:58 937] SSH2      : [S]echo $?
+ERR   [2017/02/01 15:05:02 813] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/01 15:05:12 367] SSH2      : [R]0
+INFO  [2017/02/01 15:05:13 419] SSH2      : [S]tar -zxf SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/01 15:05:13 419] SSH2      : [S]echo $?
+INFO  [2017/02/01 15:05:18 308] SSH2      : [R]0
+INFO  [2017/02/01 15:05:18 309] SSH2      : [S]rm SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/01 15:05:18 309] SSH2      : [S]chmod u+x *.sh
+INFO  [2017/02/01 15:05:18 309] SSH2      : [S]/tmp/update.sh /tmp/smu_app.tar.gz updateall &
+INFO  [2017/02/01 15:05:24 462] SSH2      : [R]decompress update package...
+INFO  [2017/02/01 15:05:32 300] SSH2      : [R]update app to /mnt/app_bin1/bin_arm/...
+INFO  [2017/02/01 15:05:37 960] SSH2      : [R]INFO: cp /tmp//app_arm...
+INFO  [2017/02/01 15:06:07 361] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/01 15:06:11 711] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/01 15:06:11 740] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/01 15:06:35 357] SSH2      : [R]INFO: /tmp//libssl.so.1.0.1p...
+INFO  [2017/02/01 15:06:36 785] SSH2      : [R]INFO: /tmp//libcrypto.so.1.0.1p...
+INFO  [2017/02/01 15:06:42 460] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/01 15:06:42 492] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/01 15:06:42 548] SSH2      : [R]update app to /mnt/app_bin0/bin_arm/...
+INFO  [2017/02/01 15:07:13 691] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/01 15:07:18 081] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/01 15:07:18 114] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/01 15:07:26 344] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/01 15:07:26 374] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/01 15:07:26 506] SSH2      : [R]OK
+INFO  [2017/02/01 15:07:26 508] SSH2      : [S]reboot
+INFO  [2017/02/01 15:07:26 509] SSH2      : [S]reboot
+INFO  [2017/02/01 15:08:28 535] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/01 15:08:30 351] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/01 15:08:32 331] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/01 15:08:33 381] SSH2      : [S]version
+INFO  [2017/02/01 15:08:33 411] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/01 15:08:34 462] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/01 15:08:34 562] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/01 15:08:35 612] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/01 15:08:35 633] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/02/01 15:08:35 633] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B18
+INFO  [2017/02/01 15:08:36 644] DLG       : update success
+INFO  [2017/02/01 18:20:40 692] DLG       : Select server ip is 0.0.0.0
+INFO  [2017/02/01 18:20:48 683] DLG       : Select server ip is 0.0.0.0
+INFO  [2017/02/02 12:47:13 309] DLG       : Tool Init
+INFO  [2017/02/02 12:47:45 328] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/02 12:58:42 391] DLG       : Tool Init
+INFO  [2017/02/02 12:58:49 539] DLG       : Select server ip is 0.0.0.0
+INFO  [2017/02/02 12:59:44 084] DLG       : Tool Init
+INFO  [2017/02/02 13:00:02 113] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/02 13:00:10 321] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/02 13:00:12 729] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/02 13:00:15 647] SSH2      : [S]version
+INFO  [2017/02/02 13:00:15 670] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/02 13:00:16 720] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/02 13:00:16 788] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/02 13:00:17 839] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/02 13:00:17 864] SSH2      : [R]PDM_Version=V181
+SoftwareVersion=V300R002C02SP81
+INFO  [2017/02/02 13:00:17 864] VersionInfo: PDM ver = V181, APP ver = V300R002C02SP81, BSP ver = V100R004C01B18
+ERR   [2017/02/02 13:00:25 335] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/02 13:01:09 686] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/02 13:01:11 489] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/02 13:01:13 341] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 13:01:14 482] SSH2      : [S]cd /tmp
+INFO  [2017/02/02 13:01:15 535] SSH2      : [S]version
+INFO  [2017/02/02 13:01:15 548] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/02 13:01:16 598] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/02 13:01:16 681] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/02 13:01:17 731] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/02 13:01:17 752] SSH2      : [R]PDM_Version=V181
+SoftwareVersion=V300R002C02SP81
+INFO  [2017/02/02 13:01:17 752] VersionInfo: PDM ver = V181, APP ver = V300R002C02SP81, BSP ver = V100R004C01B18
+INFO  [2017/02/02 13:01:18 752] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 13:01:18 752] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 13:01:18 753] SSH2      : [S]cd /tmp
+INFO  [2017/02/02 13:01:18 753] SSH2      : [S]cd /tmp
+INFO  [2017/02/02 13:01:18 755] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 192.168.0.11
+INFO  [2017/02/02 13:01:18 856] Begin     : SendMessage() start
+INFO  [2017/02/02 13:01:18 880] Send_first:  ntohs(DBuf.block)=1
+INFO  [2017/02/02 13:01:20 786] SSH2      : [S]echo $?
+ERR   [2017/02/02 13:01:24 707] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/02 13:01:33 950] SSH2      : [R]0
+INFO  [2017/02/02 13:01:35 003] SSH2      : [S]tar -zxf SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/02 13:01:35 003] SSH2      : [S]echo $?
+INFO  [2017/02/02 13:01:39 543] SSH2      : [R]0
+INFO  [2017/02/02 13:01:39 543] SSH2      : [S]rm SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/02 13:01:39 543] SSH2      : [S]chmod u+x *.sh
+INFO  [2017/02/02 13:01:39 544] SSH2      : [S]/tmp/update.sh /tmp/smu_app.tar.gz updateall &
+INFO  [2017/02/02 13:01:46 271] SSH2      : [R]decompress update package...
+INFO  [2017/02/02 13:01:54 325] SSH2      : [R]update app to /mnt/app_bin1/bin_arm/...
+INFO  [2017/02/02 13:01:56 785] SSH2      : [R]INFO: cp /tmp//app_arm...
+INFO  [2017/02/02 13:02:25 935] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/02 13:02:30 285] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/02 13:02:30 314] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/02 13:02:53 831] SSH2      : [R]INFO: /tmp//libssl.so.1.0.1p...
+INFO  [2017/02/02 13:02:55 230] SSH2      : [R]INFO: /tmp//libcrypto.so.1.0.1p...
+INFO  [2017/02/02 13:03:00 848] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/02 13:03:00 881] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/02 13:03:00 938] SSH2      : [R]update app to /mnt/app_bin0/bin_arm/...
+INFO  [2017/02/02 13:03:31 850] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/02 13:03:36 207] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/02 13:03:36 235] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/02 13:03:44 488] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/02 13:03:44 515] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/02 13:03:44 646] SSH2      : [R]OK
+INFO  [2017/02/02 13:03:44 648] SSH2      : [S]reboot
+INFO  [2017/02/02 13:03:44 649] SSH2      : [S]reboot
+INFO  [2017/02/02 13:04:46 662] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/02 13:04:48 429] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/02 13:04:50 126] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 13:04:51 178] SSH2      : [S]version
+INFO  [2017/02/02 13:04:51 191] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/02 13:04:52 241] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/02 13:04:52 324] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/02 13:04:53 374] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/02 13:04:53 393] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/02/02 13:04:53 393] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B18
+INFO  [2017/02/02 13:04:54 395] DLG       : update success
+INFO  [2017/02/02 13:47:46 760] DLG       : Tool Init
+INFO  [2017/02/02 13:48:23 674] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/02 13:48:31 724] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/02 13:48:33 847] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/02 13:48:36 787] SSH2      : [S]version
+INFO  [2017/02/02 13:48:36 804] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/02 13:48:37 854] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/02 13:48:37 916] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/02 13:48:38 966] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/02 13:48:38 989] SSH2      : [R]PDM_Version=V181
+SoftwareVersion=V300R002C02SP81
+INFO  [2017/02/02 13:48:38 989] VersionInfo: PDM ver = V181, APP ver = V300R002C02SP81, BSP ver = V100R004C01B18
+ERR   [2017/02/02 13:48:46 738] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/02 13:49:37 754] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/02 13:49:39 433] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/02 13:49:41 219] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 13:49:42 359] SSH2      : [S]cd /tmp
+INFO  [2017/02/02 13:49:43 413] SSH2      : [S]version
+INFO  [2017/02/02 13:49:43 427] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/02 13:49:44 477] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/02 13:49:44 573] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/02 13:49:45 623] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/02 13:49:45 639] SSH2      : [R]PDM_Version=V181
+SoftwareVersion=V300R002C02SP81
+INFO  [2017/02/02 13:49:45 640] VersionInfo: PDM ver = V181, APP ver = V300R002C02SP81, BSP ver = V100R004C01B18
+INFO  [2017/02/02 13:49:46 646] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 13:49:46 646] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 13:49:46 646] SSH2      : [S]cd /tmp
+INFO  [2017/02/02 13:49:46 647] SSH2      : [S]cd /tmp
+INFO  [2017/02/02 13:49:46 649] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 192.168.0.11
+INFO  [2017/02/02 13:49:46 772] Begin     : SendMessage() start
+INFO  [2017/02/02 13:49:46 774] Send_first:  ntohs(DBuf.block)=1
+INFO  [2017/02/02 13:49:48 679] SSH2      : [S]echo $?
+ERR   [2017/02/02 13:49:52 800] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/02 13:50:01 500] SSH2      : [R]0
+INFO  [2017/02/02 13:50:02 552] SSH2      : [S]tar -zxf SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/02 13:50:02 553] SSH2      : [S]echo $?
+INFO  [2017/02/02 13:50:07 013] SSH2      : [R]0
+INFO  [2017/02/02 13:50:07 014] SSH2      : [S]rm SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/02 13:50:07 014] SSH2      : [S]chmod u+x *.sh
+INFO  [2017/02/02 13:50:07 015] SSH2      : [S]/tmp/update.sh /tmp/smu_app.tar.gz updateall &
+INFO  [2017/02/02 13:50:13 099] SSH2      : [R]decompress update package...
+INFO  [2017/02/02 13:50:20 757] SSH2      : [R]update app to /mnt/app_bin1/bin_arm/...
+INFO  [2017/02/02 13:50:24 815] SSH2      : [R]INFO: cp /tmp//app_arm...
+INFO  [2017/02/02 13:50:53 757] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/02 13:50:58 107] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/02 13:50:58 135] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/02 13:51:21 622] SSH2      : [R]INFO: /tmp//libssl.so.1.0.1p...
+INFO  [2017/02/02 13:51:23 014] SSH2      : [R]INFO: /tmp//libcrypto.so.1.0.1p...
+INFO  [2017/02/02 13:51:28 616] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/02 13:51:28 649] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/02 13:51:28 704] SSH2      : [R]update app to /mnt/app_bin0/bin_arm/...
+INFO  [2017/02/02 13:51:59 430] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/02 13:52:03 780] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/02 13:52:03 812] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/02 13:52:11 929] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/02 13:52:11 955] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/02 13:52:12 074] SSH2      : [R]OK
+INFO  [2017/02/02 13:52:12 076] SSH2      : [S]reboot
+INFO  [2017/02/02 13:52:12 077] SSH2      : [S]reboot
+INFO  [2017/02/02 13:53:14 092] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/02 13:53:15 963] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/02 13:53:17 890] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 13:53:18 943] SSH2      : [S]version
+INFO  [2017/02/02 13:53:18 971] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/02 13:53:20 022] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/02 13:53:20 101] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/02 13:53:21 151] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/02 13:53:21 179] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/02/02 13:53:21 179] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B18
+INFO  [2017/02/02 13:53:22 181] DLG       : update success
+INFO  [2017/02/02 15:19:38 779] DLG       : Tool Init
+INFO  [2017/02/02 15:20:00 344] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/02 15:20:10 037] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/02 15:20:12 395] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/02 15:20:15 216] SSH2      : [S]version
+INFO  [2017/02/02 15:20:15 240] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/02 15:20:16 290] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/02 15:20:16 359] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/02 15:20:17 409] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/02 15:20:17 425] SSH2      : [R]PDM_Version=V181
+SoftwareVersion=V300R002C02SP81
+INFO  [2017/02/02 15:20:17 425] VersionInfo: PDM ver = V181, APP ver = V300R002C02SP81, BSP ver = V100R004C01B18
+ERR   [2017/02/02 15:20:25 059] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/02 15:21:18 891] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/02 15:21:20 638] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/02 15:21:22 534] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 15:21:23 674] SSH2      : [S]cd /tmp
+INFO  [2017/02/02 15:21:24 728] SSH2      : [S]version
+INFO  [2017/02/02 15:21:24 757] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/02 15:21:25 807] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/02 15:21:25 905] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/02 15:21:26 956] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/02 15:21:26 973] SSH2      : [R]PDM_Version=V181
+SoftwareVersion=V300R002C02SP81
+INFO  [2017/02/02 15:21:26 973] VersionInfo: PDM ver = V181, APP ver = V300R002C02SP81, BSP ver = V100R004C01B18
+INFO  [2017/02/02 15:21:27 976] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 15:21:27 976] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 15:21:27 977] SSH2      : [S]cd /tmp
+INFO  [2017/02/02 15:21:27 977] SSH2      : [S]cd /tmp
+INFO  [2017/02/02 15:21:27 980] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 192.168.0.11
+INFO  [2017/02/02 15:21:28 088] Begin     : SendMessage() start
+INFO  [2017/02/02 15:21:28 089] Send_first:  ntohs(DBuf.block)=1
+INFO  [2017/02/02 15:21:30 010] SSH2      : [S]echo $?
+ERR   [2017/02/02 15:21:33 911] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/02 15:21:43 469] SSH2      : [R]0
+INFO  [2017/02/02 15:21:44 524] SSH2      : [S]tar -zxf SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/02 15:21:44 524] SSH2      : [S]echo $?
+INFO  [2017/02/02 15:21:49 154] SSH2      : [R]0
+INFO  [2017/02/02 15:21:49 155] SSH2      : [S]rm SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/02 15:21:49 155] SSH2      : [S]chmod u+x *.sh
+INFO  [2017/02/02 15:21:49 155] SSH2      : [S]/tmp/update.sh /tmp/smu_app.tar.gz updateall &
+INFO  [2017/02/02 15:21:55 286] SSH2      : [R]decompress update package...
+INFO  [2017/02/02 15:22:03 294] SSH2      : [R]update app to /mnt/app_bin1/bin_arm/...
+INFO  [2017/02/02 15:22:07 722] SSH2      : [R]INFO: cp /tmp//app_arm...
+INFO  [2017/02/02 15:22:37 134] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/02 15:22:41 485] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/02 15:22:41 517] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/02 15:23:05 369] SSH2      : [R]INFO: /tmp//libssl.so.1.0.1p...
+INFO  [2017/02/02 15:23:06 775] SSH2      : [R]INFO: /tmp//libcrypto.so.1.0.1p...
+INFO  [2017/02/02 15:23:12 438] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/02 15:23:12 470] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/02 15:23:12 525] SSH2      : [R]update app to /mnt/app_bin0/bin_arm/...
+INFO  [2017/02/02 15:23:43 478] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/02 15:23:47 846] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/02 15:23:47 874] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/02 15:23:56 175] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/02 15:23:56 202] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/02 15:23:56 320] SSH2      : [R]OK
+INFO  [2017/02/02 15:23:56 328] SSH2      : [S]reboot
+INFO  [2017/02/02 15:23:56 328] SSH2      : [S]reboot
+INFO  [2017/02/02 15:24:58 344] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/02 15:25:00 190] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/02 15:25:02 070] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 15:25:03 120] SSH2      : [S]version
+INFO  [2017/02/02 15:25:03 138] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/02 15:25:04 188] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/02 15:25:04 300] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/02 15:25:05 350] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/02 15:25:05 377] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/02/02 15:25:05 377] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B18
+INFO  [2017/02/02 15:25:06 383] DLG       : update success
+INFO  [2017/02/02 17:34:04 088] DLG       : Tool Init
+INFO  [2017/02/02 17:34:23 550] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/02 17:35:04 990] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/02 17:35:07 892] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/02 17:35:10 993] SSH2      : [S]version
+INFO  [2017/02/02 17:35:11 008] SSH2      : [R]version: v100r004c01b21
+INFO  [2017/02/02 17:35:12 058] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/02 17:35:12 146] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/02 17:35:13 197] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/02 17:35:13 215] SSH2      : [R]PDM_Version=V186
+SoftwareVersion=V300R003C00SPC086
+INFO  [2017/02/02 17:35:13 215] VersionInfo: PDM ver = V186, APP ver = V300R003C00SPC086, BSP ver = V100R004C01B21
+ERR   [2017/02/02 17:35:20 006] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/02 17:35:43 115] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/02 17:35:45 023] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/02 17:35:47 230] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 17:35:48 371] SSH2      : [S]cd /tmp
+INFO  [2017/02/02 17:35:49 424] SSH2      : [S]version
+INFO  [2017/02/02 17:35:49 444] SSH2      : [R]version: v100r004c01b21
+INFO  [2017/02/02 17:35:50 495] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/02 17:35:50 570] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/02 17:35:51 621] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/02 17:35:51 647] SSH2      : [R]PDM_Version=V186
+SoftwareVersion=V300R003C00SPC086
+INFO  [2017/02/02 17:35:51 647] VersionInfo: PDM ver = V186, APP ver = V300R003C00SPC086, BSP ver = V100R004C01B21
+INFO  [2017/02/02 17:35:52 649] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 17:35:52 649] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 17:35:52 650] SSH2      : [S]cd /tmp
+INFO  [2017/02/02 17:35:52 650] SSH2      : [S]cd /tmp
+INFO  [2017/02/02 17:35:52 652] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 192.168.0.11
+INFO  [2017/02/02 17:35:52 769] Begin     : SendMessage() start
+INFO  [2017/02/02 17:35:52 770] Send_first:  ntohs(DBuf.block)=1
+INFO  [2017/02/02 17:35:54 683] SSH2      : [S]echo $?
+ERR   [2017/02/02 17:35:58 136] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/02 17:36:10 044] SSH2      : [R]0
+INFO  [2017/02/02 17:36:11 096] SSH2      : [S]tar -zxf SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/02 17:36:11 096] SSH2      : [S]echo $?
+INFO  [2017/02/02 17:36:16 925] SSH2      : [R]0
+INFO  [2017/02/02 17:36:16 925] SSH2      : [S]rm SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/02 17:36:16 926] SSH2      : [S]chmod u+x *.sh
+INFO  [2017/02/02 17:36:16 926] SSH2      : [S]/tmp/update.sh /tmp/smu_app.tar.gz updateall &
+INFO  [2017/02/02 17:36:23 230] SSH2      : [R]decompress update package...
+INFO  [2017/02/02 17:36:30 996] SSH2      : [R]update app to /mnt/app_bin1/bin_arm/...
+INFO  [2017/02/02 17:36:43 766] SSH2      : [R]INFO: cp /tmp//app_arm...
+INFO  [2017/02/02 17:37:13 616] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/02 17:37:16 156] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/02 17:37:16 191] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/02 17:37:32 972] SSH2      : [R]INFO: /tmp//libssl.so.1.0.1p...
+INFO  [2017/02/02 17:37:33 803] SSH2      : [R]INFO: /tmp//libcrypto.so.1.0.1p...
+INFO  [2017/02/02 17:37:36 994] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/02 17:37:37 028] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/02 17:37:37 085] SSH2      : [R]update app to /mnt/app_bin0/bin_arm/...
+INFO  [2017/02/02 17:38:07 952] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/02 17:38:10 497] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/02 17:38:10 527] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/02 17:38:18 197] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/02 17:38:19 170] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/02 17:38:20 282] SSH2      : [R]OK
+INFO  [2017/02/02 17:38:20 284] SSH2      : [S]reboot
+INFO  [2017/02/02 17:38:20 285] SSH2      : [S]reboot
+INFO  [2017/02/02 17:39:22 300] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/02 17:39:23 918] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/02 17:39:25 823] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/02 17:39:26 873] SSH2      : [S]version
+INFO  [2017/02/02 17:39:26 898] SSH2      : [R]version: v100r004c01b21
+INFO  [2017/02/02 17:39:27 949] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/02 17:39:28 014] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/02 17:39:29 065] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/02 17:39:29 095] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/02/02 17:39:29 095] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B21
+INFO  [2017/02/02 17:39:30 100] DLG       : update success
+INFO  [2017/02/03 11:44:02 097] DLG       : Tool Init
+INFO  [2017/02/03 11:44:22 091] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/03 11:44:33 007] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/03 11:44:35 528] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/03 11:44:38 540] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+INFO  [2017/02/03 11:44:42 013] SSH2      : [S]cd /
+INFO  [2017/02/03 11:44:42 013] SSH2      : [S]su
+INFO  [2017/02/03 11:44:42 014] SSH2      : [S]Changeme
+INFO  [2017/02/03 11:44:42 014] SSH2      : [S]cd /
+INFO  [2017/02/03 11:44:42 112] SSH2      : [R]Password: 
+INFO  [2017/02/03 11:44:42 113] SSH2      : [S]version
+INFO  [2017/02/03 11:44:42 120] SSH2      : [R]
+INFO  [2017/02/03 11:44:42 120] SSH2      : [S]version
+INFO  [2017/02/03 11:44:43 120] SSH2      : [R]su to root succussed
+INFO  [2017/02/03 11:44:43 121] SSH2      : [S]version
+INFO  [2017/02/03 11:44:43 192] SSH2      : [R]version: v100r004c01b44
+INFO  [2017/02/03 11:44:43 210] SSH2      : [R]version: v100r004c01b44
+INFO  [2017/02/03 11:44:43 210] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/03 11:44:43 260] SSH2      : [R]version: v100r004c01b44
+INFO  [2017/02/03 11:44:45 260] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/03 11:44:45 260] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/03 11:44:45 355] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/03 11:44:46 405] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/03 11:44:46 427] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/02/03 11:44:46 427] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B44
+ERR   [2017/02/03 11:44:48 032] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/03 11:46:38 469] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/03 11:46:40 787] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/03 11:46:43 804] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+INFO  [2017/02/03 11:46:47 269] SSH2      : [S]cd /
+INFO  [2017/02/03 11:46:47 270] SSH2      : [S]su
+INFO  [2017/02/03 11:46:47 270] SSH2      : [S]Changeme
+INFO  [2017/02/03 11:46:47 270] SSH2      : [S]cd /
+INFO  [2017/02/03 11:46:47 270] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/03 11:46:47 363] SSH2      : [R]Password: 
+INFO  [2017/02/03 11:46:47 363] SSH2      : [S]cd /tmp
+INFO  [2017/02/03 11:46:47 367] SSH2      : [R]
+INFO  [2017/02/03 11:46:47 367] SSH2      : [S]version
+INFO  [2017/02/03 11:46:48 085] SSH2      : [R]su to root succussed
+INFO  [2017/02/03 11:46:48 085] SSH2      : [S]version
+INFO  [2017/02/03 11:46:48 170] SSH2      : [R]version: v100r004c01b44
+INFO  [2017/02/03 11:46:48 185] SSH2      : [R]version: v100r004c01b44
+INFO  [2017/02/03 11:46:48 185] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/03 11:46:48 295] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/03 11:46:49 345] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/03 11:46:49 363] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/02/03 11:46:49 363] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B44
+INFO  [2017/02/03 11:46:50 365] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/03 11:46:50 365] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/03 11:46:50 366] SSH2      : [S]cd /tmp
+INFO  [2017/02/03 11:46:50 366] SSH2      : [S]cd /tmp
+INFO  [2017/02/03 11:46:50 368] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 192.168.0.11
+INFO  [2017/02/03 11:46:50 465] Begin     : SendMessage() start
+INFO  [2017/02/03 11:46:50 473] Send_first:  ntohs(DBuf.block)=1
+INFO  [2017/02/03 11:46:52 398] SSH2      : [S]echo $?
+ERR   [2017/02/03 11:46:53 493] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/03 11:47:13 323] SSH2      : [R]0
+INFO  [2017/02/03 11:47:14 375] SSH2      : [S]tar -zxf SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/03 11:47:14 375] SSH2      : [S]echo $?
+INFO  [2017/02/03 11:47:20 175] SSH2      : [R]0
+INFO  [2017/02/03 11:47:20 175] SSH2      : [S]rm SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/03 11:47:20 175] SSH2      : [S]chmod u+x *.sh
+INFO  [2017/02/03 11:47:20 176] SSH2      : [S]/tmp/update.sh /tmp/smu_app.tar.gz updateall &
+INFO  [2017/02/03 11:47:26 717] SSH2      : [R]decompress update package...
+INFO  [2017/02/03 11:47:34 359] SSH2      : [R]update app to /mnt/app_bin1/bin_arm/...
+INFO  [2017/02/03 11:47:45 950] SSH2      : [R]INFO: cp /tmp//app_arm...
+INFO  [2017/02/03 11:48:25 568] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/03 11:48:28 126] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/03 11:48:28 160] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/03 11:48:44 654] SSH2      : [R]INFO: /tmp//libssl.so.1.0.1p...
+INFO  [2017/02/03 11:48:45 484] SSH2      : [R]INFO: /tmp//libcrypto.so.1.0.1p...
+INFO  [2017/02/03 11:48:48 676] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/03 11:48:48 708] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/03 11:48:48 764] SSH2      : [R]update app to /mnt/app_bin0/bin_arm/...
+INFO  [2017/02/03 11:49:25 760] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/03 11:49:28 312] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/03 11:49:28 347] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/03 11:49:35 691] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/03 11:49:35 734] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/03 11:49:37 524] SSH2      : [R]OK
+INFO  [2017/02/03 11:49:37 526] SSH2      : [S]reboot
+INFO  [2017/02/03 11:49:37 527] SSH2      : [S]reboot
+INFO  [2017/02/03 11:50:39 551] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/03 11:50:41 501] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/03 11:50:44 851] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+INFO  [2017/02/03 11:50:48 136] SSH2      : [S]cd /
+INFO  [2017/02/03 11:50:48 136] SSH2      : [S]su
+INFO  [2017/02/03 11:50:48 136] SSH2      : [S]Changeme
+INFO  [2017/02/03 11:50:48 136] SSH2      : [S]cd /
+INFO  [2017/02/03 11:50:48 137] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/03 11:50:48 219] SSH2      : [R]Password: 
+INFO  [2017/02/03 11:50:48 219] SSH2      : [S]version
+INFO  [2017/02/03 11:50:48 223] SSH2      : [R]
+INFO  [2017/02/03 11:50:48 223] SSH2      : [S]version
+INFO  [2017/02/03 11:50:49 256] SSH2      : [R]su to root succussed
+INFO  [2017/02/03 11:50:49 256] SSH2      : [S]version
+INFO  [2017/02/03 11:50:49 340] SSH2      : [R]version: v100r004c01b44
+INFO  [2017/02/03 11:50:49 358] SSH2      : [R]version: v100r004c01b44
+INFO  [2017/02/03 11:50:49 358] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/03 11:50:49 457] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/03 11:50:50 507] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/03 11:50:50 530] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/02/03 11:50:50 530] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B44
+INFO  [2017/02/03 11:50:51 531] DLG       : update success
+INFO  [2017/02/03 18:14:46 299] DLG       : Tool Init
+INFO  [2017/02/03 18:14:52 778] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/03 18:14:59 452] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/03 18:15:01 493] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/03 18:15:04 057] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+INFO  [2017/02/03 18:15:06 699] SSH2      : [S]cd /
+INFO  [2017/02/03 18:15:06 699] SSH2      : [S]su
+INFO  [2017/02/03 18:15:06 700] SSH2      : [S]Changeme
+INFO  [2017/02/03 18:15:06 700] SSH2      : [S]cd /
+INFO  [2017/02/03 18:15:06 791] SSH2      : [R]Password: 
+INFO  [2017/02/03 18:15:06 792] SSH2      : [S]version
+INFO  [2017/02/03 18:15:06 792] SSH2      : [R]
+INFO  [2017/02/03 18:15:06 793] SSH2      : [S]version
+INFO  [2017/02/03 18:15:07 758] SSH2      : [R]su to root succussed
+INFO  [2017/02/03 18:15:07 758] SSH2      : [S]version
+INFO  [2017/02/03 18:15:07 825] SSH2      : [R]version: v100r004c01b44
+INFO  [2017/02/03 18:15:07 843] SSH2      : [R]version: v100r004c01b44
+INFO  [2017/02/03 18:15:07 844] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/03 18:15:07 862] SSH2      : [R]version: v100r004c01b44
+INFO  [2017/02/03 18:15:09 862] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/03 18:15:09 862] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/03 18:15:09 974] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/03 18:15:11 024] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/03 18:15:11 046] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/02/03 18:15:11 046] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B44
+ERR   [2017/02/03 18:15:14 467] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/13 11:14:55 207] DLG       : Tool Init
+INFO  [2017/02/13 11:15:04 521] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/13 11:15:19 162] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/13 11:15:21 106] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/13 11:15:23 729] SSH2      : [S]version
+INFO  [2017/02/13 11:15:23 749] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/13 11:15:24 799] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/13 11:15:24 863] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/13 11:15:25 913] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/13 11:15:25 939] SSH2      : [R]PDM_Version=V181
+SoftwareVersion=V300R002C02SP81
+INFO  [2017/02/13 11:15:25 939] VersionInfo: PDM ver = V181, APP ver = V300R002C02SP81, BSP ver = V100R004C01B18
+ERR   [2017/02/13 11:15:34 162] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/13 11:18:13 574] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/13 11:18:15 328] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/13 11:18:17 072] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/13 11:18:18 213] SSH2      : [S]cd /tmp
+INFO  [2017/02/13 11:18:19 266] SSH2      : [S]version
+INFO  [2017/02/13 11:18:19 288] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/13 11:18:20 338] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/13 11:18:20 418] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/13 11:18:21 468] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/13 11:18:21 490] SSH2      : [R]PDM_Version=V181
+SoftwareVersion=V300R002C02SP81
+INFO  [2017/02/13 11:18:21 490] VersionInfo: PDM ver = V181, APP ver = V300R002C02SP81, BSP ver = V100R004C01B18
+INFO  [2017/02/13 11:18:22 492] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/13 11:18:22 492] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/13 11:18:22 493] SSH2      : [S]cd /tmp
+INFO  [2017/02/13 11:18:22 493] SSH2      : [S]cd /tmp
+INFO  [2017/02/13 11:18:22 495] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 192.168.0.11
+INFO  [2017/02/13 11:18:22 594] Begin     : SendMessage() start
+INFO  [2017/02/13 11:18:22 613] Send_first:  ntohs(DBuf.block)=1
+INFO  [2017/02/13 11:18:24 525] SSH2      : [S]echo $?
+ERR   [2017/02/13 11:18:28 587] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/13 11:18:37 908] SSH2      : [R]0
+INFO  [2017/02/13 11:18:38 959] SSH2      : [S]tar -zxf SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/13 11:18:38 959] SSH2      : [S]echo $?
+INFO  [2017/02/13 11:18:43 611] SSH2      : [R]0
+INFO  [2017/02/13 11:18:43 611] SSH2      : [S]rm SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/13 11:18:43 612] SSH2      : [S]chmod u+x *.sh
+INFO  [2017/02/13 11:18:43 612] SSH2      : [S]/tmp/update.sh /tmp/smu_app.tar.gz updateall &
+INFO  [2017/02/13 11:18:49 985] SSH2      : [R]decompress update package...
+INFO  [2017/02/13 11:18:57 362] SSH2      : [R]update app to /mnt/app_bin1/bin_arm/...
+INFO  [2017/02/13 11:19:03 350] SSH2      : [R]INFO: cp /tmp//app_arm...
+INFO  [2017/02/13 11:19:33 142] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/13 11:19:37 501] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/13 11:19:37 533] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/13 11:20:01 258] SSH2      : [R]INFO: /tmp//libssl.so.1.0.1p...
+INFO  [2017/02/13 11:20:02 671] SSH2      : [R]INFO: /tmp//libcrypto.so.1.0.1p...
+INFO  [2017/02/13 11:20:08 361] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/13 11:20:08 394] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/13 11:20:08 449] SSH2      : [R]update app to /mnt/app_bin0/bin_arm/...
+INFO  [2017/02/13 11:20:39 754] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/13 11:20:44 174] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/13 11:20:44 200] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/13 11:20:52 524] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/13 11:20:52 550] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/13 11:20:52 681] SSH2      : [R]OK
+INFO  [2017/02/13 11:20:52 683] SSH2      : [S]reboot
+INFO  [2017/02/13 11:20:52 684] SSH2      : [S]reboot
+INFO  [2017/02/13 11:21:54 699] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/13 11:21:56 502] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/13 11:21:58 468] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/13 11:21:59 518] SSH2      : [S]version
+INFO  [2017/02/13 11:21:59 536] SSH2      : [R]version: v100r004c01b18
+INFO  [2017/02/13 11:22:00 587] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/13 11:22:00 671] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/13 11:22:01 721] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/13 11:22:01 761] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/02/13 11:22:01 761] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B18
+INFO  [2017/02/13 11:22:02 763] DLG       : update success
+INFO  [2017/02/14 15:37:15 312] DLG       : Tool Init
+INFO  [2017/02/14 15:37:21 275] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/14 15:37:28 880] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 15:37:30 381] PING      : Recv time out
+ERR   [2017/02/14 15:37:31 881] PING      : Recv time out
+ERR   [2017/02/14 15:37:32 884] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:37:33 381] PING      : Recv time out
+ERR   [2017/02/14 15:37:34 881] PING      : Recv time out
+ERR   [2017/02/14 15:37:36 381] PING      : Recv time out
+ERR   [2017/02/14 15:37:37 882] PING      : Recv time out
+ERR   [2017/02/14 15:37:39 382] PING      : Recv time out
+ERR   [2017/02/14 15:37:40 882] PING      : Recv time out
+ERR   [2017/02/14 15:37:41 887] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:37:42 382] PING      : Recv time out
+ERR   [2017/02/14 15:37:43 882] PING      : Recv time out
+ERR   [2017/02/14 15:37:45 382] PING      : Recv time out
+ERR   [2017/02/14 15:37:46 882] PING      : Recv time out
+ERR   [2017/02/14 15:37:48 382] PING      : Recv time out
+ERR   [2017/02/14 15:37:49 882] PING      : Recv time out
+ERR   [2017/02/14 15:37:50 889] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:37:51 382] PING      : Recv time out
+ERR   [2017/02/14 15:37:51 384] PING      : nOkCount = 0,nCount=15
+ERR   [2017/02/14 15:37:59 892] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+INFO  [2017/02/14 15:38:02 224] DLG       : Tool Init
+INFO  [2017/02/14 15:38:07 346] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/14 15:38:14 534] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 15:38:16 033] PING      : Recv time out
+ERR   [2017/02/14 15:38:17 533] PING      : Recv time out
+ERR   [2017/02/14 15:38:18 540] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:38:19 033] PING      : Recv time out
+ERR   [2017/02/14 15:38:20 533] PING      : Recv time out
+ERR   [2017/02/14 15:38:22 033] PING      : Recv time out
+ERR   [2017/02/14 15:38:23 533] PING      : Recv time out
+ERR   [2017/02/14 15:38:25 033] PING      : Recv time out
+ERR   [2017/02/14 15:38:26 533] PING      : Recv time out
+ERR   [2017/02/14 15:38:27 542] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:38:28 033] PING      : Recv time out
+ERR   [2017/02/14 15:38:29 534] PING      : Recv time out
+ERR   [2017/02/14 15:38:31 034] PING      : Recv time out
+ERR   [2017/02/14 15:38:32 534] PING      : Recv time out
+ERR   [2017/02/14 15:38:34 034] PING      : Recv time out
+ERR   [2017/02/14 15:38:35 534] PING      : Recv time out
+ERR   [2017/02/14 15:38:36 545] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:38:37 034] PING      : Recv time out
+ERR   [2017/02/14 15:38:37 036] PING      : nOkCount = 0,nCount=15
+ERR   [2017/02/14 15:38:43 546] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:38:52 549] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:38:52 549] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:38:52 549] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 15:38:56 550] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:39:05 553] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:39:07 735] PING      : Recv time out
+ERR   [2017/02/14 15:39:09 235] PING      : Recv time out
+INFO  [2017/02/14 15:39:36 496] DLG       : Tool Init
+INFO  [2017/02/14 15:39:42 752] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/14 15:39:55 254] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 15:39:56 756] PING      : Recv time out
+ERR   [2017/02/14 15:39:58 256] PING      : Recv time out
+ERR   [2017/02/14 15:39:59 260] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:39:59 756] PING      : Recv time out
+ERR   [2017/02/14 15:40:01 256] PING      : Recv time out
+ERR   [2017/02/14 15:40:02 756] PING      : Recv time out
+ERR   [2017/02/14 15:40:04 256] PING      : Recv time out
+ERR   [2017/02/14 15:40:05 756] PING      : Recv time out
+ERR   [2017/02/14 15:40:07 256] PING      : Recv time out
+ERR   [2017/02/14 15:40:08 262] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:40:08 756] PING      : Recv time out
+ERR   [2017/02/14 15:40:10 256] PING      : Recv time out
+ERR   [2017/02/14 15:40:11 756] PING      : Recv time out
+ERR   [2017/02/14 15:40:13 256] PING      : Recv time out
+ERR   [2017/02/14 15:40:14 757] PING      : Recv time out
+ERR   [2017/02/14 15:40:16 257] PING      : Recv time out
+ERR   [2017/02/14 15:40:17 265] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:40:17 757] PING      : Recv time out
+ERR   [2017/02/14 15:40:17 759] PING      : nOkCount = 0,nCount=15
+ERR   [2017/02/14 15:40:26 267] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:40:35 269] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:40:35 269] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:40:35 269] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 15:40:35 269] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+INFO  [2017/02/14 15:41:25 939] DLG       : Tool Init
+INFO  [2017/02/14 15:41:32 539] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/14 15:41:41 984] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 15:41:43 483] PING      : Recv time out
+ERR   [2017/02/14 15:41:44 983] PING      : Recv time out
+ERR   [2017/02/14 15:41:45 989] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:41:46 483] PING      : Recv time out
+ERR   [2017/02/14 15:41:47 983] PING      : Recv time out
+ERR   [2017/02/14 15:41:49 483] PING      : Recv time out
+ERR   [2017/02/14 15:41:50 983] PING      : Recv time out
+ERR   [2017/02/14 15:41:52 483] PING      : Recv time out
+ERR   [2017/02/14 15:41:53 983] PING      : Recv time out
+ERR   [2017/02/14 15:41:54 991] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:41:55 483] PING      : Recv time out
+ERR   [2017/02/14 15:41:56 983] PING      : Recv time out
+ERR   [2017/02/14 15:41:58 483] PING      : Recv time out
+ERR   [2017/02/14 15:41:59 984] PING      : Recv time out
+ERR   [2017/02/14 15:42:01 484] PING      : Recv time out
+ERR   [2017/02/14 15:42:02 984] PING      : Recv time out
+ERR   [2017/02/14 15:42:03 994] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:42:04 484] PING      : Recv time out
+ERR   [2017/02/14 15:42:04 486] PING      : nOkCount = 0,nCount=15
+ERR   [2017/02/14 15:42:12 996] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:42:21 999] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:42:21 999] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:42:21 999] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 15:42:26 001] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:42:35 004] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:42:44 006] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:42:53 009] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+INFO  [2017/02/14 15:51:14 923] DLG       : Tool Init
+INFO  [2017/02/14 15:51:20 305] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/14 15:51:28 963] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 15:51:30 492] PING      : Recv time out
+ERR   [2017/02/14 15:51:32 020] PING      : Recv time out
+ERR   [2017/02/14 15:51:32 988] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:51:33 549] PING      : Recv time out
+ERR   [2017/02/14 15:51:35 078] PING      : Recv time out
+ERR   [2017/02/14 15:51:36 607] PING      : Recv time out
+ERR   [2017/02/14 15:51:38 136] PING      : Recv time out
+ERR   [2017/02/14 15:51:39 664] PING      : Recv time out
+ERR   [2017/02/14 15:51:41 193] PING      : Recv time out
+ERR   [2017/02/14 15:51:42 020] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:51:42 722] PING      : Recv time out
+ERR   [2017/02/14 15:51:44 251] PING      : Recv time out
+ERR   [2017/02/14 15:51:45 780] PING      : Recv time out
+ERR   [2017/02/14 15:51:47 308] PING      : Recv time out
+ERR   [2017/02/14 15:51:48 837] PING      : Recv time out
+ERR   [2017/02/14 15:51:50 366] PING      : Recv time out
+ERR   [2017/02/14 15:51:51 052] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:51:51 895] PING      : Recv time out
+ERR   [2017/02/14 15:51:51 895] PING      : nOkCount = 0,nCount=15
+ERR   [2017/02/14 15:52:00 073] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:52:09 106] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:52:09 106] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:52:09 106] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 15:52:13 130] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:52:22 163] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:52:31 195] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:52:40 228] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:52:49 260] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:52:49 260] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:52:51 272] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 15:52:55 297] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:53:04 330] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:53:13 362] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:53:22 395] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:53:31 427] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:53:31 427] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:53:31 427] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 15:53:35 452] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:53:44 467] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:53:53 499] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:54:02 532] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:54:11 564] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:54:11 564] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:54:13 577] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 15:54:17 601] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:54:26 634] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:54:31 641] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:54:36 649] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:54:41 655] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:54:41 655] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:54:41 655] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 15:54:41 655] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+INFO  [2017/02/14 15:55:13 593] DLG       : Tool Init
+INFO  [2017/02/14 15:55:18 944] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/14 15:55:26 478] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 15:55:28 007] PING      : Recv time out
+ERR   [2017/02/14 15:55:29 536] PING      : Recv time out
+ERR   [2017/02/14 15:55:30 503] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:55:31 065] PING      : Recv time out
+ERR   [2017/02/14 15:55:32 594] PING      : Recv time out
+ERR   [2017/02/14 15:55:34 122] PING      : Recv time out
+ERR   [2017/02/14 15:55:35 651] PING      : Recv time out
+ERR   [2017/02/14 15:55:37 180] PING      : Recv time out
+ERR   [2017/02/14 15:55:38 709] PING      : Recv time out
+ERR   [2017/02/14 15:55:39 536] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:55:40 238] PING      : Recv time out
+ERR   [2017/02/14 15:55:41 766] PING      : Recv time out
+ERR   [2017/02/14 15:55:43 295] PING      : Recv time out
+ERR   [2017/02/14 15:55:44 824] PING      : Recv time out
+ERR   [2017/02/14 15:55:46 353] PING      : Recv time out
+ERR   [2017/02/14 15:55:47 882] PING      : Recv time out
+ERR   [2017/02/14 15:55:48 568] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:55:49 410] PING      : Recv time out
+ERR   [2017/02/14 15:55:49 410] PING      : nOkCount = 0,nCount=15
+ERR   [2017/02/14 15:55:57 600] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:56:06 633] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:56:06 633] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:56:06 633] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 15:56:10 658] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:56:19 690] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:56:28 722] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:56:37 755] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:56:46 787] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:56:46 787] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:56:48 800] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 15:56:52 824] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:57:01 857] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:57:10 889] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:57:19 922] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:57:28 954] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:57:28 954] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:57:28 954] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 15:57:32 979] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:57:42 011] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:57:51 044] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:58:00 076] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:58:09 109] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:58:09 109] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:58:11 121] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 15:58:15 146] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:58:24 178] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:58:33 211] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:58:42 243] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:58:51 275] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:58:51 275] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:58:51 275] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 15:58:55 300] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:59:04 333] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:59:13 365] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 15:59:22 398] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 15:59:31 430] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 15:59:31 430] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 15:59:33 442] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 15:59:37 467] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 15:59:46 500] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 15:59:55 532] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 16:00:04 564] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 16:00:13 597] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 16:00:13 597] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 16:00:13 597] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 16:00:17 622] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 16:00:26 646] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 16:00:35 675] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 16:00:44 707] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 16:00:53 740] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 16:00:53 740] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 16:00:55 752] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 16:00:59 777] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 16:01:08 809] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 16:01:17 842] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 16:01:26 874] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 16:01:35 907] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 16:01:35 907] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 16:01:35 907] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 16:01:39 931] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 16:01:48 964] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 16:01:57 996] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 16:02:07 027] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 16:02:16 059] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 16:02:16 059] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 16:02:18 072] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 16:02:22 097] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 16:02:31 129] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 16:02:40 161] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 16:02:49 194] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 16:02:58 209] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 16:02:58 209] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 16:02:58 209] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 16:03:02 234] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 16:03:11 266] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 16:03:20 299] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 16:03:29 331] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 16:03:38 364] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 16:03:38 364] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 16:03:40 376] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 16:03:44 401] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 16:03:53 433] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 16:04:02 466] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 16:04:11 498] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 16:04:20 530] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 16:04:20 530] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 16:04:20 530] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 16:04:24 555] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 16:04:33 588] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 16:04:38 595] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 16:04:43 603] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 16:04:48 611] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 16:04:48 611] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 16:04:50 623] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+ERR   [2017/02/14 16:04:50 623] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 16:46:31 500] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 16:46:36 507] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 16:46:41 515] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 16:46:50 537] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 16:46:50 537] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/14 16:46:50 537] Login     : Login ip:192.168.0.10, use:enspire,pwd:Changeme
+ERR   [2017/02/14 16:46:54 562] CLoginEntity::Login: connect ssh2 or telnet failed had try 1
+ERR   [2017/02/14 16:47:03 594] CLoginEntity::Login: connect ssh2 or telnet failed had try 2
+ERR   [2017/02/14 16:47:12 627] CLoginEntity::Login: connect ssh2 or telnet failed had try 3
+ERR   [2017/02/14 16:47:21 661] CLoginEntity::Login: connect ssh2 or telnet failed had try 4
+ERR   [2017/02/14 16:47:30 695] CLoginEntity::Login: connect ssh2 or telnet failed had try 5
+ERR   [2017/02/14 16:47:30 695] CLoginEntity::Login: connect ssh2 or telnet failed
+INFO  [2017/02/15 10:47:52 297] DLG       : Tool Init
+INFO  [2017/02/15 10:47:59 661] DLG       : Select server ip is 192.168.0.11
+INFO  [2017/02/15 10:48:05 922] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/15 10:48:08 760] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/15 10:48:12 120] SSH2      : [S]version
+INFO  [2017/02/15 10:48:12 140] SSH2      : [R]version: v100r004c01b21
+INFO  [2017/02/15 10:48:13 190] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/15 10:48:13 287] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/15 10:48:14 337] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/15 10:48:14 352] SSH2      : [R]PDM_Version=V186
+SoftwareVersion=V300R003C00SPC086
+INFO  [2017/02/15 10:48:14 352] VersionInfo: PDM ver = V186, APP ver = V300R003C00SPC086, BSP ver = V100R004C01B21
+ERR   [2017/02/15 10:48:20 936] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/15 10:49:07 158] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/15 10:49:09 325] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/15 10:49:11 650] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/15 10:49:12 791] SSH2      : [S]cd /tmp
+INFO  [2017/02/15 10:49:13 845] SSH2      : [S]version
+INFO  [2017/02/15 10:49:13 860] SSH2      : [R]version: v100r004c01b21
+INFO  [2017/02/15 10:49:14 910] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/15 10:49:14 983] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/15 10:49:16 034] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/15 10:49:16 054] SSH2      : [R]PDM_Version=V186
+SoftwareVersion=V300R003C00SPC086
+INFO  [2017/02/15 10:49:16 054] VersionInfo: PDM ver = V186, APP ver = V300R003C00SPC086, BSP ver = V100R004C01B21
+INFO  [2017/02/15 10:49:17 055] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/15 10:49:17 055] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/15 10:49:17 056] SSH2      : [S]cd /tmp
+INFO  [2017/02/15 10:49:17 056] SSH2      : [S]cd /tmp
+INFO  [2017/02/15 10:49:17 058] SSH2      : [S]busybox tftp -g -r SMUV300R003C00SPC090.tar.gz 192.168.0.11
+INFO  [2017/02/15 10:49:17 148] Begin     : SendMessage() start
+INFO  [2017/02/15 10:49:17 159] Send_first:  ntohs(DBuf.block)=1
+INFO  [2017/02/15 10:49:19 089] SSH2      : [S]echo $?
+ERR   [2017/02/15 10:49:22 176] PING      : nOkCount = 15,nCount=15
+INFO  [2017/02/15 10:49:33 772] SSH2      : [R]0
+INFO  [2017/02/15 10:49:34 824] SSH2      : [S]tar -zxf SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/15 10:49:34 824] SSH2      : [S]echo $?
+INFO  [2017/02/15 10:49:40 682] SSH2      : [R]0
+INFO  [2017/02/15 10:49:40 682] SSH2      : [S]rm SMUV300R003C00SPC090.tar.gz
+INFO  [2017/02/15 10:49:40 682] SSH2      : [S]chmod u+x *.sh
+INFO  [2017/02/15 10:49:40 683] SSH2      : [S]/tmp/update.sh /tmp/smu_app.tar.gz updateall &
+INFO  [2017/02/15 10:49:46 922] SSH2      : [R]decompress update package...
+INFO  [2017/02/15 10:49:54 528] SSH2      : [R]update app to /mnt/app_bin1/bin_arm/...
+INFO  [2017/02/15 10:50:03 978] SSH2      : [R]INFO: cp /tmp//app_arm...
+INFO  [2017/02/15 10:50:32 900] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/15 10:50:35 429] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/15 10:50:35 462] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/15 10:50:53 185] SSH2      : [R]INFO: /tmp//libssl.so.1.0.1p...
+INFO  [2017/02/15 10:50:54 008] SSH2      : [R]INFO: /tmp//libcrypto.so.1.0.1p...
+INFO  [2017/02/15 10:50:57 167] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/15 10:50:57 201] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/15 10:50:57 258] SSH2      : [R]update app to /mnt/app_bin0/bin_arm/...
+INFO  [2017/02/15 10:51:26 314] SSH2      : [R]INFO: /tmp//web_server...
+INFO  [2017/02/15 10:51:28 840] SSH2      : [R]INFO: cp /tmp//config...
+INFO  [2017/02/15 10:51:28 875] SSH2      : [R]INFO: cp /tmp//webpage...
+INFO  [2017/02/15 10:51:36 100] SSH2      : [R]INFO: cp /tmp//user_init_cfg.emap...
+INFO  [2017/02/15 10:51:36 786] SSH2      : [R]INFO: cp /tmp//user_init_salt.emap...
+INFO  [2017/02/15 10:51:37 643] SSH2      : [R]OK
+INFO  [2017/02/15 10:51:37 645] SSH2      : [S]reboot
+INFO  [2017/02/15 10:51:37 646] SSH2      : [S]reboot
+INFO  [2017/02/15 10:52:39 681] Login     : Login ip:192.168.0.10, use:enspire,pwd:
+INFO  [2017/02/15 10:52:41 868] Login     : Login ip:192.168.0.10, use:root,pwd:Changeme
+INFO  [2017/02/15 10:52:44 076] SSH2      : [S]watchdog -t 10ms /dev/watchdog
+INFO  [2017/02/15 10:52:45 126] SSH2      : [S]version
+INFO  [2017/02/15 10:52:45 146] SSH2      : [R]version: v100r004c01b21
+INFO  [2017/02/15 10:52:46 196] SSH2      : [S]cat /proc/`pidof app_arm`/cmdline
+INFO  [2017/02/15 10:52:46 296] SSH2      : [R]/mnt/app_bin0/bin_arm/app_arm
+INFO  [2017/02/15 10:52:47 346] SSH2      : [S]cat /mnt/app_bin0/bin_arm/config/version
+INFO  [2017/02/15 10:52:47 367] SSH2      : [R]PDM_Version=V190
+SoftwareVersion=V300R003C00SPC090
+INFO  [2017/02/15 10:52:47 367] VersionInfo: PDM ver = V190, APP ver = V300R003C00SPC090, BSP ver = V100R004C01B21
+INFO  [2017/02/15 10:52:48 374] DLG       : update success
+INFO  [2017/06/20 10:04:26 273] DLG       : Tool Init
+INFO  [2017/06/20 10:04:37 789] DLG       : Select server ip is 0.0.0.0
+INFO  [2017/06/20 10:04:51 607] DLG       : Tool Init
+INFO  [2017/06/20 10:04:55 328] DLG       : Select server ip is 0.0.0.0
+INFO  [2017/06/20 11:34:47 268] DLG       : Tool Init
+INFO  [2017/06/20 11:43:55 934] DLG       : Tool Init
+INFO  [2017/06/20 11:43:59 636] DLG       : Select server ip is 0.0.0.0
+INFO  [2017/06/20 11:44:16 876] DLG       : Tool Init
+INFO  [2017/06/20 11:44:19 422] DLG       : Select server ip is 0.0.0.0
+INFO  [2017/06/20 11:57:47 047] DLG       : Tool Init
+INFO  [2017/06/20 11:57:49 119] DLG       : Select server ip is 0.0.0.0
+INFO  [2017/06/20 12:29:53 673] DLG       : Select server ip is 0.0.0.0

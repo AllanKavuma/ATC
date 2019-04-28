@@ -1,0 +1,261 @@
+
+<PrimaryTables>
+	
+	<HoldingRegisters>
+
+		<Tab Name="General">
+
+		</Tab>
+
+		<Tab Name="Config">
+			<Register Address="0x0101" 	Name="Report interval" 		 		Level="0" Signed="0" Min="1" Max="720"	Translations=""			Scale="1"	Format="" Unit="m" 	Description="Logging interval of live data to Cloud. Can be changed to a shorter time to see faster updates during installation or debugging"/>
+			<Register Address="0x0102" 	Name="Vref" 						Level="0" Signed="0" Min="0" Max="3300"	Translations=""			Scale="0.001"	Format="" Unit="V" 	Description=""/>
+			<Register Address="0x0103" 	Name="Enable switch bootloader" 	Level="0" Signed="0" Min="0" Max="1"	Translations="YesNo"	Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0104" 	Name="Typical site load auto" 		Level="0" Signed="0" Min="0" Max="1"	Translations="YesNo"	Scale="1"	Format="" Unit="" 	Description="Enable automatic estimation of typical current"/>
+			<Register Address="0x0105" 	Name="Typical site load" 			Level="0" Signed="0" Min="0" Max="400"	Translations=""			Scale="0.1"	Format="" Unit="A" 	Description="The typical current of this site"/>
+			<Register Address="0x0106" 	Name="Cloud domain" 				Level="1" Signed="0" Min="0" Max="1"	Translations="CloudDomain"		Scale="1"	Format="" Unit="" 	Description="Select development or production environment"/>
+			<Register Address="0x0107" 	Name="System of units" 				Level="0" Signed="0" Min="0" Max="1"	Translations="Metric"	Scale="1"	Format="" Unit="" 	Description="Select metric or imperial units"/>
+			<Register Address="0x0108" 	Name="Modbus baudrate" 				Level="1" Signed="0" Min="0" Max="5000"	Translations=""			Scale="0.1"	Format="" Unit="kbaud" 	Description="Modbus RS485 bit rate"/>
+		</Tab>
+
+		<Tab Name="Switch" SubTab="Common">
+			<Register Address="0x0200" 	Name="Power limit" 					Level="0" Signed="0" Min="0" Max="1500"	Translations=""			Scale="1"	Format="" Unit="W" 	Description=""/>
+			<Register Address="0x0201" 	Name="Power delay" 					Level="0" Signed="0" Min="1" Max="500"	Translations=""			Scale="0.1"	Format="" Unit="S" 	Description=""/>
+			<Register Address="0x0202" 	Name="Pulse count" 					Level="1" Signed="0" Min="1" Max="100"	Translations=""			Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0203" 	Name="Pulse period on" 				Level="0" Signed="0" Min="0" Max="500"	Translations=""			Scale="0.001"	Format="" Unit="mS" 	Description=""/>
+			<Register Address="0x0204" 	Name="Pulse period off" 				Level="1" Signed="0" Min="1" Max="10000"	Translations=""			Scale="0.001"	Format="" Unit="mS" 	Description=""/>
+		</Tab>
+		
+		<Tab Name="Switch" Min="1" Max="3" IndexMask="0x00F0">
+			<Register Address="0x0201" 	Name="Current rating" 			Level="0" Signed="0" Min="10"  Max="400" 	Translations=""	Scale="0.1"	Format="" Unit="A" 	Description="">
+				<Max>400</Max>
+				<Max>200</Max>
+				<Max>200</Max>
+			</Register>
+			<Register Address="0x0202" 	Name="Current delay" 			Level="0" Signed="0" Min="1"   Max="500" 	Translations=""	Scale="0.1"	Format="" Unit="s" 	Description="Delay before tripping the over current at twice the current rating"/>
+			<Register Address="0x0203" 	Name="Under voltage limit" 		Level="0" Signed="0" Min="12000" Max="56000" 	Translations=""	Scale="0.001"	Format="" Unit="V" 	Description=""/>
+			<Register Address="0x0204" 	Name="Temp limit" 				Level="0" Signed="0" Min="200" Max="1000" 	Translations=""	Scale="0.1"		Format="" Unit="°C" 		Description=""/>
+			
+			<Register Address="0x0205" 	Name="Power limit" 					Level="0" Signed="0" Min="0" Max="1500"	Translations=""			Scale="1"	Format="" Unit="W" 	Description="">
+				<Max>1500</Max>
+				<Max>750</Max>
+				<Max>750</Max>
+			</Register>
+			
+			<Register Address="0x0206" 	Name="Power delay" 				Level="0" Signed="0" Min="1" Max="500"	Translations=""			Scale="0.1"	Format="" Unit="S" 	Description=""/>
+			<Register Address="0x0207" 	Name="Shunt resistance" 		Level="0" Signed="0" Min="400" Max="600" 	Translations=""	Scale="0.001"		Format="" Unit="mOhm" 		Description=""/>
+		</Tab>
+
+		<Tab Name="Cloud">
+		</Tab>
+
+		<Tab Name="Alarm" Min="1" Max="4" IndexMask="0x00F0">
+			<Register Address="0x0300" 	Name="Quantity" 				 Level="0" Signed="0" Min="" Max="" 	Translations="AlarmQuantity" Scale="1"	Format="" Unit="" 	Description="The selected input to the alarm"/>
+			<Register Address="0x0301" 	Name="Boundary type" 			 Level="0" Signed="1" Min="" Max="" 	Translations="AlarmBoundaryType" Scale="1"	Format="" Unit="" 	Description="Current state "/>
+			<Register Address="0x0302" 	Name="High" 					 Level="0" Signed="1" Min="-32768" Max="32767" 	Translations="" 			Scale="0.1"	Format="" Unit="" 	Description="High boundary of the alarm"/>
+			<Register Address="0x0303" 	Name="Low" 						 Level="0" Signed="1" Min="-32768" Max="32767" 	Translations=""				Scale="0.1"	Format="" Unit="" 	Description="Low boundary of the alarm"/>
+			<Register Address="0x0304" 	Name="Invert output" 			 Level="0" Signed="0" Min="0" Max="1" 	Translations=""				Scale="1"	Format="" Unit="" 	Description="Invert the electrical output the alarm relay"/>
+		</Tab>
+
+		<Tab Name="Status">
+		</Tab>
+
+		<Tab Name="Anti-theft">
+			<Register Address="0x0600" 	Name="Arm" 				 Level="1" Signed="0" Min="" Max=""   	Translations="Locked"	Scale="1"	Format="" Unit="" 	Description="Lock batteries. This can not be undone! Only a valid 5 digit code will lock the batteries. When locked, the batteries will require a connection to a PBM with a valid Rfid tag to work"/>
+		</Tab>
+
+		<Tab Name="Battery">
+			<Register Address="0x0700" 	Name="Address" 		 			Level="0" Signed="1" Min="0" Max="31"   	Translations="" 				Scale="1"		Format="" Unit="" 	Description=""/>
+			<Register Address="0x0701" 	Name="FET temp limit" 			Level="0" Signed="0" Min="0" Max="1000" 	Translations=""	Scale="0.1"		Format="" Unit="°C" 		Description="Over temperature limit of FETs"/>
+			<Register Address="0x0702" 	Name="FET temp delay" 			Level="0" Signed="0" Min="0"  Max="600" Translations=""	Scale="0.1"	Format="" Unit="s" 	Description="Delay before tripping the over temp limit"/>
+			<Register Address="0x0703" 	Name="Shunt resistance" 		Level="0" Signed="0" Min="800" Max="1200" 	Translations=""	Scale="0.001"		Format="" Unit="mOhm" 		Description=""/>
+		</Tab>
+		
+		<Tab Name="Test" Min="" Max=""  IndexMask="0x0000">
+			<Register Address="0x0800" 	Name="Test mode" 			 	Level="1" Signed="0" Min=""  Max=""   		Translations="TestMode" 	Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0801" 	Name="Trace channel" 		 	Level="1" Signed="0" Min="" Max=""   		Translations="TraceChannel" Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0802" 	Name="Trace mask" 		 	 	Level="1" Signed="0" Min="" Max=""   		Translations="" 			Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0803" 	Name="Switch outputs" 			Level="1" Signed="0" Min="0" Max="7"   		Translations="" 			Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0804" 	Name="Alarm outputs" 			Level="1" Signed="0" Min="0" Max="15"   	Translations="" 			Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0805" 	Name="Heater" 					Level="1" Signed="0" Min="0" Max="1"   		Translations="" 			Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0806" 	Name="Fan" 						Level="1" Signed="0" Min="0" Max="1"   		Translations="" 			Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0807" 	Name="Trigger watchdog" 	Level="1" Signed="0" Min="" Max=""   		Translations="YesNo" 			Scale="1"	Format="" Unit="" 	Description="Trigger watchdog"/>
+		</Tab>
+
+		<Tab Name="Climate">
+			<Register Address="0x0A00" 	Name="Regulation type" 			Level="2" Signed="0" Min="" Max=""   		Translations="ClimateRegulationType" 	Scale="1"	Format="" Unit="" 	Description="Type of regulation. In Hysteresis mode, the current temperature is compared to upper and lower limits to activate and deactivate the heat and cold. Inbetween the activation and deactivation limits, the last value will be retained, causing a hysteresis functionality. Between the two deactivation limits, both heat and cold is deactivated"/>
+			<Register Address="0x0A01" 	Name="Temperature source" 		Level="0" Signed="0" Min="" Max=""   		Translations="ClimateTemperatureSource" Scale="1"	Format="" Unit="" 	Description="Primary temperature source"/>
+			<Register Address="0x0A02" 	Name="Temperature source backup"Level="1" Signed="0" Min="" Max=""   		Translations="ClimateTemperatureSource" Scale="1"	Format="" Unit="" 	Description="Temperature source, if first is unavailable"/>
+			<Register Address="0x0A03" 	Name="Cold activate above" 		 Level="0" Signed="1" Min="0" Max="400"   	Translations="" 				Scale="0.1"		Format="" Unit="°C" 	Description="Above this temperature, the cold will be activated"/>
+			<Register Address="0x0A04" 	Name="Cold deactivate below" 	Level="0" Signed="1" Min="0" Max="400"   	Translations="" 				Scale="0.1"		Format="" Unit="°C" 	Description="Below this temperature, the cold will be deactivated"/>
+			<Register Address="0x0A05" 	Name="Heat deactivate above" 	Level="0" Signed="1" Min="0" Max="400"   	Translations="" 				Scale="0.1"		Format="" Unit="°C" 	Description="Above this temperature, the heat will be deactivated"/>
+			<Register Address="0x0A06" 	Name="Heat activate below" 		Level="0" Signed="1" Min="0" Max="400"   	Translations="" 				Scale="0.1"		Format="" Unit="°C" 	Description="Below this temperature, the heat will be activated"/>
+			<Register Address="0x0A07" 	Name="Expected temp" 			Level="2" Signed="1" Min="0" Max="400"   	Translations="" 				Scale="0.1"		Format="" Unit="°C" 	Description="Expected temperature for PI-regulator"/>
+			<Register Address="0x0A08" 	Name="P factor"  			 	Level="2" Signed="0" Min="0" Max="10000"   	Translations="" 						Scale="0.01"	Format="" Unit="%" 	Description="Percentage of output PWM per error (°C)"/>
+			<Register Address="0x0A09" 	Name="I factor"  			 	Level="2" Signed="0" Min="0" Max="10000"   	Translations="" 						Scale="0.01"	Format="" Unit="%" 	Description="Percentage of output PWM per error (°C) each 10s"/>
+			<Register Address="0x0A0A" 	Name="PWM period" 		 	 	Level="2" Signed="0" Min="10" Max="3600"   	Translations="" 						Scale="1"		Format="" Unit="s" 	Description="Output PWM period for PI-regulator"/>
+			<Register Address="0x0A0B" 	Name="Allow during discharge"   Level="0" Signed="0" Min="" Max=""   		Translations="YesNo" 					Scale="1"		Format="" Unit="s" 	Description="If set, heating and cooling is allowed during discharge (Current &lt; 0)"/>
+		</Tab>
+
+	</HoldingRegisters>
+	
+	
+	<InputRegisters>
+
+		<Tab Name="General">
+			<Register Address="0x0001" 	Name="App state" 			Level="0" Signed="0" Min="" Max=""   	Translations="PackState"	Scale="1"	Format="" Unit="" 	Description="Overall application state"/>
+			<Register Address="0x0002" 	Name="Switch state" 		Level="0" Signed="0" Min="" Max=""   	Translations="SwitchState"	Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0003" 	Name="Rail voltage" 	    Level="0" Signed="0" Min="" Max=""   	Translations=""	Scale="0.001"	Format="" Unit="V" 	Description=""/>
+			<Register Address="0x000A" 	Name="Firmware version" 	Level="0" Signed="0" Min="" Max=""   		Translations=""			Scale="0.01"	Format="" Unit="" 	Description="Version number of master firmware"/>
+			<Register Address="0x000B" 	Name="Switch version" 		Level="1" Signed="0" Min="" Max=""   		Translations=""			Scale="0.01"	Format="" Unit="" 	Description="Version number of switch firmware"/>
+		</Tab>
+
+		<Tab Name="Config">
+		</Tab>
+
+		<Tab Name="Switch" SubTab="Common">
+			<Register Address="0x0200" 	Name="Power" 				Level="0" Signed="1" Min="" Max="" 		Translations=""				Scale="1"	Format="" Unit="W" 	Description="Combined load power"/>
+		</Tab>
+
+		<Tab Name="Switch" Min="1" Max="3" IndexMask="0x00F0">
+			<Register Address="0x0200" 	Name="State" 				Level="0" Signed="0" Min="" Max="" 		Translations="SwitchState"	Scale="1"	Format="" Unit="" 	Description="Driver logic state"/>
+			<Register Address="0x0201" 	Name="Voltage" 				Level="0" Signed="0" Min="" Max="" 		Translations=""				Scale="0.001"	Format="" Unit="V" 	Description="Output voltage"/>
+			<Register Address="0x0202" 	Name="Current" 				Level="0" Signed="1" Min="" Max="" 		Translations=""				Scale="0.1"	Format="" Unit="A" 	Description="Output current"/>
+			<Register Address="0x0205" 	Name="Power" 				Level="0" Signed="1" Min="" Max="" 		Translations=""				Scale="1"	Format="" Unit="W" 	Description="Load power"/>
+			<Register Address="0x0203" 	Name="Temp" 				Level="0" Signed="1" Min="" Max="" 		Translations="Temperature"		Scale="0.1"	Format="" Unit="°C" 	Description="Driver temperature"/>
+			<Register Address="0x0204" 	Name="Over current quota" 	Level="1" Signed="1" Min="" Max="" 		Translations=""				Scale="0.1"	Format="" Unit="%" 	Description=""/>
+		</Tab>
+		
+		<Tab Name="Alarm" Min="1" Max="4" IndexMask="0x00F0">
+			<Register Address="0x0302" 	Name="Value" 						 Level="0" Signed="1" Min="" Max="" 	Translations=""			Scale="0.1"	Format="" Unit="" 	Description="Current input of alarm"/>
+			<Register Address="0x0300" 	Name="State" 						 Level="0" Signed="1" Min="" Max="" 	Translations="AlarmState"		Scale="1"	Format="" Unit="" 	Description="Current state "/>
+			<!--Register Address="0x0301" 	Name="Output" 						 Level="2" Signed="1" Min="" Max="" 	Translations="AlarmSignal"	Scale="1"	Format="" Unit="" 	Description="Current output, after possible inversion"/-->
+		</Tab>
+		
+		<Tab Name="Cloud">
+			<Register Address="0x0400" 	Name="Network online" 		Level="0" Signed="0" Min="" Max=""   		Translations="YesNo"	Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0401" 	Name="3G network status" 		Level="0" Signed="0" Min="" Max=""   		Translations="NetworkStatus" Scale="1"	Format="" Unit="" 	Description="Status of the 3G connection, if Ethernet is not used"/>
+			<Register Address="0x0402" 	Name="Packets sent" 			Level="0" Signed="0" Min="" Max=""   		Translations=""				Scale="1"	Format="" Unit="" 	Description="The number of packets successfully sent to the server"/>
+			<Register Address="0x0403" 	Name="Time online" 				Level="0" Signed="0" Min="" Max=""   		Translations=""				Scale="0.01"	Format="" Unit="h" 	Description="The time spent with an established connection"/>
+			<Register Address="0x0404" 	Name="RSSI" 					Level="0" Signed="0" Min="" Max=""   		Translations="RSSI"			Scale="1"	Format="" Unit="" 	Description="The 3G signal strength"/>
+			<Register Address="0x0405" 	Name="Bootloader status" 		Level="0" Signed="0" Min="" Max=""   		Translations="ApplicationBootloaderStatus"			Scale="1"	Format="" Unit="" 	Description="Application bootloader status"/>
+		</Tab>
+
+		<Tab Name="Status">
+			<Register Address="0x0520" 	Name="Config error" 			 Level="1" Signed="0" Min="" Max=""   Translations="ConfigError" Scale="1"	Format="" Unit="" 	Description="Config error"/>
+			<Register Address="0x0521" 	Name="On/off" 			 		Level="0" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="On/off switch"/>
+			<Register Address="0x0522" 	Name="AC detect" 			 	Level="0" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="AC detect input relay"/>
+			<Register Address="0x0523" 	Name="Alarm inputs" 			 Level="0" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="External alarm relay inputs"/>
+			<Register Address="0x0524" 	Name="Switch outputs" 			 Level="0" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="Load outputs"/>
+			<Register Address="0x0525" 	Name="Alarm outputs" 			 Level="0" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="Internal alarm relays"/>
+			<Register Address="0x0526" 	Name="Heater" 			 		Level="0" Signed="1" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0527" 	Name="Fan" 			 			Level="0" Signed="1" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description=""/>
+			<Register Address="0x0528" 	Name="Time on" 				Level="0" Signed="0" Min="" Max=""   		Translations=""	Scale="1"	Format="" Unit="m" 	Description=""/>
+
+			<Register Address="0x0530" 	Name="MCU temp" 				 Level="2" Signed="0" Min="" Max=""   Translations="Temperature"			Scale="0.1"	Format="" Unit="°C" 	Description=""/>
+			<Register Address="0x0531" 	Name="External temp 1" 		     Level="0" Signed="0" Min="" Max=""   Translations="Temperature"			Scale="0.1"	Format="" Unit="°C" 	Description=""/>
+			<Register Address="0x0532" 	Name="External temp 2" 			 Level="0" Signed="0" Min="" Max=""   Translations="Temperature"			Scale="0.1"	Format="" Unit="°C" 	Description=""/>
+
+			<Register Address="0x0500" 	Name="A00 Bandgap" 				 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x0501" 	Name="A01 MCU temp" 			 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x0502" 	Name="A02 External temp 1" 		 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x0503" 	Name="A03 External temp 2" 		 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x0504" 	Name="A04 Board temp" 			 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x0505" 	Name="A05 Fuel" 				 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x0506" 	Name="A06 Voltage output 1" 	 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x0507" 	Name="A07 Voltage output 2" 	 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x0508" 	Name="A08 Voltage output 3" 	 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x0509" 	Name="A09 Voltage output 4" 	 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x050A" 	Name="A10 Current sense 1" 		 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x050B" 	Name="A11 Current sense 2" 		 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x050C" 	Name="A12 Current sense 3" 		 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x050D" 	Name="A13 Current sense 4" 		 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x050E" 	Name="A14 Current output 1" 	 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x050F" 	Name="A15 Current output 2" 	 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x0510" 	Name="A16 Current output 3" 	 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+			<Register Address="0x0511" 	Name="A17 Current output 4" 	 Level="1" Signed="0" Min="" Max=""   Translations=""			Scale="1"	Format="" Unit="" 	Description="ADC measurement"/>
+		</Tab>
+
+		<Tab Name="Anti-theft">
+			<Register Address="0x0600" 	Name="Valid" 						 Level="1" Signed="0" Min="0" Max="1"   	Translations="YesNo"	Scale="1"	Format="" Unit="" 	Description="Rfid valid check. Is set when Received and Expected matches. This unlocks the SP48 batteries"/>
+		</Tab>
+
+		<Tab Name="Battery">
+			<Register Address="0x071C" 	Name="Pack state" 		 		Level="0" Signed="1" Min="" Max=""   	Translations="PackPhase" 	Scale="1"		Format="" Unit="" 	Description=""/>
+			<Register Address="0x0700" 	Name="Batt state" 		 			Level="0" Signed="1" Min="" Max=""   	Translations="BatteryPhase" 	Scale="1"		Format="" Unit="" 	Description=""/>
+			<Register Address="0x0701" 	Name="Voltage" 		 		Level="0" Signed="0" Min="" Max=""   		Translations=""			Scale="0.001"	Format="" Unit="V" 	Description="Average voltage of all batteries"/>
+			<Register Address="0x0702" 	Name="Current" 			 	Level="0" Signed="1" Min="" Max=""   		Translations=""			Scale="0.1"	Format="" Unit="A" 	Description="Total current of all batteries"/>
+			<Register Address="0x0703" 	Name="SOC" 				 	Level="0" Signed="0" Min="" Max=""   	Translations=""			Scale="0.1"	Format="" Unit="%" 	Description="Average state of charge of pack"/>
+			<Register Address="0x0704" 	Name="SOH" 				 	Level="1" Signed="0" Min="" Max=""   	Translations=""			Scale="0.1"	Format="" Unit="%" 	Description="Average state of health of pack"/>
+			<Register Address="0x0705" 	Name="Charge" 				Level="0" Signed="0" Min="" Max=""   		Translations=""			Scale="0.1"	Format="" Unit="Ah" 	Description="Total charge of pack"/>
+			<Register Address="0x0706" 	Name="Capacity" 			Level="0" Signed="0" Min="" Max=""   		Translations=""			Scale="0.1"	Format="" Unit="Ah" 	Description="Total nominal capacity"/>
+			<Register Address="0x0707" 	Name="Cycles" 		 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="1"		Format="" Unit="" 	Description=""/>
+			<Register Address="0x0708" 	Name="Charge" 		 			Level="0" Signed="1" Min="" Max=""   	Translations="OnOff" 				Scale="1"		Format="" Unit="" 	Description=""/>
+			<Register Address="0x0709" 	Name="Discharge" 		 		Level="0" Signed="1" Min="" Max=""   	Translations="OnOff" 				Scale="1"		Format="" Unit="" 	Description=""/>
+			<Register Address="0x070A" 	Name="Precharge" 		 		Level="0" Signed="1" Min="" Max=""   	Translations="OnOff" 				Scale="1"		Format="" Unit="" 	Description=""/>
+			<Register Address="0x071D" 	Name="FET temp" 		 		Level="0" Signed="1" Min="" Max=""   	Translations="Temperature" 				Scale="0.1"		Format="" Unit="°C" 	Description=""/>
+			<Register Address="0x070B" 	Name="Cell temp 1" 		 		Level="0" Signed="1" Min="" Max=""   	Translations="Temperature" 				Scale="0.1"		Format="" Unit="°C" 	Description=""/>
+			<Register Address="0x070C" 	Name="Cell temp 2" 		 		Level="0" Signed="1" Min="" Max=""   	Translations="Temperature" 				Scale="0.1"		Format="" Unit="°C" 	Description=""/>
+			<Register Address="0x070D" 	Name="Cell temp 3" 		 		Level="0" Signed="1" Min="" Max=""   	Translations="Temperature" 				Scale="0.1"		Format="" Unit="°C" 	Description=""/>
+			<Register Address="0x070E" 	Name="Cell 1 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x070F" 	Name="Cell 2 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x0710" 	Name="Cell 3 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x0711" 	Name="Cell 4 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x0712" 	Name="Cell 5 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x0713" 	Name="Cell 6 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x0714" 	Name="Cell 7 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x0715" 	Name="Cell 8 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x0716" 	Name="Cell 9 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x0717" 	Name="Cell 10 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x0718" 	Name="Cell 11 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x0719" 	Name="Cell 12 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x071A" 	Name="Cell 13 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+			<Register Address="0x071B" 	Name="Cell 14 voltage" 			Level="0" Signed="1" Min="" Max=""   	Translations="" 				Scale="0.001"		Format="" Unit="V" 	Description=""/>
+		</Tab>
+
+		<Tab Name="Climate">
+			<Register Address="0x0A00" 	Name="Current temp" 			  Level="0" Signed="1" Min="" Max=""   		Translations="Temperature" 			Scale="0.1"	Format="" Unit="°C" 	Description="Current temperature of the selected source, if available"/>
+			<Register Address="0x0A01" 	Name="Output heat" 			 	 Level="0" Signed="0" Min="" Max=""   		Translations="" 			Scale="0.1"	Format="" Unit="%" 	Description="The current output value of the heat regulation"/>
+			<Register Address="0x0A02" 	Name="Output cold"  			 Level="0" Signed="0" Min="" Max=""   		Translations="" 			Scale="0.1"	Format="" Unit="%" 	Description="The current output value of the cold regulation"/>
+		</Tab>
+
+	</InputRegisters>
+	
+	<HoldingBlobs>
+	
+	
+		<Tab Name="Config">
+			<Register Address="0x0100" 	Name="Modbus IP" 				 Level="1" Signed="" Min="" Max="" 		Translations=""			Scale=""	Length="16" Format="%c" Unit="" 	Description="To enable the safety function, set this value to the exact value of Received. These two values must match in order for Valid to be true"/>
+		</Tab>
+
+		<Tab Name="Anti-theft">
+			<Register Address="0x0600" 	Name="Expected" 				 Level="1" Signed="" Min="" Max="" 		Translations=""			Scale=""	Length="16" Format="%c" Unit="" 	Description="To enable the safety function, set this value to the exact value of Received. These two values must match in order for Valid to be true"/>
+		</Tab>
+
+	</HoldingBlobs>
+
+	<InputBlobs>
+		
+		<Tab Name="Cloud">
+			<Register Address="0x0400" 	Name="ICCID" 		 Level="0" Signed="" Min="" Max="" 		Translations=""			Scale=""	Length="20" Format="%c" Unit="" 	Description=""/>
+			<Register Address="0x0401" 	Name="IMEI" 		 Level="0" Signed="" Min="" Max="" 		Translations=""			Scale=""	Length="15" Format="%c" Unit="" 	Description=""/>
+			<Register Address="0x0402" 	Name="IMSI" 		 Level="0" Signed="" Min="" Max="" 		Translations=""			Scale=""	Length="15" Format="%c" Unit="" 	Description=""/>
+		</Tab>
+
+
+		<Tab Name="Status">
+			<Register Address="0x0500" 	Name="RTC" 						 Level="0" Signed="" Min="" Max="" 		Translations=""			Scale=""	Length="4" Format="%t" Unit=""	Description="Real-time clock"/>
+		</Tab>
+
+		<Tab Name="Anti-theft">
+			<Register Address="0x0600" 	Name="Received" 				 Level="1" Signed="" Min="" Max="" 		Translations=""			Scale=""	Length="16" Format="" Unit="%c" 	Description="The last received identification from the RFID tag reader"/>
+		</Tab>
+
+		<Tab Name="System">
+			<Register Address="0xFF00" 	Name="AppInfo" 				Level="1" Signed="" Min="" Max="" 		Translations=""			Scale=""	Length="16" Format="" Unit="" 	Description=""/>
+			<Register Address="0xFF01" 	Name="Serial number" 		Level="1" Signed="0" Min="0" Max="1"   	Translations=""	Scale="1"	Length="10" Format="%c" Unit="" 	Description=""/>
+		</Tab>
+
+	</InputBlobs>
+	
+</PrimaryTables>

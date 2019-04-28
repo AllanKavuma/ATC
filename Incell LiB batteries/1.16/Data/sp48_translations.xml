@@ -1,0 +1,94 @@
+<TranslationSet>
+
+	<Translations Name="Bool">
+		<Translation Value="0" Text="false"/>
+		<Translation Value="1" Text="true"/>
+	</Translations>
+
+	<Translations Name="YesNo">
+		<Translation Value="0" Text="No"/>
+		<Translation Value="1" Text="Yes"/>
+	</Translations>
+
+	<Translations Name="OnOff">
+		<Translation Value="0" Text="Off"/>
+		<Translation Value="1" Text="On"/>
+	</Translations>
+
+	<Translations Name="Temperature">
+		<Translation Value="-32768" Text="-"/>
+	</Translations>
+
+	<Translations Name="Override">
+		<Translation Value="-1" Text="-"/>
+		<Translation Value="+0" Text="Off"/>
+		<Translation Value="+1" Text="On"/>
+	</Translations>
+
+	<Translations Name="OverrideBalance">
+		<Translation Value="-1" Text="-"/>
+		<Translation Value="0x0000" Text="Off"/>
+		<Translation Value="0x0001" Text="Cell 1"/>
+		<Translation Value="0x0002" Text="Cell 2"/>
+		<Translation Value="0x0004" Text="Cell 3"/>
+		<Translation Value="0x0008" Text="Cell 4"/>
+		<Translation Value="0x0010" Text="Cell 5"/>
+		<Translation Value="0x0020" Text="Cell 6"/>
+		<Translation Value="0x0040" Text="Cell 7"/>
+		<Translation Value="0x0080" Text="Cell 8"/>
+		<Translation Value="0x0100" Text="Cell 9"/>
+		<Translation Value="0x0200" Text="Cell 10"/>
+		<Translation Value="0x0400" Text="Cell 11"/>
+		<Translation Value="0x0800" Text="Cell 12"/>
+		<Translation Value="0x1000" Text="Cell 13"/>
+		<Translation Value="0x2000" Text="Cell 14"/>
+		<Translation Value="0x4000" Text="Cell 15"/>
+	</Translations>
+
+	<Translations Name="OverrideLED">
+		<Translation Value="-1"   Text="-"/>
+		<Translation Value="0x00" Text="Off"/>
+		<Translation Value="0x01" Text="Red"/>
+		<Translation Value="0x02" Text="Green"/>
+		<Translation Value="0x04" Text="Blue"/>
+		<Translation Value="0x08" Text="CAN"/>
+	</Translations>
+
+	<Translations Name="Model">
+		<Translation Value="0x00" Text="SP48-22-44M"/>
+		<Translation Value="0x01" Text="SP48-22-17M"/>
+		<Translation Value="0x02" Text="SP48-22-79M"/>
+		<Translation Value="0x03" Text="SP48-29-100S"/>
+		<Translation Value="0x04" Text="SP48-29-50S"/>
+		<Translation Value="0x05" Text="SP48-29-74S"/>
+		<Translation Value="0x06" Text="SP48-22-79S"/>
+		<Translation Value="0x07" Text="SP48-29-50"/>
+		<Translation Value="0x08" Text="SP48-29-100"/>
+		<Translation Value="0x09" Text="SP48-22-44"/>
+		<Translation Value="0x0A" Text="BKB90271/7 R3A"/>
+		<Translation Value="0x0B" Text="BKB90271/7 R2A"/>
+		<Translation Value="0x0C" Text="BKB90271/11 R1A"/>
+		<Translation Value="0x0D" Text="SP48-22-80"/>
+		<Translation Value="0x0E" Text="SP48-22-80S"/>
+		<Translation Value="0x0F" Text="BKB90271/6 R1B"/>
+		<Translation Value="0x10" Text="SP48-33-100S-S"/>
+		<Translation Value="0xFF" Text="Unprogrammed/unknown"/>
+	</Translations>
+
+	<Translations Name="Revision">
+		<Translation Value="0x00" Text="M2"/>
+		<Translation Value="0x01" Text="M1"/>
+		<Translation Value="0x02" Text="R0"/>
+		<Translation Value="0x03" Text="R1"/>
+		<Translation Value="0x04" Text="R2"/>
+	</Translations>
+
+	<Translations Name="ServiceInterface">
+		<Translation Value="0x00" Text="RS232"/>
+		<Translation Value="0x01" Text="RS485"/>
+	</Translations>
+
+	<Translations Name="CurrentGain">
+		<Translation Value="-32768" Text="Uncalibrated"/>
+	</Translations>
+</TranslationSet>

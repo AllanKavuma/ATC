@@ -1,0 +1,17 @@
+ex20ETH
+07/11/2017 12:24:43
+----- Test log -----
+...Searching device
+HW: HW_VER_EX20ETH_REV1 FW:1.01
+...Set Device Test Configuration
+Dev. Configuration Pass
+...Query device signature
+Signature: 05DFFF356205
+...Downloading default parameters
+Default Parameters updated Ok
+...BIT request
+External power ok. 11.99v
+Overall BIT Success
+Visual status LED Red Tested Ok
+Visual status LED Green Tested Ok
+-- Local info only: Device updated on server OK Server Verification Ok

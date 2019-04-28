@@ -1,0 +1,9 @@
+Controller:
+Password: 3
+
+
+Laptop:
+Ip address(static): 192.168.10.21
+Ip Address(browser): 192.168.10.20
+Username: admin
+Password: admin

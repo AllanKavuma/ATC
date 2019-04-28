@@ -1,0 +1,227 @@
+﻿<XtraSerializer version="1.0" application="DevExpress.XtraBars.Ribbon.RibbonCustomizationModel">
+  <property name="CommonSettings" isnull="true" iskey="true">
+    <property name="IsReady">true</property>
+    <property name="HashCode">16</property>
+    <property name="Minimized">false</property>
+    <property name="ToolbarLocation">Default</property>
+  </property>
+  <property name="Categories" iskey="true" value="1">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="IsCustom">false</property>
+      <property name="SourceIdInfo" isnull="true" iskey="true">
+        <property name="Id">0</property>
+      </property>
+      <property name="Alias">(Unassigned Pages)</property>
+      <property name="IdInfo" isnull="true" iskey="true">
+        <property name="Id">16</property>
+      </property>
+      <property name="Name" />
+      <property name="Pages" iskey="true" value="2">
+        <property name="Item1" isnull="true" iskey="true">
+          <property name="IsCustom">false</property>
+          <property name="SourceIdInfo" isnull="true" iskey="true">
+            <property name="Id">1</property>
+          </property>
+          <property name="Alias">Misc</property>
+          <property name="IdInfo" isnull="true" iskey="true">
+            <property name="Id">17</property>
+          </property>
+          <property name="Name">ribbonPageFile</property>
+          <property name="Groups" iskey="true" value="2">
+            <property name="Item1" isnull="true" iskey="true">
+              <property name="IsCustom">false</property>
+              <property name="SourceIdInfo" isnull="true" iskey="true">
+                <property name="Id">2</property>
+              </property>
+              <property name="Alias">Layout</property>
+              <property name="IdInfo" isnull="true" iskey="true">
+                <property name="Id">18</property>
+              </property>
+              <property name="Name">ribbonPageGroup9</property>
+              <property name="Items" iskey="true" value="1">
+                <property name="Item1" isnull="true" iskey="true">
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">19</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">Restore</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">3</property>
+                  </property>
+                  <property name="Text">Restore</property>
+                  <property name="IsVisible">true</property>
+                </property>
+              </property>
+              <property name="IsVisible">true</property>
+              <property name="Text">Layout</property>
+            </property>
+            <property name="Item2" isnull="true" iskey="true">
+              <property name="IsCustom">false</property>
+              <property name="SourceIdInfo" isnull="true" iskey="true">
+                <property name="Id">4</property>
+              </property>
+              <property name="Alias">General</property>
+              <property name="IdInfo" isnull="true" iskey="true">
+                <property name="Id">20</property>
+              </property>
+              <property name="Name">ribbonPageGroup1</property>
+              <property name="Items" iskey="true" value="1">
+                <property name="Item1" isnull="true" iskey="true">
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">21</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">Administrator Login</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">5</property>
+                  </property>
+                  <property name="Text">Administrator Login</property>
+                  <property name="IsVisible">true</property>
+                </property>
+              </property>
+              <property name="IsVisible">true</property>
+              <property name="Text">General</property>
+            </property>
+          </property>
+          <property name="IsVisible">true</property>
+          <property name="Text">Misc</property>
+        </property>
+        <property name="Item2" isnull="true" iskey="true">
+          <property name="IsCustom">false</property>
+          <property name="SourceIdInfo" isnull="true" iskey="true">
+            <property name="Id">8</property>
+          </property>
+          <property name="Alias">Services Center</property>
+          <property name="IdInfo" isnull="true" iskey="true">
+            <property name="Id">22</property>
+          </property>
+          <property name="Name">ribbonPageServices</property>
+          <property name="Groups" iskey="true" value="2">
+            <property name="Item1" isnull="true" iskey="true">
+              <property name="IsCustom">false</property>
+              <property name="SourceIdInfo" isnull="true" iskey="true">
+                <property name="Id">9</property>
+              </property>
+              <property name="Alias">Version Upgrade Service</property>
+              <property name="IdInfo" isnull="true" iskey="true">
+                <property name="Id">23</property>
+              </property>
+              <property name="Name">barOTA</property>
+              <property name="Items" iskey="true" value="1">
+                <property name="Item1" isnull="true" iskey="true">
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">24</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">OTA Center</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">10</property>
+                  </property>
+                  <property name="Text">OTA Center</property>
+                  <property name="IsVisible">true</property>
+                </property>
+              </property>
+              <property name="IsVisible">true</property>
+              <property name="Text">Version Upgrade Service</property>
+            </property>
+            <property name="Item2" isnull="true" iskey="true">
+              <property name="IsCustom">false</property>
+              <property name="SourceIdInfo" isnull="true" iskey="true">
+                <property name="Id">11</property>
+              </property>
+              <property name="Alias">ConfigurationTools</property>
+              <property name="IdInfo" isnull="true" iskey="true">
+                <property name="Id">25</property>
+              </property>
+              <property name="Name">groupConfigurationTools</property>
+              <property name="Items" iskey="true" value="4">
+                <property name="Item1" isnull="true" iskey="true">
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">26</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">DC Meter (CE11)</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">12</property>
+                  </property>
+                  <property name="Text">DC Meter (CE11)</property>
+                  <property name="IsVisible">true</property>
+                </property>
+                <property name="Item2" isnull="true" iskey="true">
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">27</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">Omnicomm Fuel Sensor</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">13</property>
+                  </property>
+                  <property name="Text">Omnicomm Fuel Sensor</property>
+                  <property name="IsVisible">true</property>
+                </property>
+                <property name="Item3" isnull="true" iskey="true">
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">28</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">LLS500 Fuel Sensor</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">14</property>
+                  </property>
+                  <property name="Text">LLS500 Fuel Sensor</property>
+                  <property name="IsVisible">true</property>
+                </property>
+                <property name="Item4" isnull="true" iskey="true">
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">29</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">HOLYKELL HPT604 Fuel Sensor</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">15</property>
+                  </property>
+                  <property name="Text">HOLYKELL HPT604 Fuel Sensor</property>
+                  <property name="IsVisible">true</property>
+                </property>
+              </property>
+              <property name="IsVisible">true</property>
+              <property name="Text">ConfigurationTools</property>
+            </property>
+          </property>
+          <property name="IsVisible">true</property>
+          <property name="Text">Services Center</property>
+        </property>
+      </property>
+      <property name="IsVisible">true</property>
+      <property name="Text">(Unassigned Pages)</property>
+    </property>
+  </property>
+</XtraSerializer>

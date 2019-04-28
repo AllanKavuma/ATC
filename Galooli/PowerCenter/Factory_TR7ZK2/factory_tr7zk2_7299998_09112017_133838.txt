@@ -1,0 +1,38 @@
+tr7zk2
+09/11/2017 13:38:38
+----- Test log -----
+Production batch: GA00211
+...Testing Unit ID with Galooli's server
+...Unit ID validated
+...Searching device
+HW: TR7ZK2_PCB5 FW:3.24
+...Exiting factory mode
+...Query device signature
+Signature: 066FFF482856
+...Downloading default parameters
+Default Parameters updated Ok
+...Entering factory mode
+Factory mode Ok
+...Testing External Power
+External power Tested Ok 12.1
+...Testing External flash memory
+External flash memory Tested Ok
+...Testing Immobilizer
+Immobilizer On Tested Ok
+Immobilizer Off Tested Ok
+...Testing Analog inputs
+Input 4 Tested Ok 10.8
+Input 3 Tested Ok 10.7
+Input 2 Tested Ok 10.8
+Input 1 Tested Ok 10.8
+RTC Tested Ok
+...Testing Modem
+Modem Connected to server. Signal=83.9 %
+...Modem IMEI
+IMEI 355565074146740
+...Testing GPS
+GPS Passes 4 Satellites
+Visual modem LED Tested Ok
+Visual status LED Tested Ok
+Buzzer Tested Ok
+-- Local info only: Device updated on server OK Server Verification Ok

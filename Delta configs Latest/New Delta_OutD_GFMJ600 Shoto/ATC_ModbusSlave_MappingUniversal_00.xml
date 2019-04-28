@@ -1,0 +1,1564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping protocol="ModbusSlave" version="1.0" xsi:noNamespaceSchemaLocation="..\PSC3_ModbusSlave_Schema_V3.20_rev3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<meta creationdate="2016-11-28T16:34:00" author="Stefan Smieskol"
+        description="
+  File description: This file contains registers definition for accessing  ORION data,
+                    that come with
+ a setup derived from the related setup. 
+  
+  Related Setup:    CFG_ATC_master setup file.xml 
+                    
+  Compatibility:    This mapping is compatible with ORION V6.51.
+ and higher
+  
+  History:
+                    revision: 0
+                    date:     28.11.2016
+                    author:   Stefan Smiesko
+                    purpose:  Mapping file for systems with setup derived from the related setup
+                    changes:  initial version, ATC_ZA_ModbusSlave_Mapping_07.xml was taken as a base
+
+  
+                                          
+                           
+  "/>
+  
+  <!-- ########################### DISCRETE INPUTS ###################################################### -->
+  
+  <!-- ########################### group General_1 ########################### -->
+  <discreteInput>
+    <!--Critical Alarm-->
+    <register start="0" typeId="0x1011" objectId="0x2060" instanceId="0x0003" default="0x0001" />
+    <!--Urgent Alarm-->
+    <register start="1" typeId="0x1011" objectId="0x2060" instanceId="0x0001" default="0x0001" />
+    <!--Non Urgent Alarm-->
+    <register start="2" typeId="0x1011" objectId="0x2060" instanceId="0x0002" default="0x0001" />
+
+    <scaling>
+      <read source="0" target="1" />
+      <read source="1" target="0" />
+      <read source="2" target="1" />
+      <read source="3" target="0" />
+      <read source="4" target="0" />
+      <read source="5" target="1" />
+      <read source="6" target="1" />
+      <read source="7" target="0" />
+      <read source="8" target="1" />      
+    </scaling>
+  </discreteInput>
+
+  <discreteInput>
+    <!--AC power state - mainsfailure-->
+    <register start="3" typeId="0x1002" objectId="0x1060" instanceId="0x0013" default="0x0001" />
+    <!--DC low voltage - uaLow_event-->
+    <register start="4" typeId="0x1002" objectId="0x1060" instanceId="0x0065" default="0x0001" />
+    <!--DC high voltage - uaHigh_event-->
+    <register start="5" typeId="0x1002" objectId="0x1060" instanceId="0x0064" default="0x0001" />
+    <!--Hardware failure - eHWFailure event-->
+    <register start="6" typeId="0x1002" objectId="0x1060" instanceId="0x002C" default="0x0001" />    
+    <!-- Overload -->
+    <register start="7" typeId="0x1002" objectId="0x1060" instanceId="0x0016" default="0x0001" />    
+    <!-- Us Low -->
+    <register start="8" typeId="0x1002" objectId="0x1060" instanceId="0x0067" default="0x0001" />    
+    <!-- Us high -->
+    <register start="9" typeId="0x1002" objectId="0x1060" instanceId="0x0066" default="0x0001" />    
+    <!-- Non Urg PFA -->
+    <register start="10" typeId="0x1002" objectId="0x1060" instanceId="0x0082" default="0x0001" />    
+    <!-- Urgent PFA -->
+    <register start="11" typeId="0x1002" objectId="0x1060" instanceId="0x0083" default="0x0001" />    
+    <!-- RM Redundancy Lost -->
+    <register start="12" typeId="0x1002" objectId="0x1060" instanceId="0x005C" default="0x0001" /> 
+    <!-- Backup time Lost -->
+    <register start="13" typeId="0x1002" objectId="0x1060" instanceId="0x003f" default="0x0001" />  
+    <!--RM lack of power -->
+    <register start="14" typeId="0x1002" objectId="0x1060" instanceId="0x005d" default="0x0001" /> 
+    <!--Batt.fail MP-->
+    <register start="15" typeId="0x1002" objectId="0x1060" instanceId="0x0039" default="0x0001" />      
+
+    <scaling>
+      <read source="0" target="1" />
+      <read source="1" target="0" />
+      <read source="2" target="1" />
+    </scaling>
+  </discreteInput>
+  
+    <discreteInput>
+  
+ 
+    <!--MP failure-->
+    <register start="16" typeId="0x1011" objectId="0x2060" instanceId="0x8014" default="0x0001" />
+    <!--Intrusion alarm-->
+    <register start="17" typeId="0x1011" objectId="0x2060" instanceId="0x8013" default="0x0001" />
+     <!--OVP alarm-->
+    <register start="18" typeId="0x1011" objectId="0x2060" instanceId="0x8003" default="0x0001" />
+     <!--GEN fault-->
+    <register start="19" typeId="0x1011" objectId="0x2060" instanceId="0x8012" default="0x0001" />
+     <!--Ext GEN fault-->
+    <register start="20" typeId="0x1011" objectId="0x2060" instanceId="0x8010" default="0x0001" />
+   
+
+    <scaling>
+      <read source="0" target="1" />
+      <read source="1" target="0" />
+      <read source="2" target="1" />
+      <read source="3" target="0" />
+      <read source="4" target="0" />
+      <read source="5" target="1" />
+      <read source="6" target="1" />
+      <read source="7" target="0" />
+      <read source="8" target="1" />      
+    </scaling>
+  </discreteInput>
+
+      
+ <!--Other events-->
+  <discreteInput> 
+  
+    <!--Gen on inv-->
+       <register start="21" typeId="0x1007" objectId="0x1060" instanceId="0x806e" default="0x0001" />
+    <!--Gen on SoC-->
+       <register start="22" typeId="0x1002" objectId="0x1060" instanceId="0x8060" default="0x0000"/>
+ 
+    <!--Gen off SoC-->
+       <register start="23" typeId="0x1002" objectId="0x1060" instanceId="0x805f"  default="0x0000"/>
+    <!--Gen on[U]-->
+       <register start="24" typeId="0x1002" objectId="0x1060" instanceId="0x805e" default="0x0001" />
+    <!--Gen off (I)-->
+       <register start="25" typeId="0x1002" objectId="0x1060" instanceId="0x8061" default="0x0001"/>
+    <!--Tbatt1 high-->
+       <register start="26" typeId="0x1002" objectId="0x1060" instanceId="0x80A9" default="0x0001"/>
+     <!--Tbatt1 low -->
+       <register start="27" typeId="0x1002" objectId="0x1060" instanceId="0x80AA"  default="0x0001" />
+        <!--Tbatt2 high-->
+       <register start="28" typeId="0x1002" objectId="0x1060" instanceId="0x80AB" default="0x0001"/>
+     <!--Tbatt2 low -->
+       <register start="29" typeId="0x1002" objectId="0x1060" instanceId="0x80AC"  default="0x0001" />
+       <!--Comiss charge -->
+       <register start="30" typeId="0x100D" objectId="0x1060" instanceId="0x8079"  default="0x0001" />
+       <!--ComChg on -->
+       <register start="31" typeId="0x1008" objectId="0x1060" instanceId="0x807C"  default="0x0001" />
+       <!--Gen man start -->
+       <register start="32" typeId="0x100D" objectId="0x1060" instanceId="0x8065"  default="0x0001" />
+       <!--Gen_on_(U) -->
+       <register start="33" typeId="0x100D" objectId="0x1060" instanceId="0x806B"  default="0x0001" />
+         <!--Gen stop -->
+       <register start="34" typeId="0x1009" objectId="0x1060" instanceId="0x806C"  default="0x0001" />
+             
+       
+       
+        <scaling>
+      <read source="0" target="1" />
+      <read source="1" target="0" />
+      <read source="2" target="1" />
+    </scaling>
+  </discreteInput>
+  
+      
+ <discreteInput>
+  
+ 
+    <!--Batt fuse MC-->
+    <register start="50" typeId="0x1011" objectId="0x2060" instanceId="0x8000" default="0x0001" />
+    <!--Prio.load fuse-->
+    <register start="51" typeId="0x1011" objectId="0x2060" instanceId="0x8001" default="0x0001" />
+     <!--LVD[U]-->
+    <register start="52" typeId="0x1011" objectId="0x2060" instanceId="0x8002" default="0x0001" />
+     <!--Tint low-->
+    <register start="53" typeId="0x1011" objectId="0x2060" instanceId="0x8005" default="0x0001" />
+     <!--Psys high-->
+    <register start="54" typeId="0x1011" objectId="0x2060" instanceId="0x8006" default="0x0001" />
+      <!--Batt.fail.BT-->
+    <register start="55" typeId="0x1011" objectId="0x2060" instanceId="0x8007" default="0x0001" />
+         <!--BLV-->
+    <register start="56" typeId="0x1011" objectId="0x2060" instanceId="0x800F" default="0x0001" />
+     <!--MF delay-->
+    <register start="57" typeId="0x1011" objectId="0x2060" instanceId="0x8011" default="0x0001" />
+     <!--MCB fail-->
+    <register start="58" typeId="0x1011" objectId="0x2060" instanceId="0x8015" default="0x0001" />
+     <!--Fan alarm-->
+    <register start="59" typeId="0x1011" objectId="0x2060" instanceId="0x8016" default="0x0001" />
+     <!--Ext Mains Fail-->
+    <register start="60" typeId="0x1011" objectId="0x2060" instanceId="0x8017" default="0x0001" />
+     <!--Temp high-->
+    <register start="61" typeId="0x1011" objectId="0x2060" instanceId="0x8018" default="0x0001" />
+   
+
+    <scaling>
+      <read source="0" target="1" />
+      <read source="1" target="0" />
+      <read source="2" target="1" />
+      <read source="3" target="0" />
+      <read source="4" target="0" />
+      <read source="5" target="1" />
+      <read source="6" target="1" />
+      <read source="7" target="0" />
+      <read source="8" target="1" />      
+    </scaling>
+  </discreteInput>
+  
+  
+    <!-- ########################### group Rectifiers_general ########################### -->
+  <discreteInput>
+    <!--Urgent RFA-->
+    <register start="2048" typeId="0x1002" objectId="0x1060" instanceId="0x001A" default="0x0001" />
+    <!--Non Urgent RFA-->
+    <register start="2049" typeId="0x1002" objectId="0x1060" instanceId="0x0019" default="0x0001" />
+     
+
+    <scaling>
+      <read source="0" target="1" />
+      <read source="1" target="0" />
+      <read source="2" target="1" />
+    </scaling>
+  </discreteInput>
+  
+  
+
+  <!-- ########################### group Battery ########################### -->
+  <discreteInput>
+    <!--Battery test failure-->
+    <register start="7168" typeId="0x1002" objectId="0x1060" instanceId="0x0033" default="0x0001" />
+    <!--Battery #1 fuse status-->
+    <register start="7392" typeId="0x10b0" objectId="0x1070" instanceId="0x0001" default="0x0001" />
+    <!--Battery #2 fuse status-->
+    <register start="7432" typeId="0x10b0" objectId="0x1070" instanceId="0x0002" default="0x0001" />
+    <!--Battery #3 fuse status-->
+    <register start="7472" typeId="0x10b0" objectId="0x1070" instanceId="0x0003" default="0x0001" />
+    <!--Battery #4 fuse status-->
+    <register start="7512" typeId="0x10b0" objectId="0x1070" instanceId="0x0004" default="0x0001" />
+    <!--Battery #5 fuse status-->
+    <register start="7552" typeId="0x10b0" objectId="0x1070" instanceId="0x0005" default="0x0001" />
+    <!--Battery #6 fuse status-->
+    <register start="7592" typeId="0x10b0" objectId="0x1070" instanceId="0x0006" default="0x0001" />                    
+
+    <scaling>
+      <read source="0" target="1" />
+      <read source="1" target="0" />
+      <read source="2" target="1" />
+    </scaling>
+  </discreteInput>
+
+  <!-- ########################### group Load_1 ########################### -->
+  <discreteInput>
+    <!--Load #1 fuse status-->
+    <register start="13824" typeId="0x10c0" objectId="0x1090" instanceId="0x0001" default="0x0001" />
+    <!--Load #2 fuse status-->
+    <register start="13840" typeId="0x10c0" objectId="0x1090" instanceId="0x0002" default="0x0001" />
+    <!--Load #3 fuse status-->
+    <register start="13856" typeId="0x10c0" objectId="0x1090" instanceId="0x0003" default="0x0001" />
+    <!--Load #4 fuse status-->
+    <register start="13872" typeId="0x10c0" objectId="0x1090" instanceId="0x0004" default="0x0001" />
+    <!--Load #5 fuse status-->
+    <register start="13888" typeId="0x10c0" objectId="0x1090" instanceId="0x0005" default="0x0001" />
+    <!--Load #6 fuse status-->
+    <register start="13904" typeId="0x10c0" objectId="0x1090" instanceId="0x0006" default="0x0001" />
+
+    <scaling>
+      <read source="0" target="1" />
+      <read source="1" target="0" />
+      <read source="2" target="1" />
+    </scaling>
+  </discreteInput>
+
+  <!-- ########################### COILS ###################################################### -->
+
+  <!-- ########################### group Battery ########################### -->
+
+  <coil>
+    <!--equalize enable-->
+    <register start="7168" typeId="0x10E2" objectId="0x01A1" instanceId="0x0001" default="0x0001" />
+  </coil>
+  
+  <coil>
+    <!--equalize control-->
+    <register start="7169" typeId="0x10E2" objectId="0x2020" instanceId="0x0001" default="0x0000" /> 
+    <!--Boost charge control-->
+    <register start="7170" typeId="0x10E3" objectId="0x2020" instanceId="0x0001" default="0x0000" />     
+    <!--Batt Test control-->   
+    <register start="7171" typeId="0x10E1" objectId="0x2030" instanceId="0x0001" default="0x0000" />        
+    <scaling>
+      <read source="0" target="0" />
+      <read source="1" target="0" />
+      <read source="2" target="1" />
+      <read source="3" target="1" />                        
+      <redirect source="1" target="8195" />
+      <redirect source="0" target="8196" />      
+    </scaling>
+  </coil>
+  <!-- ########################### INPUT REGISTERS ###################################################### -->
+  
+   
+  
+  
+  <!-- group General_1-->
+  <inputRegister>
+    <!--Usys-->
+    <register start="0" typeId="0x1090" objectId="0x1000" instanceId="0x0001" type="signed"  />
+    <!--Iload-->
+    <register start="3" typeId="0x1090" objectId="0x1002" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Ibatt-->
+    <register start="4" typeId="0x1090" objectId="0x1003" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Irect-->
+    <register start="5" typeId="0x1090" objectId="0x1004" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Tbatt1-->
+    <register start="6"  typeId="0x10D3" objectId="0x1060" instanceId="0x0004" type="signed" default="0x7fff" />
+    <!--Ua high voltage-->
+    <register start="7" typeId="0x10e0" objectId="0x1030" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Ua low voltage-->
+    <register start="8" typeId="0x10e0" objectId="0x1031" instanceId="0x0001" type="signed" default="0x7fff" />    
+    <!--Ubackup-->
+    <register start="9" typeId="0x10D1" objectId="0x1060" instanceId="0x1000" type="signed" default="0x7fff" />
+      <!--Temp int.-->
+      <register start="10"  typeId="0x10d3" objectId="0x1060" instanceId="0x0003" type="signed" default="0x7fff" />
+      <!--Temp amb.-->
+      <register start="11"  typeId="0x10d3" objectId="0x1060" instanceId="0x0005" type="signed" default="0x7fff" />
+         <!--Tbatt2.-->
+      <register start="12"  typeId="0x10d3" objectId="0x1060" instanceId="0x0002" type="signed" default="0x7fff" />
+         <!--Tbatt3.-->
+      <register start="13"  typeId="0x10d3" objectId="0x1060" instanceId="0x0006" type="signed" default="0x7fff" />
+   
+     
+  </inputRegister>
+
+  <!--32 bits MSB-->
+  <inputRegister>  
+    <!--Psys MSB-->
+    <register start="1" typeId="0x1090" objectId="0x1001" instanceId="0x0001" type="signed" default="0x7fff" />
+  
+    <scaling>
+      <read numerator="1" denominator="65536" offset="0"/>
+    </scaling>   
+  </inputRegister>
+  
+  <!--32 bits LSB-->
+  <inputRegister>
+    <!--Psys LSB-->
+    <register start="2" typeId="0x1090" objectId="0x1001" instanceId="0x0001" type="signed" default="0xffff" />
+   </inputRegister>
+   
+  
+   
+
+  
+ <!--group Alarms-->
+ <inputRegister> 
+   <!--Urgent alarm-->
+       <register start="21" typeId="0x1011" objectId="0x2060" instanceId="0x0001" />
+   <!--Non Urgent alarm-->
+       <register start="22" typeId="0x1011" objectId="0x2060" instanceId="0x0002" />
+    <!--Critical alarm-->
+       <register start="23" typeId="0x1011" objectId="0x2060" instanceId="0x0003" />
+    <!--Battery fuse alarm MC-->
+       <register start="24" typeId="0x1011" objectId="0x2060" instanceId="0x8000" default="0x7fff"/>
+ 
+    <!--Priority Load fuse alarm-->
+       <register start="25" typeId="0x1011" objectId="0x2060" instanceId="0x8001"  default="0x7fff"/>
+    <!--LVD[U]-->
+       <register start="26" typeId="0x1011" objectId="0x2060" instanceId="0x8002" default="0x7fff" />
+    <!--OVP alarm)-->
+       <register start="27" typeId="0x1011" objectId="0x2060" instanceId="0x8003" default="0x7fff"/>
+    
+     <!--Tint low -->
+       <register start="29" typeId="0x1011" objectId="0x2060" instanceId="0x8005"  default="0x7fff" />
+     <!--Psys high-->
+       <register start="30" typeId="0x1011" objectId="0x2060" instanceId="0x8006"  default="0x7fff"/>
+ 
+     <!--Batt. fail BT -->
+       <register start="31" typeId="0x1011" objectId="0x2060" instanceId="0x8007" default="0x7fff"/>
+     <!--HW failure-->
+       <register start="32" typeId="0x1011" objectId="0x2060" instanceId="0x8004" default="0x7fff" />
+ 
+      <!--Mainsfailure-->
+       <register start="33" typeId="0x1011" objectId="0x2060" instanceId="0x8009" default="0x7fff" />
+      <!--Ua high-->
+       <register start="34" typeId="0x1011" objectId="0x2060" instanceId="0x800A"  default="0x7fff"/>
+      <!--Ua low-->
+       <register start="35" typeId="0x1011" objectId="0x2060" instanceId="0x800B" default="0x7fff" />
+      <!--Urgent rectifier alarm-->
+       <register start="36" typeId="0x1011" objectId="0x2060" instanceId="0x800C"  default="0x7fff"/>
+      <!--Us high-->
+       <register start="37" typeId="0x1011" objectId="0x2060" instanceId="0x800D" default="0x7fff" />
+     <!--Us low-->
+       <register start="38" typeId="0x1011" objectId="0x2060" instanceId="0x800E" default="0x7fff" />
+    <!--BLV-->
+       <register start="39" typeId="0x1011" objectId="0x2060" instanceId="0x800F" default="0x7fff" />
+ 
+     <!--Ext.gen fault-->
+       <register start="40" typeId="0x1011" objectId="0x2060" instanceId="0x8010" default="0x7fff" />
+     <!--MF delay-->
+       <register start="41" typeId="0x1011" objectId="0x2060" instanceId="0x8011" default="0x7fff" />
+     <!--GEN fault -->
+       <register start="42" typeId="0x1011" objectId="0x2060" instanceId="0x8012" default="0x7fff" />
+     <!--Intrusion alarm-->
+       <register start="43" typeId="0x1011" objectId="0x2060" instanceId="0x8013" default="0x7fff" />
+     <!--MP failure-->
+       <register start="44" typeId="0x1011" objectId="0x2060" instanceId="0x8014" default="0x7fff" />
+    <!--MCB fail-->
+       <register start="45" typeId="0x1011" objectId="0x2060" instanceId="0x8015" default="0x7fff" />
+ 
+     <!--Fan alarm-->
+       <register start="46" typeId="0x1011" objectId="0x2060" instanceId="0x8016" default="0x7fff" />
+     <!--No ext MF-->
+       <register start="47" typeId="0x1011" objectId="0x2060" instanceId="0x8017" default="0x7fff" />
+        <!--Temp.high-->
+       <register start="48" typeId="0x1011" objectId="0x2060" instanceId="0x8018" default="0x7fff" />
+      
+      
+      <!--group LVD-->
+       <!--LVD status-->
+       <register start="54" typeId="0x1012" objectId="0x2020" instanceId="0x0001" />
+      <!--PLD status-->
+       <register start="55" typeId="0x1012" objectId="0x2020" instanceId="0x0002" default="0x7fff"  />
+      
+    </inputRegister>
+  
+  
+  
+<!--Mains and GEN time counters-->
+ 
+    
+    <inputRegister> 
+    
+       
+        <!--GEN seconds /2  MSB-->
+       <register start="70" typeId="0x1015" objectId="0x2080" instanceId="0x8081"  default="0xffff" />
+            <!--Ext MF seconds/2 MSB -->
+       <register start="72" typeId="0x1015" objectId="0x2080" instanceId="0x8083"  default="0xffff" />
+        
+
+     <scaling>
+      <read numerator="1" denominator="65536" offset="0"/>
+    </scaling>   
+ 
+ 
+    </inputRegister>
+    
+       
+    <inputRegister> 
+    
+        <!--GEN seconds /2  LSB -->
+       <register start="71" typeId="0x1015" objectId="0x2080" instanceId="0x8081"  default="0xffff" />
+            <!--Ext MF seconds/2 LSB -->
+       <register start="73" typeId="0x1015" objectId="0x2080" instanceId="0x8083"  default="0xffff" />
+         </inputRegister>
+         
+             <inputRegister> 
+        
+
+       <!--Gen on total hours (meter panel)-->
+       <register start="74" typeId="0x1120" objectId="0x2022" instanceId="0x0007"  default="0xffff" />
+       <!--Gen man start  hours (meter panel)-->
+       <register start="75" typeId="0x1120" objectId="0x2022" instanceId="0x0006"  default="0xffff" />
+       
+
+ <scaling>
+      <read numerator="1" denominator="3600" offset="0"/>
+    </scaling> 
+     
+     
+    </inputRegister>
+    
+      
+    
+   <!--group Digital inputs Controller -->
+  <inputRegister>
+    <!--Input1 - Fan Alarm In-->
+    <register start="101" typeId="0x10d2" objectId="0x2000" instanceId="0x0004" default="0x7fff" />
+    <!--Input2 - Orion IN2-->
+    <register start="102" typeId="0x10d2" objectId="0x2000" instanceId="0x000F" default="0x7fff" /> 
+     <!--Input3 - Intrusion Alarm In-->
+    <register start="103" typeId="0x10d2" objectId="0x2000" instanceId="0x0003" default="0x7fff" /> 
+     <!--Over Voltage Protection Alarm-->
+    <register start="104" typeId="0x10d2" objectId="0x2000" instanceId="0x0007" default="0x7fff" /> 
+    
+    <!--ORION UM4-->
+    <register start="108" typeId="0x10d2" objectId="0x2000" instanceId="0x0010" default="0x7fff" /> 
+      
+     
+  </inputRegister>
+   
+   
+   
+   
+    
+     <!--group Digital inputs SSM1 -->
+  <inputRegister>
+    <!--Input1 - Ext Gen fault-->
+    <register start="111" typeId="0x10d2" objectId="0x2000" instanceId="0x0005" default="0x7fff" />
+    <!--Input2 - Ext MF detect-->
+    <register start="112" typeId="0x10d2" objectId="0x2000" instanceId="0x0008" default="0x7fff" /> 
+     <!--Input3 - In3 SSM1-->
+    <register start="113" typeId="0x10d2" objectId="0x2000" instanceId="0x0009" default="0x7fff" /> 
+     <!--Input4 - In4 SSM1-->
+    <register start="114" typeId="0x10d2" objectId="0x2000" instanceId="0x000a" default="0x7fff" /> 
+        
+     
+  </inputRegister>
+  
+    <!--group Digital inputs SSM2 -->
+  <inputRegister>
+    <!--Input1 - In1 SSM2-->
+    <register start="121" typeId="0x10d2" objectId="0x2000" instanceId="0x000b" default="0x7fff" />
+    <!--Input2 - In2 SSM2-->
+    <register start="122" typeId="0x10d2" objectId="0x2000" instanceId="0x000c" default="0x7fff" /> 
+     <!--Input3 - In3 SSM2-->
+    <register start="123" typeId="0x10d2" objectId="0x2000" instanceId="0x000d" default="0x7fff" /> 
+     <!--Input4 - In4 SSM2-->
+    <register start="124" typeId="0x10d2" objectId="0x2000" instanceId="0x000e" default="0x7fff" /> 
+        
+     
+  </inputRegister>
+  
+   <!--group Digital inputs SSM3 -->
+  <inputRegister>
+    <!--Fan al BC In-->
+    <register start="131" typeId="0x10d2" objectId="0x2000" instanceId="0x0015" default="0x7fff" />
+    <!--Smoke alarm BC-->
+    <register start="132" typeId="0x10d2" objectId="0x2000" instanceId="0x0017" default="0x7fff" /> 
+     <!--Intrusion Al BC-->
+    <register start="133" typeId="0x10d2" objectId="0x2000" instanceId="0x0016" default="0x7fff" /> 
+     <!--Input4 - In4 SSM3-->
+    <register start="134" typeId="0x10d2" objectId="0x2000" instanceId="0x0018" default="0x7fff" /> 
+        
+     
+  </inputRegister>
+  
+  
+  
+  
+<!--Orion LVD output-->
+  
+   <inputRegister>
+          <!--LVD - LVD status-->
+       <register start="200" typeId="0x1000" objectId="0x113a" instanceId="0x0001"  default="0x7fff"/>
+         <scaling>
+      <read numerator="1" denominator="1" offset="1"/>
+    </scaling>   
+    
+    
+  </inputRegister>
+ 
+  
+  <!--Orion OUT1-6 outputs-->
+  
+  <inputRegister>
+   <!--Orion OUT1-->
+    <register start="201" typeId="0x1000" objectId="0x1110" instanceId="0x0001" default="0x7fff" />
+    <!--Orion OUT2-->
+    <register start="202" typeId="0x1000" objectId="0x1111" instanceId="0x0001" default="0x7fff" />
+    <!--Orion OUT3-->
+    <register start="203" typeId="0x1000" objectId="0x1112" instanceId="0x0001" default="0x7fff" />
+    <!--Orion OUT4-->
+    <register start="204" typeId="0x1000" objectId="0x1113" instanceId="0x0001" default="0x7fff" />
+    <!--Orion OUT5-->
+    <register start="205" typeId="0x1000" objectId="0x1114" instanceId="0x0001" default="0x7fff" />
+     <!--Orion OUT6-->
+    <register start="206" typeId="0x1000" objectId="0x1115" instanceId="0x0001" default="0x7fff" />
+  
+
+        <scaling>
+      <read numerator="1" denominator="1" offset="1"/>
+    </scaling>   
+    
+    
+  </inputRegister>
+ 
+ 
+      
+      <inputRegister>
+   <!-- Orion OC1-OC4 outputs -->
+     
+      <!--Orion OC1-->
+       <register start="207" typeId="0x1000" objectId="0x1130" instanceId="0x0001" default="0x7fff"  />
+      <!--Orion OC2-->
+       <register start="208" typeId="0x1000" objectId="0x1131" instanceId="0x0001" default="0x7fff"  />
+         <!--Orion OC3-->
+       <register start="209" typeId="0x1000" objectId="0x1132" instanceId="0x0001" default="0x7fff" />
+        <!--Orion OC4-->
+       <register start="210" typeId="0x1000" objectId="0x1133" instanceId="0x0001" default="0x7fff" />
+          <scaling>
+      <read numerator="1" denominator="1" offset="1"/>
+    </scaling>   
+    
+    
+  </inputRegister>
+ 
+  
+   
+      <!--SSM  Alarm outputs-->
+  
+  <inputRegister>
+    <!--SSM1 OUT1-->
+    <register start="211" typeId="0x6000" objectId="0x2051" instanceId="0x0001" default="0x7fff" />
+    <!--SSM1 OUT2-->
+    <register start="212" typeId="0x6000" objectId="0x2059" instanceId="0x0001" default="0x7fff" />
+    <!--SSM1OUT3-->
+    <register start="213" typeId="0x6000" objectId="0x2061" instanceId="0x0001" default="0x7fff" />
+      <!--SSM2 OUT1-->
+    <register start="221" typeId="0x6000" objectId="0x2051" instanceId="0x0002" default="0x7fff" />
+    <!--SSM2OUT2-->
+    <register start="222" typeId="0x6000" objectId="0x2059" instanceId="0x0002" default="0x7fff" />
+    <!--SSM2OUT3-->
+    <register start="223" typeId="0x6000" objectId="0x2061" instanceId="0x0002" default="0x7fff" />
+       <!--SSM3 OUT1-->
+    <register start="231" typeId="0x6000" objectId="0x2051" instanceId="0x0003" default="0x7fff" />
+    <!--SSM3OUT2-->
+    <register start="232" typeId="0x6000" objectId="0x2059" instanceId="0x0003" default="0x7fff" />
+    <!--SSM3OUT3-->
+    <register start="233" typeId="0x6000" objectId="0x2061" instanceId="0x0003" default="0x7fff" />
+   
+      <scaling>
+      <read numerator="1" denominator="1" offset="1"/>
+    </scaling>   
+    
+    
+  </inputRegister>
+  
+  <!--group reserved/unassigned inputs -->
+  <inputRegister>
+    <!--Reserved IN1-->
+    <register start="301" typeId="0x10d2" objectId="0x2000" instanceId="0x0019" default="0x7fff" />
+    <!--Reserved IN2-->
+    <register start="302" typeId="0x10d2" objectId="0x2000" instanceId="0x001A" default="0x7fff" /> 
+     <!--Reserved IN3-->
+    <register start="303" typeId="0x10d2" objectId="0x2000" instanceId="0x001B" default="0x7fff" /> 
+     <!--Reserved IN4-->
+    <register start="304" typeId="0x10d2" objectId="0x2000" instanceId="0x001C" default="0x7fff" /> 
+     <!--Reserved IN5-->
+    <register start="305" typeId="0x10d2" objectId="0x2000" instanceId="0x001D" default="0x7fff" /> 
+    <!--A/C unit MC-->
+    <register start="306" typeId="0x10d2" objectId="0x2000" instanceId="0x001F" default="0x7fff" />
+    <!--A/C unit BC-->
+    <register start="307" typeId="0x10d2" objectId="0x2000" instanceId="0x0020" default="0x7fff" /> 
+     <!--Smoke alarm MC-->
+    <register start="308" typeId="0x10d2" objectId="0x2000" instanceId="0x0006" default="0x7fff" />
+    
+            
+  </inputRegister>
+ 
+  <!--group Digital inputs BSM4 -->
+  <inputRegister>
+    <!--BSM A13 IN1-->
+    <register start="341" typeId="0x10d2" objectId="0x2000" instanceId="0x0011" default="0x7fff" />
+    <!--BSM A13 IN2-->
+    <register start="342" typeId="0x10d2" objectId="0x2000" instanceId="0x0012" default="0x7fff" /> 
+     <!--BSM A13 IN3-->
+    <register start="343" typeId="0x10d2" objectId="0x2000" instanceId="0x0013" default="0x7fff" /> 
+    
+            
+  </inputRegister>
+  
+   <!--group Digital inputs BSM6 -->
+  <inputRegister>
+    <!--BSM A15 IN1-->
+    <register start="361" typeId="0x10d2" objectId="0x2000" instanceId="0x0021" default="0x7fff" />
+    <!--BSM A15 IN2-->
+    <register start="362" typeId="0x10d2" objectId="0x2000" instanceId="0x0022" default="0x7fff" /> 
+     <!--BSM A15 IN3-->
+    <register start="363" typeId="0x10d2" objectId="0x2000" instanceId="0x0023" default="0x7fff" /> 
+    
+            
+  </inputRegister>
+  
+      <!--IOM  Alarm outputs-->
+  
+  <inputRegister>
+    <!--IOM Alarm OUT1-->
+    <register start="451" typeId="0x9000" objectId="0x2050" instanceId="0x0035" default="0x7fff" />
+    <!--IOM Alarm OUT2-->
+    <register start="452" typeId="0x9000" objectId="0x2051" instanceId="0x0035" default="0x7fff" />
+    <!--IOM Alarm OUT3-->
+    <register start="453" typeId="0x9000" objectId="0x2052" instanceId="0x0035" default="0x7fff" />
+      <!--IOM Alarm OUT4-->
+    <register start="454" typeId="0x9000" objectId="0x2053" instanceId="0x0035" default="0x7fff" />
+    <!--IOM Alarm OUT5-->
+    <register start="455" typeId="0x9000" objectId="0x2054" instanceId="0x0035" default="0x7fff" />
+    <!--IOM Alarm OUT6-->
+    <register start="456" typeId="0x9000" objectId="0x2055" instanceId="0x0035" default="0x7fff" />
+       <!--IOM Alarm OUT7-->
+    <register start="457" typeId="0x9000" objectId="0x2056" instanceId="0x0035" default="0x7fff" />
+    <!--IOM Alarm OUT8-->
+    <register start="458" typeId="0x9000" objectId="0x2057" instanceId="0x0035" default="0x7fff" />
+    <!--IOM Alarm OUT9-->
+    <register start="459" typeId="0x9000" objectId="0x2058" instanceId="0x0035" default="0x7fff" />
+     <!--IOM Alarm OUT10-->
+    <register start="460" typeId="0x9000" objectId="0x2059" instanceId="0x0035" default="0x7fff" />
+   
+      <scaling>
+      <read numerator="1" denominator="1" offset="1"/>
+    </scaling>   
+    
+    
+  </inputRegister>
+  
+   <!--General info -->
+ <inputRegister>
+  <!--Site name MSB-->
+    <register start="501" typeId="0x1000" objectId="0x1240" instanceId="0x0001"  default="0x7fff" />
+     <!--Lattitude MSB-->
+    <register start="502" typeId="0x1000" objectId="0x1243" instanceId="0x0001" default="0x7fff" />
+     <!--Longitude MSB-->
+    <register start="503" typeId="0x1000" objectId="0x1244" instanceId="0x0001"  default="0x7fff" />
+    <scaling>
+      <read numerator="1" denominator="65536" offset="0"/>
+    </scaling>   
+     
+   </inputRegister>
+  
+   
+   <inputRegister>
+  <!--Site name LSB-->
+    <register start="504" typeId="0x1000" objectId="0x1240" instanceId="0x0001"  default="0x7fff" />
+     <!--Lattitude LSB-->
+    <register start="505" typeId="0x1000" objectId="0x1243" instanceId="0x0001"  default="0x7fff" />
+     <!--Longitude LSB-->
+    <register start="506" typeId="0x1000" objectId="0x1244" instanceId="0x0001"  default="0x7fff" />
+   
+     
+   </inputRegister>
+   
+   <!--Middle point measurements-->
+  <inputRegister>
+    <!-- MPM1 MC status-->
+    <register start="701" typeId="0x10D4" objectId="0x2000" instanceId="0x0001"  default="0x8000" type="signed"/>
+     <!--MPM2 MC status-->
+    <register start="702" typeId="0x10D4" objectId="0x2000" instanceId="0x0002"  default="0x8000" type="signed"/>
+
+    <!--MPM3 MC status-->
+    <register start="703" typeId="0x10D4" objectId="0x2000" instanceId="0x0003"  default="0x8000" type="signed"/>
+    <!--MPM1 BC status-->
+    <register start="704" typeId="0x10D4" objectId="0x2000" instanceId="0x0004"  default="0x8000" type="signed"/>
+     <!--MPM2 BC status-->
+    <register start="705" typeId="0x10D4" objectId="0x2000" instanceId="0x0005"  default="0x8000" type="signed"/>
+    <!--MPM3 BC status-->
+    <register start="706" typeId="0x10D4" objectId="0x2000" instanceId="0x0006"  default="0x8000" type="signed"/>
+      <!-- MPM4 status-->
+    <register start="707" typeId="0x10D4" objectId="0x2000" instanceId="0x0007"  default="0x8000" type="signed"/>
+     <!--MPM5 status-->
+    <register start="708" typeId="0x10D4" objectId="0x2000" instanceId="0x0008"  default="0x8000" type="signed"/>
+   
+
+   
+      
+    </inputRegister>
+    
+       <!--BSM Middle point measurements (in fact block measurements)-->
+  <inputRegister>
+  
+    <!--BSM MPM1-1 status -->
+    <register start="711" typeId="0x10D5" objectId="0x2000" instanceId="0x0001"  default="0x8000" type="signed"/>
+     <!--BSM MPM1-2 status -->
+    <register start="712" typeId="0x10D5" objectId="0x2000" instanceId="0x0002"  default="0x8000" type="signed"/>
+
+    <!--BSM MPM2-1 status -->
+    <register start="721" typeId="0x10D5" objectId="0x2000" instanceId="0x0003"  default="0x8000" type="signed"/>
+    <!--BSM MPM2-2 status-->
+    <register start="722" typeId="0x10D5" objectId="0x2000" instanceId="0x0004"  default="0x8000" type="signed"/>
+    <!--BSM MPM3-1 status-->
+    <register start="731" typeId="0x10D5" objectId="0x2000" instanceId="0x0005"  default="0x8000" type="signed"/>
+    <!--BSM MPM3-2 status-->
+    <register start="732" typeId="0x10D5" objectId="0x2000" instanceId="0x0006"  default="0x8000" type="signed"/>
+     <!--BSM MPM4-1 status-->
+    <register start="741" typeId="0x10D5" objectId="0x2000" instanceId="0x0007"  default="0x8000" type="signed"/>
+    <!--BSM MPM4-2 status-->
+    <register start="742" typeId="0x10D5" objectId="0x2000" instanceId="0x0008"  default="0x8000" type="signed"/>
+    <!--BSM MPM5-1 status -->
+    <register start="751" typeId="0x10D5" objectId="0x2000" instanceId="0x0009"  default="0x8000" type="signed"/>
+     <!--BSM MPM5-2 status -->
+    <register start="752" typeId="0x10D5" objectId="0x2000" instanceId="0x000A"  default="0x8000" type="signed"/>
+
+    <!--BSM MPM6-1 status -->
+    <register start="761" typeId="0x10D5" objectId="0x2000" instanceId="0x000B"  default="0x8000" type="signed"/>
+    <!--BSM MPM6-2 status-->
+    <register start="762" typeId="0x10D5" objectId="0x2000" instanceId="0x000C"  default="0x8000" type="signed"/>
+    <!--BSM MPM7-1 status-->
+    <register start="771" typeId="0x10D5" objectId="0x2000" instanceId="0x000D"  default="0x8000" type="signed"/>
+    <!--BSM MPM7-2 status-->
+    <register start="772" typeId="0x10D5" objectId="0x2000" instanceId="0x000E"  default="0x8000" type="signed"/>
+     <!--BSM MPM8-1 status-->
+    <register start="781" typeId="0x10D5" objectId="0x2000" instanceId="0x000F"  default="0x8000" type="signed"/>
+    <!--BSM MPM8-2 status-->
+    <register start="782" typeId="0x10D5" objectId="0x2000" instanceId="0x0010"  default="0x8000" type="signed"/>
+   
+
+    </inputRegister>
+    
+
+ 
+ 
+ <!--group Rectifier_General-->
+  <inputRegister>
+    <!--Nb of installed rectifiers-->
+    <register start="2050" typeId="0xA005" objectId="0x3022" instanceId="0x0001" default="0xffff" />
+    <!--Nb of faulty rectifiers-->
+    <register start="2051" typeId="0xA005" objectId="0x3024" instanceId="0x0001" default="0xffff" />    
+  </inputRegister>
+  
+  <!--32 bits MSB-->
+  <inputRegister>  
+    <!--Rectifiers total energy MSB-->
+    <register start="2048" typeId="0x1090" objectId="0x1393" instanceId="0x0001" type="signed" default="0x7fff" />  
+  
+    <scaling>
+      <read numerator="1" denominator="65536" offset="0"/>
+    </scaling>   
+  </inputRegister>
+  
+  
+  <inputRegister>
+    <!--Rectifiers total energy LSB-->
+    <register start="2049" typeId="0x1090" objectId="0x1393" instanceId="0x0001" type="signed" default="0xffff" />  
+  </inputRegister>  
+  
+   <!--group AC measurement-->
+  
+<inputRegister>
+  
+<!--Voltage L1-->
+    <register start="2101" typeId="0x1090" objectId="0x1360" instanceId="0x0001" type="signed" default="0xffff" />  
+
+ 
+<!--Voltage L2-->
+    <register start="2102" typeId="0x1090" objectId="0x1361" instanceId="0x0001" type="signed" default="0xffff" />
+
+ 
+<!--Voltage L3-->
+    <register start="2103" typeId="0x1090" objectId="0x1362" instanceId="0x0001" type="signed" default="0xffff" />
+     
+<!--Real Power L1-->
+    <register start="2104" typeId="0x1090" objectId="0x1376" instanceId="0x0001" type="signed" default="0xffff" />  
+
+  
+<!--Real Power L2-->
+    <register start="2105" typeId="0x1090" objectId="0x1377" instanceId="0x0001" type="signed" default="0xffff" />
+
+ 
+ 
+<!--Real Power L3-->
+    <register start="2106" typeId="0x1090" objectId="0x1378" instanceId="0x0001" type="signed" default="0xffff" />
+     
+ 
+<!--Total Real Power-->
+    <register start="2107" typeId="0x1090" objectId="0x1379" instanceId="0x0001" type="signed" default="0xffff" />
+        </inputRegister> 
+         
+  <!--group Rectifier_01_32-->
+  <inputRegister>
+    <!--Rectifier #1 main state-->
+    <register start="3072" typeId="0xA000" objectId="0x2280" instanceId="0x0001" default="0xffff" />
+    <!--Rectifier #1 sub state-->
+    <register start="3073" typeId="0xA000" objectId="0x22A0" instanceId="0x0001" default="0xffff" />
+    <!--Rectifier #1 Iout-->
+    <register start="3074" typeId="0xA000" objectId="0x20c0" instanceId="0x0001" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #2 main state-->
+    <register start="3104" typeId="0xA000" objectId="0x2280" instanceId="0x0002" default="0xffff" />
+    <!--Rectifier #2 sub state-->
+    <register start="3105" typeId="0xA000" objectId="0x22A0" instanceId="0x0002" default="0xffff" />
+    <!--Rectifier #2 Iout-->
+    <register start="3106" typeId="0xA000" objectId="0x20c0" instanceId="0x0002" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #3 main state-->
+    <register start="3136" typeId="0xA000" objectId="0x2280" instanceId="0x0003" default="0xffff" />
+    <!--Rectifier #3 sub state-->
+    <register start="3137" typeId="0xA000" objectId="0x22A0" instanceId="0x0003" default="0xffff" />
+    <!--Rectifier #3 Iout-->
+    <register start="3138" typeId="0xA000" objectId="0x20c0" instanceId="0x0003" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #4 main state-->
+    <register start="3168" typeId="0xA000" objectId="0x2280" instanceId="0x0004" default="0xffff" />
+    <!--Rectifier #4 sub state-->
+    <register start="3169" typeId="0xA000" objectId="0x22A0" instanceId="0x0004" default="0xffff" />
+    <!--Rectifier #4 Iout-->
+    <register start="3170" typeId="0xA000" objectId="0x20c0" instanceId="0x0004" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #5 main state-->
+    <register start="3200" typeId="0xA000" objectId="0x2280" instanceId="0x0005" default="0xffff" />
+    <!--Rectifier #5 sub state-->
+    <register start="3201" typeId="0xA000" objectId="0x22A0" instanceId="0x0005" default="0xffff" />
+    <!--Rectifier #5 Iout-->
+    <register start="3202" typeId="0xA000" objectId="0x20c0" instanceId="0x0005" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #6 main state-->
+    <register start="3232" typeId="0xA000" objectId="0x2280" instanceId="0x0006" default="0xffff" />
+    <!--Rectifier #6 sub state-->
+    <register start="3233" typeId="0xA000" objectId="0x22A0" instanceId="0x0006" default="0xffff" />
+    <!--Rectifier #6 Iout-->
+    <register start="3234" typeId="0xA000" objectId="0x20c0" instanceId="0x0006" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #7 main state-->
+    <register start="3264" typeId="0xA000" objectId="0x2280" instanceId="0x0007" default="0xffff" />
+    <!--Rectifier #7 sub state-->
+    <register start="3265" typeId="0xA000" objectId="0x22A0" instanceId="0x0007" default="0xffff" />
+    <!--Rectifier #7 Iout-->
+    <register start="3266" typeId="0xA000" objectId="0x20c0" instanceId="0x0007" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #8 main state-->
+    <register start="3296" typeId="0xA000" objectId="0x2280" instanceId="0x0008" default="0xffff" />
+    <!--Rectifier #8 sub state-->
+    <register start="3297" typeId="0xA000" objectId="0x22A0" instanceId="0x0008" default="0xffff" />
+    <!--Rectifier #8 Iout-->
+    <register start="3298" typeId="0xA000" objectId="0x20c0" instanceId="0x0008" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #9 main state-->
+    <register start="3328" typeId="0xA000" objectId="0x2280" instanceId="0x0009" default="0xffff" />
+    <!--Rectifier #9 sub state-->
+    <register start="3329" typeId="0xA000" objectId="0x22A0" instanceId="0x0009" default="0xffff" />
+    <!--Rectifier #9 Iout-->
+    <register start="3330" typeId="0xA000" objectId="0x20c0" instanceId="0x0009" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #10 main state-->
+    <register start="3360" typeId="0xA000" objectId="0x2280" instanceId="0x000A" default="0xffff" />
+    <!--Rectifier #10 sub state-->
+    <register start="3361" typeId="0xA000" objectId="0x22A0" instanceId="0x000A" default="0xffff" />
+    <!--Rectifier #10 Iout-->
+    <register start="3362" typeId="0xA000" objectId="0x20c0" instanceId="0x000A" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #11 main state-->
+    <register start="3392" typeId="0xA000" objectId="0x2280" instanceId="0x000B" default="0xffff" />
+    <!--Rectifier #11 sub state-->
+    <register start="3393" typeId="0xA000" objectId="0x22A0" instanceId="0x000B" default="0xffff" />
+    <!--Rectifier #11 Iout-->
+    <register start="3394" typeId="0xA000" objectId="0x20c0" instanceId="0x000B" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #12 main state-->
+    <register start="3424" typeId="0xA000" objectId="0x2280" instanceId="0x000C" default="0xffff" />
+    <!--Rectifier #12 sub state-->
+    <register start="3425" typeId="0xA000" objectId="0x22A0" instanceId="0x000C" default="0xffff" />
+    <!--Rectifier #12 Iout-->
+    <register start="3426" typeId="0xA000" objectId="0x20c0" instanceId="0x000C" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #13 main state-->
+    <register start="3456" typeId="0xA000" objectId="0x2280" instanceId="0x000D" default="0xffff" />
+    <!--Rectifier #13 sub state-->
+    <register start="3457" typeId="0xA000" objectId="0x22A0" instanceId="0x000D" default="0xffff" />
+    <!--Rectifier #13 Iout-->
+    <register start="3458" typeId="0xA000" objectId="0x20c0" instanceId="0x000D" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #14 main state-->
+    <register start="3488" typeId="0xA000" objectId="0x2280" instanceId="0x000E" default="0xffff" />
+    <!--Rectifier #14 sub state-->
+    <register start="3489" typeId="0xA000" objectId="0x22A0" instanceId="0x000E" default="0xffff" />
+    <!--Rectifier #14 Iout-->
+    <register start="3490" typeId="0xA000" objectId="0x20c0" instanceId="0x000E" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #15 main state-->
+    <register start="3520" typeId="0xA000" objectId="0x2280" instanceId="0x000F" default="0xffff" />
+    <!--Rectifier #15 sub state-->
+    <register start="3521" typeId="0xA000" objectId="0x22A0" instanceId="0x000F" default="0xffff" />
+    <!--Rectifier #15 Iout-->
+    <register start="3522" typeId="0xA000" objectId="0x20c0" instanceId="0x000F" type="signed" default="0x7fff" />
+    
+    <!--Rectifier #16 main state-->
+    <register start="3552" typeId="0xA000" objectId="0x2280" instanceId="0x0010" default="0xffff" />
+    <!--Rectifier #16 sub state-->
+    <register start="3553" typeId="0xA000" objectId="0x22A0" instanceId="0x0010" default="0xffff" />
+    <!--Rectifier #16 Iout-->
+    <register start="3554" typeId="0xA000" objectId="0x20c0" instanceId="0x0010" type="signed" default="0x7fff" />
+    
+  
+
+  </inputRegister>
+
+  <!--32 bits MSB-->
+  <inputRegister>  
+    <!--Rectifier #1 Pout MSB-->
+    <register start="3075" typeId="0xA000" objectId="0x20c2" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Rectifier #2 Pout MSB-->
+    <register start="3107" typeId="0xA000" objectId="0x20c2" instanceId="0x0002" type="signed" default="0x7fff" />  
+    <!--Rectifier #3 Pout MSB-->
+    <register start="3139" typeId="0xA000" objectId="0x20c2" instanceId="0x0003" type="signed" default="0x7fff" />  
+    <!--Rectifier #4 Pout MSB-->
+    <register start="3171" typeId="0xA000" objectId="0x20c2" instanceId="0x0004" type="signed" default="0x7fff" />  
+    <!--Rectifier #5 Pout MSB-->
+    <register start="3203" typeId="0xA000" objectId="0x20c2" instanceId="0x0005" type="signed" default="0x7fff" />  
+    <!--Rectifier #6 Pout MSB-->
+    <register start="3235" typeId="0xA000" objectId="0x20c2" instanceId="0x0006" type="signed" default="0x7fff" />  
+    <!--Rectifier #7 Pout MSB-->
+    <register start="3267" typeId="0xA000" objectId="0x20c2" instanceId="0x0007" type="signed" default="0x7fff" />  
+    <!--Rectifier #8 Pout MSB-->
+    <register start="3299" typeId="0xA000" objectId="0x20c2" instanceId="0x0008" type="signed" default="0x7fff" />  
+    <!--Rectifier #9 Pout MSB-->
+    <register start="3331" typeId="0xA000" objectId="0x20c2" instanceId="0x0009" type="signed" default="0x7fff" />  
+    <!--Rectifier #10 Pout MSB-->
+    <register start="3363" typeId="0xA000" objectId="0x20c2" instanceId="0x000A" type="signed" default="0x7fff" />  
+    <!--Rectifier #11 Pout MSB-->
+    <register start="3395" typeId="0xA000" objectId="0x20c2" instanceId="0x000B" type="signed" default="0x7fff" />  
+    <!--Rectifier #12 Pout MSB-->
+    <register start="3427" typeId="0xA000" objectId="0x20c2" instanceId="0x000C" type="signed" default="0x7fff" />  
+    <!--Rectifier #13 Pout MSB-->
+    <register start="3459" typeId="0xA000" objectId="0x20c2" instanceId="0x000D" type="signed" default="0x7fff" />  
+    <!--Rectifier #14 Pout MSB-->
+    <register start="3491" typeId="0xA000" objectId="0x20c2" instanceId="0x000E" type="signed" default="0x7fff" />  
+    <!--Rectifier #15 Pout MSB-->
+    <register start="3523" typeId="0xA000" objectId="0x20c2" instanceId="0x000F" type="signed" default="0x7fff" />  
+    <!--Rectifier #16 Pout MSB-->
+    <register start="3555" typeId="0xA000" objectId="0x20c2" instanceId="0x0010" type="signed" default="0x7fff" />  
+ 
+                               
+  
+    <scaling>
+      <read numerator="1" denominator="65536" offset="0"/>
+    </scaling>   
+  </inputRegister>
+  
+  <!--32 bits LSB-->
+  <inputRegister>
+    <!--Rectifier #1 Pout LSB-->
+    <register start="3076" typeId="0xA000" objectId="0x20c2" instanceId="0x0001" type="signed" default="0xffff" />
+    <!--Rectifier #2 Pout LSB-->
+    <register start="3108" typeId="0xA000" objectId="0x20c2" instanceId="0x0002" type="signed" default="0xffff" />
+    <!--Rectifier #3 Pout LSB-->
+    <register start="3140" typeId="0xA000" objectId="0x20c2" instanceId="0x0003" type="signed" default="0xffff" />
+    <!--Rectifier #4 Pout LSB-->
+    <register start="3172" typeId="0xA000" objectId="0x20c2" instanceId="0x0004" type="signed" default="0xffff" />
+    <!--Rectifier #5 Pout LSB-->
+    <register start="3204" typeId="0xA000" objectId="0x20c2" instanceId="0x0005" type="signed" default="0xffff" />
+    <!--Rectifier #6 Pout LSB-->
+    <register start="3236" typeId="0xA000" objectId="0x20c2" instanceId="0x0006" type="signed" default="0xffff" />
+    <!--Rectifier #7 Pout LSB-->
+    <register start="3268" typeId="0xA000" objectId="0x20c2" instanceId="0x0007" type="signed" default="0xffff" />
+    <!--Rectifier #8 Pout LSB-->
+    <register start="3300" typeId="0xA000" objectId="0x20c2" instanceId="0x0008" type="signed" default="0xffff" />
+    <!--Rectifier #9 Pout LSB-->
+    <register start="3332" typeId="0xA000" objectId="0x20c2" instanceId="0x0009" type="signed" default="0xffff" />
+    <!--Rectifier #10 Pout LSB-->
+    <register start="3364" typeId="0xA000" objectId="0x20c2" instanceId="0x000A" type="signed" default="0xffff" />
+    <!--Rectifier #11 Pout LSB-->
+    <register start="3396" typeId="0xA000" objectId="0x20c2" instanceId="0x000B" type="signed" default="0xffff" />
+    <!--Rectifier #12 Pout LSB-->
+    <register start="3428" typeId="0xA000" objectId="0x20c2" instanceId="0x000C" type="signed" default="0xffff" />
+    <!--Rectifier #13 Pout LSB-->
+    <register start="3460" typeId="0xA000" objectId="0x20c2" instanceId="0x000D" type="signed" default="0xffff" />
+    <!--Rectifier #14 Pout LSB-->
+    <register start="3492" typeId="0xA000" objectId="0x20c2" instanceId="0x000E" type="signed" default="0xffff" />
+    <!--Rectifier #15 Pout LSB-->
+    <register start="3524" typeId="0xA000" objectId="0x20c2" instanceId="0x000F" type="signed" default="0xffff" />
+    <!--Rectifier #16 Pout LSB-->
+    <register start="3556" typeId="0xA000" objectId="0x20c2" instanceId="0x0010" type="signed" default="0xffff" />
+   
+    
+  </inputRegister>  
+  
+  
+ 
+
+
+  <!--group Battery-->
+  <inputRegister>
+    <!--State of charge-->
+    <register start="7168" typeId="0x10e0" objectId="0x10a2" instanceId="0x0001" default="0xffff"/>      
+    <!--equalize status-->
+    <register start="7171" typeId="0x10e2" objectId="0x2010" instanceId="0x0001" default="0xffff"/>
+    <!--boost charge status-->
+    <register start="7172" typeId="0x10e3" objectId="0x2010" instanceId="0x0001" default="0xffff"/>
+    <!--Batt Test: result-->
+    <register start="7190" typeId="0x10e1" objectId="0x2050" instanceId="0x0001" default="0xffff"/>
+    <!--Batt Test: status-->
+    <register start="7191" typeId="0x10e1" objectId="0x2020" instanceId="0x0001" default="0xffff"/>
+    <!--Batt Test: end voltage-->
+    <register start="7192" typeId="0x10e1" objectId="0x2042" instanceId="0x0001" default="0xffff"/>
+    <!--Charge Mode-->
+    <register start="7193" typeId="0x10e0" objectId="0x1010" instanceId="0x0001" default="0x0000"/>
+    <!--Temp. Compensation State-->
+    <register start="7194" typeId="0x10e0" objectId="0x1310" instanceId="0x0001" default="0x0000"/>  
+
+    <!--Battery #1 voltage-->
+    <register start="7392" typeId="0x10b0" objectId="0x1061" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Battery #1 current-->
+    <register start="7393" typeId="0x10b0" objectId="0x1060" instanceId="0x0001" type="signed" default="0x7fff" />      
+    <!--Battery #2 voltage-->
+    <register start="7432" typeId="0x10b0" objectId="0x1061" instanceId="0x0002" type="signed" default="0x7fff" />
+    <!--Battery #2 current-->
+    <register start="7433" typeId="0x10b0" objectId="0x1060" instanceId="0x0002" type="signed" default="0x7fff" />      
+    <!--Battery #3 voltage-->
+    <register start="7472" typeId="0x10b0" objectId="0x1061" instanceId="0x0003" type="signed" default="0x7fff" />
+    <!--Battery #3 current-->
+    <register start="7473" typeId="0x10b0" objectId="0x1060" instanceId="0x0003" type="signed" default="0x7fff" />      
+    <!--Battery #4 voltage-->
+    <register start="7512" typeId="0x10b0" objectId="0x1061" instanceId="0x0004" type="signed" default="0x7fff" />
+    <!--Battery #4 current-->
+    <register start="7513" typeId="0x10b0" objectId="0x1060" instanceId="0x0004" type="signed" default="0x7fff" />      
+    <!--Battery #5 voltage-->
+    <register start="7552" typeId="0x10b0" objectId="0x1061" instanceId="0x0005" type="signed" default="0x7fff" />
+    <!--Battery #5 current-->
+    <register start="7553" typeId="0x10b0" objectId="0x1060" instanceId="0x0005" type="signed" default="0x7fff" />      
+    <!--Battery #6 voltage-->
+    <register start="7592" typeId="0x10b0" objectId="0x1061" instanceId="0x0006" type="signed" default="0x7fff" />
+    <!--Battery #6 current-->
+    <register start="7593" typeId="0x10b0" objectId="0x1060" instanceId="0x0006" type="signed" default="0x7fff" />      
+  </inputRegister>
+  
+
+  <!--32 bits MSB-->
+  <inputRegister>  
+    <!--Battery total energy MSB-->
+    <register start="7169" typeId="0x1090" objectId="0x1390" instanceId="0x0001" type="signed" default="0x7fff" />
+
+    <!--Battery #1 energy MSB-->
+    <register start="7394" typeId="0x10b0" objectId="0x0180" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Battery #1 capacity MSB-->
+    <register start="7396" typeId="0x10b0" objectId="0x1101" instanceId="0x0001" default="0xffff" />
+    <!--Battery #2 energy MSB-->
+    <register start="7434" typeId="0x10b0" objectId="0x0180" instanceId="0x0002" type="signed" default="0x7fff" />
+    <!--Battery #2 capacity MSB-->
+    <register start="7436" typeId="0x10b0" objectId="0x1101" instanceId="0x0002" default="0xffff" />
+    <!--Battery #3 energy MSB-->
+    <register start="7474" typeId="0x10b0" objectId="0x0180" instanceId="0x0003" type="signed" default="0x7fff" />
+    <!--Battery #3 capacity MSB-->
+    <register start="7476" typeId="0x10b0" objectId="0x1101" instanceId="0x0003" default="0xffff" />
+    <!--Battery #4 energy MSB-->
+    <register start="7514" typeId="0x10b0" objectId="0x0180" instanceId="0x0004" type="signed" default="0x7fff" />
+    <!--Battery #4 capacity MSB-->
+    <register start="7516" typeId="0x10b0" objectId="0x1101" instanceId="0x0004" default="0xffff" />
+    <!--Battery #5 energy MSB-->
+    <register start="7554" typeId="0x10b0" objectId="0x0180" instanceId="0x0005" type="signed" default="0x7fff" />
+    <!--Battery #5 capacity MSB-->
+    <register start="7556" typeId="0x10b0" objectId="0x1101" instanceId="0x0005" default="0xffff" />
+    <!--Battery #6 energy MSB-->
+    <register start="7594" typeId="0x10b0" objectId="0x0180" instanceId="0x0006" type="signed" default="0x7fff" />
+    <!--Battery #6 capacity MSB-->
+    <register start="7596" typeId="0x10b0" objectId="0x1101" instanceId="0x0006" default="0xffff" />
+  
+    <scaling>
+      <read numerator="1" denominator="65536" offset="0"/>
+    </scaling>   
+  </inputRegister>
+
+  <!--32 bits LSB-->
+  <inputRegister>  
+    <!--Battery total energy LSB-->
+    <register start="7170" typeId="0x1090" objectId="0x1390" instanceId="0x0001" type="signed" default="0xffff" />
+
+    <!--Battery #1 energy LSB-->
+    <register start="7395" typeId="0x10b0" objectId="0x0180" instanceId="0x0001" type="signed" default="0xffff" />
+    <!--Battery #1 capacity MSB-->
+    <register start="7397" typeId="0x10b0" objectId="0x1101" instanceId="0x0001" default="0xffff" />    
+    <!--Battery #2 energy LSB-->
+    <register start="7435" typeId="0x10b0" objectId="0x0180" instanceId="0x0002" type="signed" default="0xffff" />
+    <!--Battery #2 capacity MSB-->
+    <register start="7437" typeId="0x10b0" objectId="0x1101" instanceId="0x0002" default="0xffff" />    
+    <!--Battery #3 energy LSB-->
+    <register start="7475" typeId="0x10b0" objectId="0x0180" instanceId="0x0003" type="signed" default="0xffff" />
+    <!--Battery #3 capacity MSB-->
+    <register start="7477" typeId="0x10b0" objectId="0x1101" instanceId="0x0003" default="0xffff" />    
+    <!--Battery #4 energy LSB-->
+    <register start="7515" typeId="0x10b0" objectId="0x0180" instanceId="0x0004" type="signed" default="0xffff" />
+    <!--Battery #4 capacity MSB-->
+    <register start="7517" typeId="0x10b0" objectId="0x1101" instanceId="0x0004" default="0xffff" />    
+    <!--Battery #5 energy LSB-->
+    <register start="7555" typeId="0x10b0" objectId="0x0180" instanceId="0x0005" type="signed" default="0xffff" />
+    <!--Battery #5 capacity MSB-->
+    <register start="7557" typeId="0x10b0" objectId="0x1101" instanceId="0x0005" default="0xffff" />    
+    <!--Battery #6 energy LSB-->
+    <register start="7595" typeId="0x10b0" objectId="0x0180" instanceId="0x0006" type="signed" default="0xffff" />
+    <!--Battery #6 capacity MSB-->
+    <register start="7597" typeId="0x10b0" objectId="0x1101" instanceId="0x0006" default="0xffff" />      
+  </inputRegister>
+  
+   <!--Battery life-->
+  <inputRegister> 
+    <!--Estimated backup time-->
+    <register start="7600" typeId="0x10e0" objectId="0x1072" instanceId="0x0001" default="0xffff" /> 
+      <scaling>
+      <read numerator="1" denominator="60" offset="0"/>
+    </scaling>   
+     
+  </inputRegister>
+  
+    <inputRegister>
+   <!--Remaining days-->
+    <register start="7601" typeId="0x10eb" objectId="0x2044" instanceId="0x0001" default="0xffff" /> 
+    <!--Real cycles-->
+    <register start="7602" typeId="0x10eb" objectId="0x2040" instanceId="0x0001" default="0xffff" /> 
+     <!--Effective cycles-->
+    <register start="7603" typeId="0x10eb" objectId="0x2041" instanceId="0x0001" default="0xffff" /> 
+  
+      
+     
+  </inputRegister>
+  
+  
+  <!-- ########################### group DCsource ########################### -->
+  
+  <inputRegister>
+    <!--Isource-->
+    <register start="9218" typeId="0x1090" objectId="0x1007" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--DC Source#1 current-->
+    <register start="9600" typeId="0x10c5" objectId="0x1063" instanceId="0x0001" type="signed" default="0x7fff" />    
+  </inputRegister>
+  
+  <!--32 bits MSB-->
+  <inputRegister>  
+    <!--DC source total energy MSB -->
+    <register start="9216" typeId="0x1090" objectId="0x1392" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--DC Source#1 energy MSB-->
+    <register start="9601" typeId="0x10c5" objectId="0x0180" instanceId="0x0001" type="signed" default="0x7fff" />    
+  
+    <scaling>
+      <read numerator="1" denominator="65536" offset="0"/>
+    </scaling>   
+  </inputRegister>
+
+  <!--32 bits LSB-->
+  <inputRegister>  
+    <!--DC source total energy LSB-->
+    <register start="9217" typeId="0x1090" objectId="0x1392" instanceId="0x0001" type="signed" default="0xffff" />
+    <!--DC Source#1 energy LSB-->
+    <register start="9602" typeId="0x10c5" objectId="0x0180" instanceId="0x0001" type="signed" default="0xffff" />    
+  </inputRegister>
+  
+  <!-- ########################### group DC/DC ########################### -->
+  
+  <inputRegister>
+    <!--DCDC installed-->
+    <register start="11262" typeId="0xa005" objectId="0x3012" instanceId="0x0001" default="0x7fff" />
+    <!--DCDC faulty-->
+    <register start="11263" typeId="0xa005" objectId="0x3014" instanceId="0x0001"  default="0x7fff" />
+    <!--Idcdc-->
+    <register start="11268" typeId="0x1090" objectId="0x1009" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Udcdc-->
+    <register start="11269" typeId="0x1090" objectId="0x1008" instanceId="0x0001" type="signed" default="0x7fff" />
+  </inputRegister>
+ 
+  <!--32 bits MSB-->
+  <inputRegister>  
+    <!--DC/DC total energy MSB-->
+    <register start="11264" typeId="0x1090" objectId="0x1394" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Pdcdc MSB-->
+    <register start="11266" typeId="0x1090" objectId="0x100A" instanceId="0x0001" type="signed" default="0x7fff" />
+  
+    <scaling>
+      <read numerator="1" denominator="65536" offset="0"/>
+    </scaling>   
+  </inputRegister>
+
+  <!--32 bits LSB-->
+  <inputRegister>  
+    <!--DC/DC total energy LSB-->
+    <register start="11265" typeId="0x1090" objectId="0x1394" instanceId="0x0001" type="signed" default="0xffff" />
+    <!--Pdcdc LSB-->
+    <register start="11267" typeId="0x1090" objectId="0x100A" instanceId="0x0001" type="signed" default="0xffff" />
+  </inputRegister>
+
+
+  <!-- ########################### group Load_1 ########################### -->
+  <inputRegister>
+    <!--Load #1 voltage-->
+    <register start="13824" typeId="0x10c0" objectId="0x1080" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Load #1 current-->
+    <register start="13825" typeId="0x10c0" objectId="0x1060" instanceId="0x0001" type="signed" default="0x7fff" />
+    
+    <!--Load #2 voltage-->
+    <register start="13840" typeId="0x10c0" objectId="0x1080" instanceId="0x0002" type="signed" default="0x7fff" />
+    <!--Load #2 current-->
+    <register start="13841" typeId="0x10c0" objectId="0x1060" instanceId="0x0002" type="signed" default="0x7fff" />
+    
+    <!--Load #3 voltage-->
+    <register start="13856" typeId="0x10c0" objectId="0x1080" instanceId="0x0003" type="signed" default="0x7fff" />
+    <!--Load #3 current-->
+    <register start="13857" typeId="0x10c0" objectId="0x1060" instanceId="0x0003" type="signed" default="0x7fff" />
+    
+    <!--Load #4 voltage-->
+    <register start="13872" typeId="0x10c0" objectId="0x1080" instanceId="0x0004" type="signed" default="0x7fff" />
+    <!--Load #4 current-->
+    <register start="13873" typeId="0x10c0" objectId="0x1060" instanceId="0x0004" type="signed" default="0x7fff" />
+    
+    <!--Load #5 voltage-->
+    <register start="13888" typeId="0x10c0" objectId="0x1080" instanceId="0x0005" type="signed" default="0x7fff" />
+    <!--Load #5 current-->
+    <register start="13889" typeId="0x10c0" objectId="0x1060" instanceId="0x0005" type="signed" default="0x7fff" />
+    
+    <!--Load #6 voltage-->
+    <register start="13904" typeId="0x10c0" objectId="0x1080" instanceId="0x0006" type="signed" default="0x7fff" />
+    <!--Load #6 current-->
+    <register start="13905" typeId="0x10c0" objectId="0x1060" instanceId="0x0006" type="signed" default="0x7fff" />
+     
+  </inputRegister>   
+  
+  <!--32 bits MSB-->
+  <inputRegister>  
+    <!--Load total energy-->
+    <register start="13312" typeId="0x1090" objectId="0x1391" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Load #1 energy-->
+    <register start="13826" typeId="0x10c0" objectId="0x0180" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Load #2 energy-->
+    <register start="13842" typeId="0x10c0" objectId="0x0180" instanceId="0x0002" type="signed" default="0x7fff" />
+    <!--Load #3 energy-->
+    <register start="13858" typeId="0x10c0" objectId="0x0180" instanceId="0x0003" type="signed" default="0x7fff" />
+    <!--Load #4 energy-->
+    <register start="13874" typeId="0x10c0" objectId="0x0180" instanceId="0x0004" type="signed" default="0x7fff" />
+    <!--Load #5 energy-->
+    <register start="13890" typeId="0x10c0" objectId="0x0180" instanceId="0x0005" type="signed" default="0x7fff" />
+    <!--Load #6 energy-->
+    <register start="13906" typeId="0x10c0" objectId="0x0180" instanceId="0x0006" type="signed" default="0x7fff" />
+  
+    <scaling>
+      <read numerator="1" denominator="65536" offset="0"/>
+    </scaling>   
+  </inputRegister>
+
+  <!--32 bits LSB-->
+  <inputRegister>  
+    <!--Load total energy-->
+    <register start="13313" typeId="0x1090" objectId="0x1391" instanceId="0x0001" type="signed" default="0xffff" />
+    <!--Load #1 energy-->
+    <register start="13827" typeId="0x10c0" objectId="0x0180" instanceId="0x0001" type="signed" default="0xffff" />
+    <!--Load #2 energy-->
+    <register start="13843" typeId="0x10c0" objectId="0x0180" instanceId="0x0002" type="signed" default="0xffff" />
+    <!--Load #3 energy-->
+    <register start="13859" typeId="0x10c0" objectId="0x0180" instanceId="0x0003" type="signed" default="0xffff" />
+    <!--Load #4 energy-->
+    <register start="13875" typeId="0x10c0" objectId="0x0180" instanceId="0x0004" type="signed" default="0xffff" />
+    <!--Load #5 energy-->
+    <register start="13891" typeId="0x10c0" objectId="0x0180" instanceId="0x0005" type="signed" default="0xffff" />
+    <!--Load #6 energy-->
+    <register start="13907" typeId="0x10c0" objectId="0x0180" instanceId="0x0006" type="signed" default="0xffff" />
+  </inputRegister>
+  
+  
+  <!-- ########################### group PVC_1 ########################### -->
+  
+  <inputRegister>
+    <!--Ipvc-->
+    <register start="17412" typeId="0x1090" objectId="0x100B" instanceId="0x0001" type="signed" default="0x7fff" />
+     <!--PVCs installed -->
+    <register start="17413" typeId="0xa005" objectId="0x3072" instanceId="0x0001" default="0xffff" />
+     <!--PVCs faulty-->
+    <register start="17414" typeId="0xa005" objectId="0x3074" instanceId="0x0001" default="0xffff" />
+   
+  </inputRegister>
+ 
+  <!--32 bits MSB-->
+  <inputRegister>  
+    <!--PVC total energy MSB-->
+    <register start="17408" typeId="0x1090" objectId="0x1395" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Ppvc MSB-->
+    <register start="17410" typeId="0x1090" objectId="0x100c" instanceId="0x0001" type="signed" default="0x7fff" />
+  
+    <scaling>
+      <read numerator="1" denominator="65536" offset="0"/>
+    </scaling>   
+  </inputRegister>
+
+  <!--32 bits LSB-->
+  <inputRegister>  
+    <!--PVC total energy LSB-->
+    <register start="17409" typeId="0x1090" objectId="0x1395" instanceId="0x0001" type="signed" default="0xffff" />
+    <!--Ppvc LSB-->
+    <register start="17411" typeId="0x1090" objectId="0x100c" instanceId="0x0001" type="signed" default="0xffff" />
+  </inputRegister>
+  
+  <!-- ########################### group BM_1 ########################### -->
+  
+  <inputRegister>
+    <!--Block Measurement #1 Ublock-->
+    <register start="19456" typeId="0x10d5" objectId="0x2011" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Block Measurement #2 Ublock-->
+    <register start="19457" typeId="0x10d5" objectId="0x2011" instanceId="0x0002" type="signed" default="0x7fff" />
+    
+ 
+
+  </inputRegister>
+  
+ <!-- Middle point measurement -->
+ <inputRegister>
+  <!--Middle point measurement #1 MC Ump-->
+    <register start="19501" typeId="0x10d4" objectId="0x2013" instanceId="0x0001" type="signed" default="0x7fff" />
+     <!--Middle point measurement #2 MC Ump-->
+    <register start="19502" typeId="0x10d4" objectId="0x2013" instanceId="0x0002" type="signed" default="0x7fff" />
+     <!--Middle point measurement #3 MC Ump-->
+    <register start="19503" typeId="0x10d4" objectId="0x2013" instanceId="0x0003" type="signed" default="0x7fff" />
+     <!--Middle point measurement #1 BC Ump-->
+    <register start="19504" typeId="0x10d4" objectId="0x2013" instanceId="0x0004" type="signed" default="0x7fff" />
+    <!--Middle point measurement #2 BC Ump-->
+    <register start="19505" typeId="0x10d4" objectId="0x2013" instanceId="0x0005" type="signed" default="0x7fff" />
+     <!--Middle point measurement #4 BC Ump-->
+    <register start="19506" typeId="0x10d4" objectId="0x2013" instanceId="0x0006" type="signed" default="0x7fff" />
+     <!--Middle point measurement #4 Ump-->
+    <register start="19507" typeId="0x10d4" objectId="0x2013" instanceId="0x0007" type="signed" default="0x7fff" />
+     <!--Middle point measurement #5 Ump-->
+    <register start="19508" typeId="0x10d4" objectId="0x2013" instanceId="0x0008" type="signed" default="0x7fff" />
+   </inputRegister>
+   
+  
+  
+  <!-- ########################### HOLDING REGISTERS ###################################################### -->
+  
+  <!-- ########################### group General_1 ########################### -->
+  <holdingRegister>
+    <!--Modbus slave id-->
+    <register start="0" typeId="0x1113" objectId="0x1000" instanceId="0x0001"/>
+  </holdingRegister>
+  
+  <!--###########################System voltage supervision#########################-->
+  <holdingRegister>
+  
+<!--Ua high voltage-->
+    <register start="51" typeId="0x10e0" objectId="0x1030" instanceId="0x0001" type="signed"/>
+    <!--Ua low voltage-->
+    <register start="52" typeId="0x10e0" objectId="0x1031" instanceId="0x0001" type="signed"/>
+ <!--Us high voltage-->
+    <register start="53" typeId="0x10e0" objectId="0x1032" instanceId="0x0001" type="signed"/>
+    <!--Us low voltage-->
+    <register start="54" typeId="0x10e0" objectId="0x1033" instanceId="0x0001" type="signed"/>
+      <!--BoD voltage-->
+    <register start="55" typeId="0x10e0" objectId="0x1037" instanceId="0x0001" type="signed"/>
+
+    
+  </holdingRegister>
+  
+    <!--###########################Rectifier parameters#########################-->
+  <holdingRegister>
+  
+<!-- Rectifier voltage-->
+    <register start="100" typeId="0xa003" objectId="0x2100" instanceId="0x0001" />
+    <!--Rectifier current limit-->
+    <register start="101" typeId="0xa003" objectId="0x2101" instanceId="0x0001" />
+ <!--Rectifier power limit-->
+    <register start="102" typeId="0xa003" objectId="0x2102" instanceId="0x0001"/>
+        <!--Rectifier input low off-->
+    <register start="103" typeId="0xa003" objectId="0x2120" instanceId="0x0001" />
+     <!--Rectifier input low on-->
+    <register start="104" typeId="0xa003" objectId="0x2121" instanceId="0x0001" />
+     <!--Rectifier input high off-->
+    <register start="105" typeId="0xa003" objectId="0x2122" instanceId="0x0001" />
+     <!--Rectifier input high on-->
+    <register start="106" typeId="0xa003" objectId="0x2123" instanceId="0x0001" />
+    <!-- Rectifier Umax off-->
+    <register start="107" typeId="0xa003" objectId="0x3063" instanceId="0x0001" />
+    <!--Rectifier power up delay-->
+    <register start="108" typeId="0xa003" objectId="0x2113" instanceId="0x0001" />
+ <!--Rectifier power up time-->
+    <register start="109" typeId="0xa003" objectId="0x3020" instanceId="0x0001"/>
+    <!-- Rectifier voltage startup-->
+    <register start="110" typeId="0xa003" objectId="0x2110" instanceId="0x0001" />
+    <!--Rectifier current limit startup-->
+    <register start="111" typeId="0xa003" objectId="0x2111" instanceId="0x0001" />
+ <!--Rectifier power limit startup-->
+    <register start="112" typeId="0xa003" objectId="0x2112" instanceId="0x0001"/>
+    <!--Rectifier limit time startup-->
+    <register start="113" typeId="0xa003" objectId="0x2114" instanceId="0x0001"/>
+    
+       
+    
+  </holdingRegister>
+  
+  <!-- ########################### group Battery ########################### -->
+
+  <holdingRegister>
+    <!--Float charge: usys at 20 deg-->
+    <register start="7168" typeId="0x10e0" objectId="0x1022" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Float charge: Tcoeff-->
+    <register start="7169" typeId="0x10e0" objectId="0x1021" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Float charge: Tc_low-->
+    <register start="7170" typeId="0x10e0" objectId="0x1023" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Float_charge: Tc_high-->
+    <register start="7171" typeId="0x10e0" objectId="0x1024" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Float charge: Utc_high-->
+    <register start="7172" typeId="0x10e0" objectId="0x1025" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Float charge: Voltage Within Ufloat±-->
+    <register start="7173" typeId="0x10e0" objectId="0x1060" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--equalize: Voltage-->
+    <register start="7175" typeId="0x10E2" objectId="0x2090" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Boost charge: type-->
+    <register start="7180" typeId="0x10E3" objectId="0x2080" instanceId="0x0001" default="0xffff" />
+    <!--Boost charge: voltage-->
+    <register start="7181" typeId="0x10E3" objectId="0x2090" instanceId="0x0001" type="signed" default="0x7fff" />
+         <!--Boost charge: Istop-->
+    <register start="7182" typeId="0x10E3" objectId="0x20E1" instanceId="0x0001" type="signed" default="0x7fff"/>
+     <!--Boost charge: Istart-->
+    <register start="7183" typeId="0x10E3" objectId="0x20E0" instanceId="0x0001" type="signed" default="0x7fff"/>
+
+    <!--Batt Test: Usupport-->
+    <register start="7190" typeId="0x10e1" objectId="0x20e0" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Batt Test: Idischarge-->
+    <register start="7192" typeId="0x10e1" objectId="0x20e1" instanceId="0x0001" type="signed" default="0x7fff" />
+    <!--Batt Test: type-->
+    <register start="7194" typeId="0x10e1" objectId="0x20d0" instanceId="0x0001" default="0xffff" />
+  </holdingRegister>
+
+  <!--hours-->
+  <holdingRegister>
+    <!--Float charge: max. Recharge Duration-->
+    <register start="7174" typeId="0x10e0" objectId="0x1061" instanceId="0x0001" default="0xffff" />
+    
+    <scaling>
+      <read numerator="1" denominator="3600" offset="0"/>
+      <write numerator="3600" denominator="1" offset="0"/>
+    </scaling>   
+  </holdingRegister>
+  
+  <!--days-->
+  <holdingRegister>
+    <!--Batt Test: Interval-->
+    <register start="7193" typeId="0x10e1" objectId="0x2101" instanceId="0x0001" default="0xffff" />
+    
+    <scaling>
+      <read numerator="1" denominator="86400" offset="0"/>
+      <write numerator="86400" denominator="1" offset="0"/>
+    </scaling>   
+  </holdingRegister>
+
+
+  <holdingRegister>
+    <!--equalize: Duration-->
+    <register start="7176" typeId="0x10E2" objectId="0x2091" instanceId="0x0001" default="0xffff" />
+    <!--Batt Test: duration-->
+    <register start="7191" typeId="0x10e1" objectId="0x20e2" instanceId="0x0001" default="0xffff" />    
+     <!--expected backup time-->
+    <register start="7198" typeId="0x10e0" objectId="0x1071" instanceId="0x0001" default="0xffff" />    
+
+    <scaling>
+      <read numerator="1" denominator="60" offset="0"/>
+      <write numerator="60" denominator="1" offset="0"/>
+    </scaling>   
+  </holdingRegister>
+  
+    <!--battery life prediction-->
+    <holdingRegister>
+     <!--Design life in years-->
+    <register start="7195" typeId="0x10eb" objectId="0x2020" instanceId="0x0001" default="0xffff" />
+    <!--expected cycles @50% DoC-->
+    <register start="7196" typeId="0x10eb" objectId="0x2021" instanceId="0x0001" default="0xffff" />
+    <!--Renmaining days notification-->
+    <register start="7197" typeId="0x10eb" objectId="0x2022" instanceId="0x0001" default="0xffff" />
+  </holdingRegister>
+
+  
+  
+  
+      <holdingRegister>
+      <!--Bat .Capacity string1-->
+     <register start="7201" typeId="0x10B0" objectId="0x1101" instanceId="0x0001" type="signed" default="0x7fff"/>
+     <!--Bat .Capacity string2-->
+     <register start="7202" typeId="0x10B0" objectId="0x1101" instanceId="0x0002" type="signed" default="0x7fff"/>
+     <!--Bat .Capacity string3-->
+     <register start="7203" typeId="0x10B0" objectId="0x1101" instanceId="0x0003" type="signed" default="0x7fff"/>
+      <!--Bat .Capacity string4-->
+     <register start="7204" typeId="0x10B0" objectId="0x1101" instanceId="0x0004" type="signed" default="0x7fff"/>
+     <!--Bat .Capacity string5-->
+     <register start="7205" typeId="0x10B0" objectId="0x1101" instanceId="0x0005" type="signed" default="0x7fff"/>
+     <!--Bat .Capacity string6-->
+     <register start="7206" typeId="0x10B0" objectId="0x1101" instanceId="0x0006" type="signed" default="0x7fff"/>
+      <!--Bat .current limit string1-->
+     <register start="7211" typeId="0x10B0" objectId="0x1100" instanceId="0x0001" type="signed" default="0x7fff"/>
+      <!--Bat .current limit string2-->
+     <register start="7212" typeId="0x10B0" objectId="0x1100" instanceId="0x0002" type="signed" default="0x7fff"/>
+      <!--Bat .current limit string3-->
+     <register start="7213" typeId="0x10B0" objectId="0x1100" instanceId="0x0003" type="signed" default="0x7fff"/>
+       <!--Bat .current limit string4-->
+     <register start="7214" typeId="0x10B0" objectId="0x1100" instanceId="0x0004" type="signed" default="0x7fff"/>
+      <!--Bat .current limit string5-->
+     <register start="7215" typeId="0x10B0" objectId="0x1100" instanceId="0x0005" type="signed" default="0x7fff"/>
+     <!--Bat .current limit string6-->
+     <register start="7216" typeId="0x10B0" objectId="0x1100" instanceId="0x0006" type="signed" default="0x7fff"/>
+ 
+    <scaling>
+      <read numerator="1" denominator="10" offset="0"/>
+      <write numerator="10" denominator="1" offset="0"/>
+           </scaling>   
+ 
+           </holdingRegister>
+  
+</mapping>

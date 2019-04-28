@@ -1,0 +1,105 @@
+<PrimaryTables>
+	<InputRegisters>
+		<Tab Name="Battery">
+			<Register Address="0x00"	Name="Status"				Level="1" Signed="0" Scale="1"		Format="0x%04X" Unit=""		Description="BMS status bitfield"/>
+			<Register Address="0x01"	Name="SOC"					Level="0" Signed="1" Scale="0.01"	Format="" Unit="%"	Description="State of charge"/>
+			<Register Address="0x02"	Name="SOH"					Level="1" Signed="1" Scale="0.01"	Format="" Unit="%"	Description="State of health"/>
+			<Register Address="0x03"	Name="Capacity"				Level="0" Signed="1" Scale="0.01"	Format="" Unit="Ah"	Description="Full charge capacity"/>
+
+			<Register Address="0x04"	Name="Battery voltage" 		Level="0" Signed="1" Scale="0.01"	Format="" Unit="V"	Description="Internal battery voltage"/>
+			<Register Address="0x05"	Name="Rail voltage" 		Level="0" Signed="1" Scale="0.01"	Format="" Unit="V"	Description="External rail voltage"/>
+			<Register Address="0x06"	Name="Current"				Level="0" Signed="1" Scale="0.01"	Format="" Unit="A"	Description="Output current"/>
+			<Register Address="0x07"	Name="Min cell voltage"		Level="0" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Min voltage of all cells"/>
+			<Register Address="0x08"	Name="Max cell voltage"		Level="0" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Max voltage of all cells"/>
+			<Register Address="0x09"	Name="Average cell voltage"	Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Average cell voltage"/>
+			<Register Address="0x0A"	Name="Min cell temp"		Level="0" Signed="1" Scale="0.1"	Format="" Unit="°C"	Description="Min temperature of all cells" Translations="Temperature"/>
+			<Register Address="0x0B"	Name="Max cell temp"		Level="0" Signed="1" Scale="0.1"	Format="" Unit="°C"	Description="Max temperature of all cells" Translations="Temperature"/>
+			<Register Address="0x0C"	Name="FET temp"				Level="0" Signed="1" Scale="0.1"	Format="" Unit="°C"	Description="Temperature of semiconductor switch" Translations="Temperature"/>
+
+			<Register Address="0x0D"	Name="AFE temp"				Level="1" Signed="1" Scale="0.1"	Format="" Unit="°C"	Description="AFE die temperature" Translations="Temperature"/>
+			<Register Address="0x0E"	Name="MCU temp"				Level="1" Signed="1" Scale="0.1"	Format="" Unit="°C"	Description="MCU die temperature" Translations="Temperature"/>
+			<Register Address="0x0F"	Name="CLD temp"				Level="1" Signed="1" Scale="0.1"	Format="" Unit="°C"	Description="CLD FET temperature" Translations="Temperature"/>
+			<Register Address="0x10"	Name="Cell temp 1"			Level="1" Signed="1" Scale="0.1"	Format="" Unit="°C"	Description="Cell temperature 1" Translations="Temperature"/>
+			<Register Address="0x11"	Name="Cell temp 2"			Level="1" Signed="1" Scale="0.1"	Format="" Unit="°C"	Description="Cell temperature 2" Translations="Temperature"/>
+			<Register Address="0x12"	Name="Extended status"		Level="1" Signed="0" Scale="1"		Format="0x%04X" Unit=""		Description="Extended BMS status bitfield"/>
+			<Register Address="0x13"	Name="Balancing status"		Level="1" Signed="1" Scale="1"		Format="0x%04X" Unit=""		Description="Cell balancing status"/>
+
+			<Register Address="0x14"	Name="Cell voltage 1"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 1"/>
+			<Register Address="0x15"	Name="Cell voltage 2"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 2"/>
+			<Register Address="0x16"	Name="Cell voltage 3"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 3"/>
+			<Register Address="0x17"	Name="Cell voltage 4"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 4"/>
+			<Register Address="0x18"	Name="Cell voltage 5"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 5"/>
+			<Register Address="0x19"	Name="Cell voltage 6"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 6"/>
+			<Register Address="0x1A"	Name="Cell voltage 7"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 7"/>
+			<Register Address="0x1B"	Name="Cell voltage 8"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 8"/>
+			<Register Address="0x1C"	Name="Cell voltage 9"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 9"/>
+			<Register Address="0x1D"	Name="Cell voltage 10"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 10"/>
+			<Register Address="0x1E"	Name="Cell voltage 11"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 11"/>
+			<Register Address="0x1F"	Name="Cell voltage 12"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 12"/>
+			<Register Address="0x20"	Name="Cell voltage 13"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 13"/>
+			<Register Address="0x21"	Name="Cell voltage 14"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 14"/>
+			<Register Address="0x22"	Name="Cell voltage 15"		Level="1" Signed="1" Scale="0.001"	Format="" Unit="V"	Description="Cell voltage 15"/>
+
+			<Register Address="0x23"	Name="MCU serial number"			Level="1" Signed="0" Scale="1"		Format="0x%08X" Unit=""	Length="2"	Description="MCU serial number"/>
+			<Register Address="0x2D"	Name="Signature 1"					Level="1" Signed="0" Scale="1"		Format="0x%08X" Unit=""	Length="2"	Description="Protocol signature 1"/>
+			<Register Address="0x2F"	Name="Signature 2"					Level="1" Signed="0" Scale="1"		Format="0x%08X" Unit=""	Length="2"	Description="Protocol signature 2"/>
+			<Register Address="0x31"	Name="Protocol version"				Level="1" Signed="0" Scale="1"		Format="" 		Unit=""				Description="Protocol version"/>
+			<Register Address="0x32"	Name="Firmware version"				Level="1" Signed="0" Scale="1"		Format="0x%08X"	Unit=""	Length="2"	Description="Firmware version"/>
+			<Register Address="0x34"	Name="Float-charging voltage"		Level="1" Signed="0" Scale="0.01"	Format=""		Unit="V"			Description="Float-charging voltage"/>
+			<Register Address="0x35"	Name="Full-charging voltage" 		Level="1" Signed="0" Scale="0.01"	Format=""		Unit="V"			Description="Full-charging voltage"/>
+			<Register Address="0x36"	Name="Nominal charge current"		Level="1" Signed="0" Scale="0.01"	Format=""		Unit="A"			Description="Nominal charge current"/>
+			<Register Address="0x37"	Name="Nominal discharge current"	Level="1" Signed="0" Scale="0.01"	Format=""		Unit="A"			Description="Nominal discharge current"/>
+			<Register Address="0x38"	Name="Nominal capacity"				Level="1" Signed="0" Scale="0.01"	Format=""		Unit="Ah"			Description="Nominal capacity"/>
+			<Register Address="0x39"	Name="Charge regulation current"	Level="1" Signed="0" Scale="0.01"	Format=""		Unit="A"			Description="Charge regulation current"/>
+			<Register Address="0x3A"	Name="Raw SOC"						Level="1" Signed="0" Scale="0.01"	Format=""		Unit="%"			Description="Unscaled state-of-charge"/>
+			<Register Address="0x3B"	Name="Battery charge"				Level="1" Signed="0" Scale="0.01"	Format=""		Unit="Ah"			Description="Battery charge"/>
+			<Register Address="0x3C"	Name="Lifetime"						Level="1" Signed="0" Scale="1"		Format="%u s"	Unit="s" Length="2"	Description="Lifetime"/>
+			<Register Address="0x3E"	Name="Cycle count"					Level="1" Signed="0" Scale="1"		Format=""		Unit=""				Description="Cycle count"/>
+			<Register Address="0x3F"    Name="Model"                		Level="0" Signed="0" Scale="1" 		Format="" 		Unit=""				Description="Model number" Translations="Model"/>
+
+			<Register Address="0x40"	Name="AFE update period"	 		Level="1" Signed="1" Scale="0.001"  	Format=""		Unit="s"		Description="AFE update period"/>
+			<Register Address="0x41"	Name="AFE temp 1"					Level="1" Signed="1" Scale="0.1"		Format=""		Unit="°C"		Description="AFE die temperature 1" Translations="Temperature"/>
+			<Register Address="0x42"	Name="AFE temp 2"					Level="1" Signed="1" Scale="0.1"		Format=""		Unit="°C"		Description="AFE die temperature 2" Translations="Temperature"/>
+			<Register Address="0x43"	Name="AFE temp 3"					Level="1" Signed="1" Scale="0.1"		Format=""	 	Unit="°C"		Description="AFE die temperature 3" Translations="Temperature"/>
+			<Register Address="0x44"	Name="Service interface"			Level="1" Signed="1" Scale="1"			Format=""	 	Unit=""			Description="Service interface"     Translations="ServiceInterface"/>
+			<Register Address="0x45"	Name="Current gain"					Level="1" Signed="1" Scale="244.140625"	Format=""	 	Unit="PPM"		Description="Current gain"          Translations="CurrentGain"/>
+			<Register Address="0x46"	Name="LVD"							Level="1" Signed="1" Scale="0.01"       Format=""		Unit="V"		Description="Low-voltage disconnect"/>
+			<Register Address="0x47"	Name="5V supply"					Level="1" Signed="1" Scale="0.001"      Format=""		Unit="V"		Description="5V supply voltage"/>
+			<Register Address="0x48"	Name="Hardware revision" 		 	Level="1" Signed="1" Scale="1"          Format=""		Unit=""			Description="Hardware revision"     Translations="Revision"/>
+			<Register Address="0x49"	Name="Start-up checksum" 		 	Level="1" Signed="0" Scale="1"          Format="0x%04X"	Unit=""			Description="Start-up code checksum"/>
+			<Register Address="0x4A"	Name="Parallel known" 		 		Level="1" Signed="0" Scale="1"          Format="0x%04X"	Unit=""			Description="Parallel modules known"/>
+			<Register Address="0x4B"	Name="Parallel group" 		 		Level="1" Signed="0" Scale="1"          Format="0x%04X"	Unit=""			Description="Parallel modules in group"/>
+			<Register Address="0x4C"	Name="CAN receive error counter" 	Level="1" Signed="0" Scale="1"          Format=""		Unit=""			Description="CAN receive error counter"/>
+			<Register Address="0x4D"	Name="CAN transmit error counter"	Level="1" Signed="0" Scale="1"          Format=""		Unit=""			Description="CAN transmit error counter"/>
+			<Register Address="0x4E"	Name="Capacity fade"				Level="1" Signed="1" Scale="0.01"       Format=""		Unit="Ah"		Description="Capacity fade"/>
+		</Tab>
+	</InputRegisters>
+	
+	<HoldingRegisters>
+		<!-- Development build only -->
+		<Tab Name="Override">
+			<Register Address="0x25" 	Name="Charge" 		 		Level="1" Signed="1" Min="-1" Max="+1"		Scale="1"	Translations="Override"			Description="Charge FET control"/>
+			<Register Address="0x26"	Name="Discharge" 			Level="1" Signed="1" Min="-1" Max="+1"		Scale="1"	Translations="Override"			Description="Discharge FET control"/>
+			<Register Address="0x27"	Name="CLD" 		 			Level="1" Signed="1" Min="-1" Max="+1"		Scale="1" 	Translations="Override"			Description="CLD control"/>
+			<Register Address="0x28"	Name="Balance" 		 		Level="1" Signed="1" Min="-1" Max="0x7FFF"	Scale="1"	Translations="OverrideBalance"	Description="Cell balancing"/>
+			<Register Address="0x29"	Name="LED" 			 		Level="1" Signed="1" Min="-1" Max="0x0F"	Scale="1"	Translations="OverrideLED"		Description="LED control"/>
+			<Register Address="0x2A"	Name="Buzzer" 		 		Level="1" Signed="1" Min="-1" Max="+1"		Scale="1"	Translations="Override"			Description="Buzzer control"/>
+			<Register Address="0x2B"	Name="Relay" 		 		Level="1" Signed="1" Min="-1" Max="+1"		Scale="1"	Translations="Override"			Description="Relay control"/>
+			<Register Address="0x44"	Name="Service interface"	Level="1" Signed="1" Min="0"  Max="1"       Scale="1"   Translations="ServiceInterface" Description="Service interface"/>
+		</Tab>
+		
+		<Tab Name="Program">
+			<Register Address="0x46"	Name="LVD"					Level="0" Signed="1"                            Scale="0.01"               Unit="V" Description="Low-voltage disconnect"/>
+			<Register Address="0xFF00"  Name="Product ID"          	Level="0" Signed="0" Min="-32768" Max="32767" 	Scale="1"      Format="%c" Unit="" Length="13" OneTime="1" Description="String defined in Product Specification"/>
+			<Register Address="0xFF0D"  Name="Hardware revision"    Level="0" Signed="0" Min="-32768" Max="32767" 	Scale="1"      Format="%c" Unit="" Length="4" OneTime="1" Description="Product revision"/>
+			<Register Address="0xFF11"  Name="Product name"         Level="0" Signed="0" Min="-32768" Max="32767" 	Scale="1"      Format="%c" Unit="" Length="7" OneTime="1" Description="String defined in Product Specification"/>
+			<Register Address="0xFF18"  Name="Production date"      Level="0" Signed="0" Min="-32768" Max="32767" 	Scale="1"      Format="%c" Unit="" Length="5" OneTime="1" Description="Production date"/>
+			<Register Address="0xFF1D"  Name="Customer serial"      Level="0" Signed="0" Min="-32768" Max="32767" 	Scale="1"      Format="%c" Unit="" Length="7" OneTime="1" Description="Serial as defined by the customer"/>
+			<Register Address="0xFF24"  Name="Market name"      	Level="0" Signed="0" Min="-32768" Max="32767" 	Scale="1"      Format="%c" Unit="" Length="16" OneTime="1" Description="String defining the official name of the product"/>
+			<Register Address="0xFF34"  Name="Incell serial"        Level="0" Signed="0" Min="-32768" Max="32767" 	Scale="1"      Format="%c" Unit="" Length="11" OneTime="1" Description="Incell serial"/>
+		</Tab>
+	</HoldingRegisters>
+
+	<HoldingBlobs/>
+	<InputBlobs/>
+</PrimaryTables>

@@ -1,0 +1,84 @@
+This file us automatically created when closing Incell Studio
+Tab;Name;Address;Count;Scale;Signed;Min;Max;Type;Level;Writable;Value;Unit;Description
+Override;Charge;0x0025;1;1.000000;Yes;-1;1;1;1;1;-;;Charge FET control
+Override;Discharge;0x0026;1;1.000000;Yes;-1;1;1;1;1;-;;Discharge FET control
+Override;CLD;0x0027;1;1.000000;Yes;-1;1;1;1;1;-;;CLD control
+Override;Balance;0x0028;1;1.000000;Yes;-1;32767;1;1;1;-;;Cell balancing
+Override;LED;0x0029;1;1.000000;Yes;-1;15;1;1;1;-;;LED control
+Override;Buzzer;0x002A;1;1.000000;Yes;-1;1;1;1;1;-;;Buzzer control
+Override;Relay;0x002B;1;1.000000;Yes;-1;1;1;1;1;-;;Relay control
+Override;Service interface;0x0044;1;1.000000;Yes;0;1;1;1;1;-1 ;;Service interface
+Program;LVD;0x0046;1;0.010000;Yes;-32768;32767;1;0;1;0.00 V;V;Low-voltage disconnect
+Program;Product ID;0xFF00;1;1.000000;No;-32768;32767;1;0;1;;;String defined in Product Specification
+Program;Hardware revision;0xFF0D;1;1.000000;No;-32768;32767;1;0;1;03;;Product revision
+Program;Product name;0xFF11;1;1.000000;No;-32768;32767;1;0;1;;;String defined in Product Specification
+Program;Production date;0xFF18;1;1.000000;No;-32768;32767;1;0;1;20181205;;Production date
+Program;Customer serial;0xFF1D;1;1.000000;No;-32768;32767;1;0;1;;;Serial as defined by the customer
+Program;Market name;0xFF24;1;1.000000;No;-32768;32767;1;0;1;SP48-33-100-SC e AIR;;String defining the official name of the product
+Program;Incell serial;0xFF34;1;1.000000;No;-32768;32767;1;0;1;81000025039818490130;;Incell serial
+Battery;Status;0x0000;1;1.000000;No;0;65535;0;1;0;0x2000;;BMS status bitfield
+Battery;SOC;0x0001;1;0.010000;Yes;-32768;32767;0;0;0;91.79 %;%;State of charge
+Battery;SOH;0x0002;1;0.010000;Yes;-32768;32767;0;1;0;99.34 %;%;State of health
+Battery;Capacity;0x0003;1;0.010000;Yes;-32768;32767;0;0;0;99.34 Ah;Ah;Full charge capacity
+Battery;Battery voltage;0x0004;1;0.010000;Yes;-32768;32767;0;0;0;57.32 V;V;Internal battery voltage
+Battery;Rail voltage;0x0005;1;0.010000;Yes;-32768;32767;0;0;0;57.36 V;V;External rail voltage
+Battery;Current;0x0006;1;0.010000;Yes;-32768;32767;0;0;0;0.05 A;A;Output current
+Battery;Min cell voltage;0x0007;1;0.001000;Yes;-32768;32767;0;0;0;4.090 V;V;Min voltage of all cells
+Battery;Max cell voltage;0x0008;1;0.001000;Yes;-32768;32767;0;0;0;4.099 V;V;Max voltage of all cells
+Battery;Average cell voltage;0x0009;1;0.001000;Yes;-32768;32767;0;1;0;4.094 V;V;Average cell voltage
+Battery;Min cell temp;0x000A;1;0.100000;Yes;-32768;32767;0;0;0;26.2 °C;°C;Min temperature of all cells
+Battery;Max cell temp;0x000B;1;0.100000;Yes;-32768;32767;0;0;0;26.7 °C;°C;Max temperature of all cells
+Battery;FET temp;0x000C;1;0.100000;Yes;-32768;32767;0;0;0;27.0 °C;°C;Temperature of semiconductor switch
+Battery;AFE temp;0x000D;1;0.100000;Yes;-32768;32767;0;1;0;30.3 °C;°C;AFE die temperature
+Battery;MCU temp;0x000E;1;0.100000;Yes;-32768;32767;0;1;0;31.2 °C;°C;MCU die temperature
+Battery;CLD temp;0x000F;1;0.100000;Yes;-32768;32767;0;1;0;34.9 °C;°C;CLD FET temperature
+Battery;Cell temp 1;0x0010;1;0.100000;Yes;-32768;32767;0;1;0;26.7 °C;°C;Cell temperature 1
+Battery;Cell temp 2;0x0011;1;0.100000;Yes;-32768;32767;0;1;0;26.2 °C;°C;Cell temperature 2
+Battery;Extended status;0x0012;1;1.000000;No;0;65535;0;1;0;0x0C23;;Extended BMS status bitfield
+Battery;Balancing status;0x0013;1;1.000000;Yes;-32768;32767;0;1;0;0x0000;;Cell balancing status
+Battery;Cell voltage 1;0x0014;1;0.001000;Yes;-32768;32767;0;1;0;4.096 V;V;Cell voltage 1
+Battery;Cell voltage 2;0x0015;1;0.001000;Yes;-32768;32767;0;1;0;4.098 V;V;Cell voltage 2
+Battery;Cell voltage 3;0x0016;1;0.001000;Yes;-32768;32767;0;1;0;4.099 V;V;Cell voltage 3
+Battery;Cell voltage 4;0x0017;1;0.001000;Yes;-32768;32767;0;1;0;4.099 V;V;Cell voltage 4
+Battery;Cell voltage 5;0x0018;1;0.001000;Yes;-32768;32767;0;1;0;4.097 V;V;Cell voltage 5
+Battery;Cell voltage 6;0x0019;1;0.001000;Yes;-32768;32767;0;1;0;4.091 V;V;Cell voltage 6
+Battery;Cell voltage 7;0x001A;1;0.001000;Yes;-32768;32767;0;1;0;4.092 V;V;Cell voltage 7
+Battery;Cell voltage 8;0x001B;1;0.001000;Yes;-32768;32767;0;1;0;4.094 V;V;Cell voltage 8
+Battery;Cell voltage 9;0x001C;1;0.001000;Yes;-32768;32767;0;1;0;4.093 V;V;Cell voltage 9
+Battery;Cell voltage 10;0x001D;1;0.001000;Yes;-32768;32767;0;1;0;4.091 V;V;Cell voltage 10
+Battery;Cell voltage 11;0x001E;1;0.001000;Yes;-32768;32767;0;1;0;4.092 V;V;Cell voltage 11
+Battery;Cell voltage 12;0x001F;1;0.001000;Yes;-32768;32767;0;1;0;4.094 V;V;Cell voltage 12
+Battery;Cell voltage 13;0x0020;1;0.001000;Yes;-32768;32767;0;1;0;4.093 V;V;Cell voltage 13
+Battery;Cell voltage 14;0x0021;1;0.001000;Yes;-32768;32767;0;1;0;4.090 V;V;Cell voltage 14
+Battery;Cell voltage 15;0x0022;1;0.001000;Yes;-32768;32767;0;1;0;0.048 V;V;Cell voltage 15
+Battery;MCU serial number;0x0023;1;1.000000;No;0;65535;0;1;0;0x06A8C83B;;MCU serial number
+Battery;Signature 1;0x002D;1;1.000000;No;0;65535;0;1;0;0x6A43ACF4;;Protocol signature 1
+Battery;Signature 2;0x002F;1;1.000000;No;0;65535;0;1;0;0x7A912546;;Protocol signature 2
+Battery;Protocol version;0x0031;1;1.000000;No;0;65535;0;1;0;4 ;;Protocol version
+Battery;Firmware version;0x0032;1;1.000000;No;0;65535;0;1;0;0x5AD9AB44;;Firmware version
+Battery;Float-charging voltage;0x0034;1;0.010000;No;0;65535;0;1;0;56.00 V;V;Float-charging voltage
+Battery;Full-charging voltage;0x0035;1;0.010000;No;0;65535;0;1;0;58.80 V;V;Full-charging voltage
+Battery;Nominal charge current;0x0036;1;0.010000;No;0;65535;0;1;0;45.00 A;A;Nominal charge current
+Battery;Nominal discharge current;0x0037;1;0.010000;No;0;65535;0;1;0;95.00 A;A;Nominal discharge current
+Battery;Nominal capacity;0x0038;1;0.010000;No;0;65535;0;1;0;100.00 Ah;Ah;Nominal capacity
+Battery;Charge regulation current;0x0039;1;0.010000;No;0;65535;0;1;0;45.00 A;A;Charge regulation current
+Battery;Raw SOC;0x003A;1;0.010000;No;0;65535;0;1;0;91.79 %;%;Unscaled state-of-charge
+Battery;Battery charge;0x003B;1;0.010000;No;0;65535;0;1;0;91.18 Ah;Ah;Battery charge
+Battery;Lifetime;0x003C;1;1.000000;No;0;65535;0;1;0;3047821 s;s;Lifetime
+Battery;Cycle count;0x003E;1;1.000000;No;0;65535;0;1;0;46 ;;Cycle count
+Battery;Model;0x003F;1;1.000000;No;0;255;0;0;0;17 ;;Model number
+Battery;AFE update period;0x0040;1;0.001000;Yes;-32768;32767;0;1;0;0.242 s;s;AFE update period
+Battery;AFE temp 1;0x0041;1;0.100000;Yes;-32768;32767;0;1;0;30.3 °C;°C;AFE die temperature 1
+Battery;AFE temp 2;0x0042;1;0.100000;Yes;-32768;32767;0;1;0;28.3 °C;°C;AFE die temperature 2
+Battery;AFE temp 3;0x0043;1;0.100000;Yes;-32768;32767;0;1;0;28.4 °C;°C;AFE die temperature 3
+Battery;Service interface;0x0044;1;1.000000;Yes;0;1;0;1;0;-1 ;;Service interface
+Battery;Current gain;0x0045;1;244.140625;Yes;-32768;32767;0;1;0;16357.421875 PPM;PPM;Current gain
+Battery;LVD;0x0046;1;0.010000;Yes;-32768;32767;0;1;0;0.00 V;V;Low-voltage disconnect
+Battery;5V supply;0x0047;1;0.001000;Yes;-32768;32767;0;1;0;4.988 V;V;5V supply voltage
+Battery;Hardware revision;0x0048;1;1.000000;Yes;0;4;0;1;0;R2;;Hardware revision
+Battery;Start-up checksum;0x0049;1;1.000000;No;0;65535;0;1;0;0x5FE1;;Start-up code checksum
+Battery;Parallel known;0x004A;1;1.000000;No;0;65535;0;1;0;0x021E;;Parallel modules known
+Battery;Parallel group;0x004B;1;1.000000;No;0;65535;0;1;0;0x021E;;Parallel modules in group
+Battery;CAN receive error counter;0x004C;1;1.000000;No;0;65535;0;1;0;0 ;;CAN receive error counter
+Battery;CAN transmit error counter;0x004D;1;1.000000;No;0;65535;0;1;0;0 ;;CAN transmit error counter
+Battery;Capacity fade;0x004E;1;0.010000;Yes;-32768;32767;0;1;0;0.66 Ah;Ah;Capacity fade
